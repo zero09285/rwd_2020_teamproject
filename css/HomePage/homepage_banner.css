@@ -1,9 +1,42 @@
 #banner {
     width: 100%;
-    height: 100vh;
-    text-align: center;
+    /* height: 100vh; */
+    /* text-align: center;
     font-size: 100px;
     color: cornflowerblue;
     font-weight: 900;
-    line-height: 100vh;
+    line-height: 100vh; */
+    z-index: -1;
+}
+
+#banner_background {
+    width: 100%;
+    height: 8000px;
+    position: relative;
+}
+.lax_pic {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+}
+.lax {
+    position: absolute;
+    position: fixed;
+}
+.actor {
+    top: 300px;
+}
+/* .contanier {
+    width: 100%;
+    height: 1000px;
+    background-color: rgb(33, 24, 116);
+} */
+.bg {
+    width: 100%;
+    height: calc(100vh - 80px);
+    bottom: 0px;
+}
+.cover {
+    /* z-index: 5; */
 }

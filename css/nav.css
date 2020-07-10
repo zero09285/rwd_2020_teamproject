@@ -155,7 +155,7 @@ width: 120px;
     }
     .navBar.nav_active{
         display: block;
-        padding: 89px 0 0 0 ;
+        padding: 45px 0 0 0 ;
     }
 
     .headerContent .navBar .mainMenu{
@@ -200,7 +200,7 @@ width: 120px;
     width: 10%;
     display: flex;
     position: relative;
-    margin: 100px 19px 0 19px;
+    margin: 15px 15px 0 15px;
     }
     .icon_pic{
     width: 100%;
@@ -241,7 +241,9 @@ width: 120px;
         transform: rotate(45deg) translate(-8px, -8px);
     }
 
-
+    .mainB {
+        display: none;
+    }
 
 
 

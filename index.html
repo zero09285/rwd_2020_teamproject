@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>添興窯官方網站</title>
+
+    <!--套件CDN-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!--套件CDN-->
+
+    <!--固定樣式(Style)-->
+    <link rel="stylesheet" href="">
+    <!--固定樣式-->
+
+    <!--CSS檔外連-->
+    <link rel="stylesheet" href="./css/loading.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/nav_list.css">
+    <link rel="stylesheet" href="./css/HomePage/homepage_banner.css">
+    <link rel="stylesheet" href="./css/HomePage/homepage_video_anime.css">
+    <link rel="stylesheet" href="./css/HomePage/homepage_video.css">
+    <link rel="stylesheet" href="./css/HomePage/homepage_play_box_son.css">
+    <link rel="stylesheet" href="./css/HomePage/homepage_diy.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <!--CSS檔外連-->
+
+
+
+
+
+</head>
+
+<body>
+
+    <div class="loading_page fixed-top">
+        <!--Loading-->
+        <div class="loader">Loading...</div>
+    </div>
+
+    <header class="header fixed-top">
+        <div id="headerSection" class="container">
+            <div class="headerContent">
+                <h2 class="logo">
+                    <a href="index.html"><img src="./img/logo.png" alt="添興窯logo"></a>
+                </h2>
+
+
+                <nav class="navBar">
+                    <ul class="mainMenu">
+                        <h2>Nav Bar</h2>
+                        <li class="mainLi">
+                            <a class="mainA" href="about.html"><span class="select">關於添興</span></a>
+                        </li>
+
+                        <!--  -->
+                        <li class="mainLi selectph">
+                            <a href="#"><span class="mainA select">車票與交通</span></a>
+                        </li>
+
+                        <li class="mainLi selectph">
+                            <a href="facility.html"><span class="mainA select">環境設施</span></a>
+                        </li>
+                        <!--  -->
+                        <li class="mainLi mainB">
+                            <a class="mainA" href="#"><span class="select">參觀資訊</span></a>
+                            <ul class="subMenu">
+                                <li><a href="#"><span class="select">車票與交通</span></a></li>
+                                <li><a href="facility.html"><span class="select">環境設施</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="mainLi">
+                            <a class="mainA" href="diy.html"><span class="select">DIY體驗</span></a>
+                        </li>
+                        <li class="mainLi">
+                            <a class="mainA" href="product.html"><span class="select">經典商品</span></a>
+                        </li>
+                        <li class="mainLi">
+                            <a class="mainA" href="#"><span class="select">周邊景點</span></a>
+                        </li>
+                        <li class="mainLi">
+                            <a class="mainA" href="#"><span class="select">團體預約</span></a>
+                        </li>
+                    </ul>
+                    <div class="icon">
+
+                        <div class="icon_change ">
+                            <a id="icon_a" href="#">
+                                <img class="icon_pic " src="./img/icon-fb-h.svg" alt="">
+                                <img class="icon_pic" src="./img/icon-fb.svg" alt="">
+                            </a>
+                        </div>
+
+                        <div class="icon_change ">
+                            <a id="icon_a" href="#">
+                                <img class="icon_pic " src="./img/icon-ig-h.svg" alt="">
+                                <img class="icon_pic" src="./img/icon-ig.svg" alt="">
+                            </a>
+                        </div>
+
+                        <div class="icon_change ">
+                            <a id="icon_a" href="#">
+                                <img class="icon_pic " src="./img/icon-twitter-h.svg" alt="">
+                                <img class="icon_pic" src="./img/icon-twitter.svg" alt="">
+                            </a>
+                        </div>
+
+                        <div class="icon_change ">
+                            <a id="icon_a" href="#">
+                                <img class="icon_pic " src="./img/icon-youtube-h.svg" alt="">
+                                <img class="icon_pic" src="./img/icon-youtube.svg" alt="">
+                            </a>
+                        </div>
+
+                    </div>
+                </nav>
+
+                <div class="burgar_btn ">
+                    <a href="#">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+    </header>
+
+
+    <div id="main">
+        <!--內容-->
+        <div id="banner">
+            <div id="banner_background">
+                <div id="laxpicbox" class="lax_pic">
+                    <img src="./img/bg/bg1.png" class="lax bg cover" alt=""
+                        data-lax-opacity="(document.querySelector('#banner_background').offsetTop) 1,(document.querySelector('#banner_background').offsetTop+1799) 1,(document.querySelector('#banner_background').offsetTop+1800) 0">
+
+                    <img src="./img/bg/bg3.png" class="lax bg" alt=""
+                        data-lax-opacity="(document.querySelector('#banner_background').offsetTop+1799) 0,(document.querySelector('#banner_background').offsetTop+1800) 1,(document.querySelector('#banner_background').offsetTop+2799) 1,(document.querySelector('#banner_background').offsetTop+2800) 0">
+
+                    <img src="./img/bg/bg2.png" class="lax bg" alt=""
+                        data-lax-opacity="(document.querySelector('#banner_background').offsetTop+2799) 0,(document.querySelector('#banner_background').offsetTop+2800) 1,(document.querySelector('#banner_background').offsetTop+3399) 1,(document.querySelector('#banner_background').offsetTop+3400) 0">
+
+                    <img src="./img/bg/bg4.png" class="lax bg" alt=""
+                        data-lax-opacity="(document.querySelector('#banner_background').offsetTop+3399) 0,(document.querySelector('#banner_background').offsetTop+3400) 1,(document.querySelector('#banner_background').offsetTop+4199) 1,(document.querySelector('#banner_background').offsetTop+4200) 0">
+
+                    <img src="./img/bg/bg2.png" class="lax bg" alt=""
+                        data-lax-opacity="(document.querySelector('#banner_background').offsetTop+4199) 0,(document.querySelector('#banner_background').offsetTop+4200) 1,(document.querySelector('#banner_background').offsetTop+4799) 1,(document.querySelector('#banner_background').offsetTop+4800) 0">
+
+                    <img src="./img/bg/bg5.png" class="lax bg cover" alt=""
+                        data-lax-opacity="(document.querySelector('#banner_background').offsetTop+4799) 0,(document.querySelector('#banner_background').offsetTop+4800) 1,(document.querySelector('#banner_background').offsetTop+5799) 1,(document.querySelector('#banner_background').offsetTop+5800) 0">
+
+                    <img src="./img/bg/bg8.png" class="lax bg cover" alt=""
+                        data-lax-opacity="(document.querySelector('#banner_background').offsetTop+5799) 0,(document.querySelector('#banner_background').offsetTop+5800) 1,(document.querySelector('#banner_background').offsetTop+6399) 1,(document.querySelector('#banner_background').offsetTop+6400) 0">
+
+
+
+                    <img src="./img/01.png" class="lax actor" alt=""
+                        data-lax-opacity="(document.querySelector('#banner_background').offsetTop) 1,(document.querySelector('#banner_background').offsetTop+199) 1,(document.querySelector('#banner_background').offsetTop+200) 0">
+                    <img src="./img/02.png" class="lax actor" alt=""
+                        data-lax-opacity="(document.querySelector('#banner_background').offsetTop+199) 0,(document.querySelector('#banner_background').offsetTop+200) 1,(document.querySelector('#banner_background').offsetTop+399) 1,(document.querySelector('#banner_background').offsetTop+400) 0">
+                    <img src="./img/03.png" class="lax actor" alt=""
+                        data-lax-opacity="(document.querySelector('#banner_background').offsetTop+399) 0,(document.querySelector('#banner_background').offsetTop+400) 1,(document.querySelector('#banner_background').offsetTop+599) 1,(document.querySelector('#banner_background').offsetTop+600) 0">
+                    <img src="./img/04.png" class="lax actor" alt=""
+                        data-lax-opacity="(document.querySelector('#banner_background').offsetTop+599) 0,(document.querySelector('#banner_background').offsetTop+600) 1,(document.querySelector('#banner_background').offsetTop+799) 1,(document.querySelector('#banner_background').offsetTop+800) 0">
+                    <img src="./img/05.png" class="lax actor" alt=""
+                        data-lax-opacity="(document.querySelector('#banner_background').offsetTop+799) 0,(document.querySelector('#banner_background').offsetTop+800) 1,(document.querySelector('#banner_background').offsetTop+999) 1,(document.querySelector('#banner_background').offsetTop+1000) 0">
+                    <img src="./img/06.png" class="lax actor" alt=""
+                        data-lax-opacity="(document.querySelector('#banner_background').offsetTop+999) 0,(document.querySelector('#banner_background').offsetTop+1000) 1,(document.querySelector('#banner_background').offsetTop+1199) 1,(document.querySelector('#banner_background').offsetTop+1200) 0">
+                    <img src="./img/06-1.png" class="lax actor" alt=""
+                        data-lax-opacity="(document.querySelector('#banner_background').offsetTop+999) 0,(document.querySelector('#banner_background').offsetTop+1000) 1,(document.querySelector('#banner_background').offsetTop+1199) 1,(document.querySelector('#banner_background').offsetTop+1200) 0">
+                    <img src="./img/07.png" class="lax actor" alt=""
+                        data-lax-opacity="(document.querySelector('#banner_background').offsetTop+1199) 0,(document.querySelector('#banner_background').offsetTop+1200) 1,(document.querySelector('#banner_background').offsetTop+1399) 1,(document.querySelector('#banner_background').offsetTop+1400) 0">
+                    <img src="./img/08.png" class="lax actor" alt=""
+                        data-lax-opacity="(document.querySelector('#banner_background').offsetTop+1399) 0,(document.querySelector('#banner_background').offsetTop+1400) 1,(document.querySelector('#banner_background').offsetTop+1599) 1,(document.querySelector('#banner_background').offsetTop+1600) 0">
+                    <img src="./img/09.png" class="lax actor" alt=""
+                        data-lax-opacity="(document.querySelector('#banner_background').offsetTop+1599) 0,(document.querySelector('#banner_background').offsetTop+1600) 1,(document.querySelector('#banner_background').offsetTop+1799) 1,(document.querySelector('#banner_background').offsetTop+1800) 0">
+                    <img src="./img/09-1.png" class="lax actor" alt=""
+                        data-lax-opacity="(document.querySelector('#banner_background').offsetTop+1599) 0,(document.querySelector('#banner_background').offsetTop+1600) 1,(document.querySelector('#banner_background').offsetTop+1799) 1,(document.querySelector('#banner_background').offsetTop+1800) 0"
+                        data-lax-translate-x="(document.querySelector('#banner_background').offsetTop+1600) 0  , (document.querySelector('#banner_background').offsetTop+2000) 1000 ">
+                    <img src="./img/09-1.png" class="lax actor" alt=""
+                        data-lax-opacity="(document.querySelector('#banner_background').offsetTop+1800) 0,(document.querySelector('#banner_background').offsetTop+1800) 1,(document.querySelector('#banner_background').offsetTop+1999) 1,(document.querySelector('#banner_background').offsetTop+2000) 0"
+                        data-lax-translate-x="(document.querySelector('#banner_background').offsetTop+1800) -500  , (document.querySelector('#banner_background').offsetTop+2000) -200 ">
+                    <img src="./img/10.png" class="lax actor" alt=""
+                        data-lax-opacity="(document.querySelector('#banner_background').offsetTop+1799) 0,(document.querySelector('#banner_background').offsetTop+1800) 1,(document.querySelector('#banner_background').offsetTop+1999) 1,(document.querySelector('#banner_background').offsetTop+2000) 0">
+                    <img src="./img/11.png" class="lax actor" alt=""
+                        data-lax-opacity="(document.querySelector('#banner_background').offsetTop+1999) 0,(document.querySelector('#banner_background').offsetTop+2000) 1,(document.querySelector('#banner_background').offsetTop+2199) 1,(document.querySelector('#banner_background').offsetTop+2200) 0">
+                    <img src="./img/12.png" class="lax actor" alt=""
+                        data-lax-opacity="(document.querySelector('#banner_background').offsetTop+2199) 0,(document.querySelector('#banner_background').offsetTop+2200) 1,(document.querySelector('#banner_background').offsetTop+2399) 1,(document.querySelector('#banner_background').offsetTop+2400) 0">
+                    <img src="./img/12-1.png" class="lax actor" alt=""
+                        data-lax-opacity="(document.querySelector('#banner_background').offsetTop+2399) 0,(document.querySelector('#banner_background').offsetTop+2400) 1,(document.querySelector('#banner_background').offsetTop+2799) 1,(document.querySelector('#banner_background').offsetTop+2800) 0">
+                    <img src="./img/12-2.png" class="lax actor" alt=""
+                        data-lax-opacity="(document.querySelector('#banner_background').offsetTop+2399) 0,(document.querySelector('#banner_background').offsetTop+2400) 1,(document.querySelector('#banner_background').offsetTop+2599) 1,(document.querySelector('#banner_background').offsetTop+2600) 0"
+                        data-lax-translate-x="(document.querySelector('#banner_background').offsetTop+2400) 450  , (document.querySelector('#banner_background').offsetTop+2600) 451 ">
+                    <img src="./img/13.png" class="lax actor" alt=""
+                        data-lax-opacity="(document.querySelector('#banner_background').offsetTop+2599) 0,(document.querySelector('#banner_background').offsetTop+2600) 1,(document.querySelector('#banner_background').offsetTop+2799) 1,(document.querySelector('#banner_background').offsetTop+2800) 0"
+                        data-lax-translate-x="(document.querySelector('#banner_background').offsetTop+2600) 450  , (document.querySelector('#banner_background').offsetTop+2800) 1000 ">
+                    <img src="./img/13.png" class="lax actor" alt=""
+                        data-lax-opacity="(document.querySelector('#banner_background').offsetTop+2799) 0,(document.querySelector('#banner_background').offsetTop+2800) 1,(document.querySelector('#banner_background').offsetTop+2999) 1,(document.querySelector('#banner_background').offsetTop+3000) 0"
+                        data-lax-translate-x="(document.querySelector('#banner_background').offsetTop+2800) -700  , (document.querySelector('#banner_background').offsetTop+3000) -100 ">
+                    <img src="./img/13-1.png" class="lax actor" alt=""
+                        data-lax-opacity="(document.querySelector('#banner_background').offsetTop+2799) 0,(document.querySelector('#banner_background').offsetTop+2800) 1,(document.querySelector('#banner_background').offsetTop+2999) 1,(document.querySelector('#banner_background').offsetTop+3000) 0">
+                    <img src="./img/14.png" class="lax actor" alt=""
+                        data-lax-opacity="(document.querySelector('#banner_background').offsetTop+2999) 0,(document.querySelector('#banner_background').offsetTop+3000) 1,(document.querySelector('#banner_background').offsetTop+3199) 1,(document.querySelector('#banner_background').offsetTop+3200) 0">
+                    <img src="./img/15.png" class="lax actor" alt=""
+                        data-lax-opacity="(document.querySelector('#banner_background').offsetTop+3199) 0,(document.querySelector('#banner_background').offsetTop+3200) 1,(document.querySelector('#banner_background').offsetTop+3399) 1,(document.querySelector('#banner_background').offsetTop+3400) 0">
+                    <img src="./img/16.png" class="lax actor" alt=""
+                        data-lax-opacity="(document.querySelector('#banner_background').offsetTop+3399) 0,(document.querySelector('#banner_background').offsetTop+3400) 1,(document.querySelector('#banner_background').offsetTop+3599) 1,(document.querySelector('#banner_background').offsetTop+3600) 0">
+                    <img src="./img/17.png" class="lax actor" alt=""
+                        data-lax-opacity="(document.querySelector('#banner_background').offsetTop+3599) 0,(document.querySelector('#banner_background').offsetTop+3600) 1,(document.querySelector('#banner_background').offsetTop+3799) 1,(document.querySelector('#banner_background').offsetTop+3800) 0">
+                    <img src="./img/18.png" class="lax actor" alt=""
+                        data-lax-opacity="(document.querySelector('#banner_background').offsetTop+3799) 0,(document.querySelector('#banner_background').offsetTop+3800) 1,(document.querySelector('#banner_background').offsetTop+4199) 1,(document.querySelector('#banner_background').offsetTop+4200) 0">
+                    <img src="./img/19.png" class="lax actor" alt=""
+                        data-lax-opacity="(document.querySelector('#banner_background').offsetTop+4000) 0,(document.querySelector('#banner_background').offsetTop+4100) 1,(document.querySelector('#banner_background').offsetTop+4200) 0">
+                    <img src="./img/20.png" class="lax actor" alt=""
+                        data-lax-opacity="(document.querySelector('#banner_background').offsetTop+4199) 0,(document.querySelector('#banner_background').offsetTop+4200) 1,(document.querySelector('#banner_background').offsetTop+4399) 1,(document.querySelector('#banner_background').offsetTop+4400) 0">
+                    <img src="./img/21.png" class="lax actor" alt=""
+                        data-lax-opacity="(document.querySelector('#banner_background').offsetTop+4399) 0,(document.querySelector('#banner_background').offsetTop+4400) 1,(document.querySelector('#banner_background').offsetTop+4599) 1,(document.querySelector('#banner_background').offsetTop+4600) 0">
+                    <img src="./img/23.png" class="lax actor" alt=""
+                        data-lax-opacity="(document.querySelector('#banner_background').offsetTop+4599) 0,(document.querySelector('#banner_background').offsetTop+4600) 1,(document.querySelector('#banner_background').offsetTop+4799) 1,(document.querySelector('#banner_background').offsetTop+4800) 0"
+                        data-lax-translate-x="(document.querySelector('#banner_background').offsetTop+4800) -155  , (document.querySelector('#banner_background').offsetTop+5000) -155 ">
+                    <img src="./img/23-1.png" class="lax actor" alt=""
+                        data-lax-opacity="(document.querySelector('#banner_background').offsetTop+4599) 0,(document.querySelector('#banner_background').offsetTop+4600) 1,(document.querySelector('#banner_background').offsetTop+4799) 1,(document.querySelector('#banner_background').offsetTop+4800) 0"
+                        data-lax-translate-x="(document.querySelector('#banner_background').offsetTop+4600) 0  , (document.querySelector('#banner_background').offsetTop+4800) 500 ">
+
+                    <img src="./img/23-1.png" class="lax actor" alt=""
+                        data-lax-opacity="(document.querySelector('#banner_background').offsetTop+4799) 0,(document.querySelector('#banner_background').offsetTop+4800) 1,(document.querySelector('#banner_background').offsetTop+4999) 1,(document.querySelector('#banner_background').offsetTop+5000) 0"
+                        data-lax-translate-x="(document.querySelector('#banner_background').offsetTop+4800) -800  , (document.querySelector('#banner_background').offsetTop+5000) -300 ">
+
+                    <img src="./img/24.png" class="lax actor" alt=""
+                        data-lax-opacity="(document.querySelector('#banner_background').offsetTop+4799) 0,(document.querySelector('#banner_background').offsetTop+4800) 1,(document.querySelector('#banner_background').offsetTop+4999) 1,(document.querySelector('#banner_background').offsetTop+5000) 0">
+                    <img src="./img/25.png" class="lax actor" alt=""
+                        data-lax-opacity="(document.querySelector('#banner_background').offsetTop+4999) 0,(document.querySelector('#banner_background').offsetTop+5000) 1,(document.querySelector('#banner_background').offsetTop+5199) 1,(document.querySelector('#banner_background').offsetTop+5200) 0">
+                    <img src="./img/26.png" class="lax actor" alt=""
+                        data-lax-opacity="(document.querySelector('#banner_background').offsetTop+5199) 0,(document.querySelector('#banner_background').offsetTop+5200) 1,(document.querySelector('#banner_background').offsetTop+5399) 1,(document.querySelector('#banner_background').offsetTop+5400) 0">
+                    <img src="./img/27.png" class="lax actor" alt=""
+                        data-lax-opacity="(document.querySelector('#banner_background').offsetTop+5399) 0,(document.querySelector('#banner_background').offsetTop+5400) 1,(document.querySelector('#banner_background').offsetTop+5599) 1,(document.querySelector('#banner_background').offsetTop+5600) 0">
+                    <img src="./img/28.png" class="lax actor" alt=""
+                        data-lax-opacity="(document.querySelector('#banner_background').offsetTop+5599) 0,(document.querySelector('#banner_background').offsetTop+5600) 1,(document.querySelector('#banner_background').offsetTop+5799) 1,(document.querySelector('#banner_background').offsetTop+5800) 0"
+                        data-lax-translate-x="(document.querySelector('#banner_background').offsetTop+5600) 250  , (document.querySelector('#banner_background').offsetTop+5800) 1000 ">
+                    <img src="./img/28.png" class="lax actor" alt=""
+                        data-lax-opacity="(document.querySelector('#banner_background').offsetTop+5799) 0,(document.querySelector('#banner_background').offsetTop+5800) 1,(document.querySelector('#banner_background').offsetTop+5999) 1,(document.querySelector('#banner_background').offsetTop+6000) 0"
+                        data-lax-translate-x="(document.querySelector('#banner_background').offsetTop+5800) -500  , (document.querySelector('#banner_background').offsetTop+6000) -200 ">
+                    <img src="./img/28-1.png" class="lax actor" alt=""
+                        data-lax-opacity="(document.querySelector('#banner_background').offsetTop+5799) 0,(document.querySelector('#banner_background').offsetTop+5800) 1,(document.querySelector('#banner_background').offsetTop+5999) 1,(document.querySelector('#banner_background').offsetTop+6000) 0">
+                    <img src="./img/29.png" class="lax actor" alt=""
+                        data-lax-opacity="(document.querySelector('#banner_background').offsetTop+5999) 0,(document.querySelector('#banner_background').offsetTop+6000) 1,(document.querySelector('#banner_background').offsetTop+6199) 1,(document.querySelector('#banner_background').offsetTop+6200) 0">
+                    <img src="./img/30.png" class="lax actor" alt=""
+                        data-lax-opacity="(document.querySelector('#banner_background').offsetTop+6199) 0,(document.querySelector('#banner_background').offsetTop+6200) 1,(document.querySelector('#banner_background').offsetTop+6399) 1,(document.querySelector('#banner_background').offsetTop+6400) 0">
+                    <img src="./img/end.png" class="lax actor" alt=""
+                        data-lax-opacity="(document.querySelector('#banner_background').offsetTop+6399) 0,(document.querySelector('#banner_background').offsetTop+7000) 1,(document.querySelector('#banner_background').offsetTop+7400) 0">
+
+                </div>
+            </div>
+        </div>
+        <!--逐格動畫-->
+
+
+        <div id="video_section" class="video_section">
+            <span>請將陶器放置窯爐</span>
+            <!--播放區域-->
+
+            <iframe id="videoplayer" class="videoplayer" src="https://www.youtube.com/embed/-vprUYchK80" frameborder="0"
+                allow="stop; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+            <div class="videoplayer_box">
+                <a href="#video_section" class="videoplayer_box_exit"></a>
+                <!--影片Section的離開按鈕-->
+            </div>
+
+
+            <div class="video_mask"></div>
+            <!--Banner濾鏡-->
+
+            <div class="video_slidebox_section">
+                <!--限制可拖動方塊的移動區塊-->
+                <a class="video_slidebox" href="#">
+                    <!--可以拖動的方塊-->
+                    <div class="video_slidebox_alpha"></div>
+                    <!--加大方塊辨識區域-->
+                </a>
+            </div>
+            <a href="#video_section" class="RWD_playbox"></a>
+            <div class="RWD_playbox_text">請點擊陶器播放影片</div>
+            <canvas></canvas>
+
+            <!-- <div class="video_switch">
+                <div class="video_shadow"></div>
+                 <div class="video_shadow video_shadow_r"></div>
+                <div class="video_shadow video_shadow_l"></div>
+                <div class="video_shadow video_shadow_r"></div>
+                <div class="video_shadow video_shadow_l"></div>
+                <div class="video_shadow video_shadow_r"></div>
+                <div class="video_shadow video_shadow_l"></div>
+                <div class="video_shadow video_shadow_r"></div>
+                <div class="video_shadow video_shadow_l"></div>
+                <div class="video_shadow video_shadow_r"></div> 
+            </div>-->
+
+            <div class="play_box">
+                <!--中心偵測播放方塊-->
+
+                <div class="play_box_son">
+                    <!-- <div class="play_box_son-inner">
+                        <div class="play_box_son-line-wrap">
+                            <div class="play_box_son-line"></div>
+                        </div>
+                        <div class="play_box_son-line-wrap">
+                            <div class="play_box_son-line"></div>
+                        </div>
+                        <div class="play_box_son-line-wrap">
+                            <div class="play_box_son-line"></div>
+                        </div>
+                        <div class="play_box_son-line-wrap">
+                            <div class="play_box_son-line"></div>
+                        </div>
+                        <div class="play_box_son-line-wrap">
+                            <div class="play_box_son-line"></div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <div class="video_section_bottom"></div>
+        <div class="diy_section">
+            <div class="container">
+                <div class="diy_section_top">
+                    <div class="diy_intro"></div>
+                    <div class="diy_image_box">
+                        <div class="diy_image"></div>
+                    </div>
+                </div>
+
+                <div class="diy_section_bottom">
+                    <div class="row text-center">
+                        <div class="col-lg-4 col-12 card-container">
+                            <div class="card card-flip">
+                                <div class="front card-block">
+                                    <!-- To add FontAwesome Icons use Unicode characters and to set size use font-size instead of fa-*x because when calculating the height (see js), the size of the icon is not calculated if using classes -->
+                                    <div class="card-img-top1"></div>
+                                    <h4 class="card-title" style="font-weight: 900;"> 90分鐘手捏</h4>
+                                    <p class="card-text" style="text-align: justify;">
+                                        手捏杯、碗、盤、時鐘、名片座、手機座、人偶、小動物、筆筒、肥皂盤...幾乎生活上的用品都能用手捏做出來。</p>
+                                </div>
+                                <div class="back card-block">
+                                    <div class="card-img-back1"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-12 card-container">
+                            <div class="card card-flip">
+                                <div class="front card-block">
+                                    <div class="card-img-top2"></div>
+                                    <h4 class="card-title" style="font-weight: 900;"> 90分鐘手捏</h4>
+                                    <p class="card-text" style="text-align: justify;">
+                                        手捏杯、碗、盤、時鐘、名片座、手機座、人偶、小動物、筆筒、肥皂盤...幾乎生活上的用品都能用手捏做出來。</p>
+                                </div>
+                                <div class="back card-block">
+                                    <div class="card-img-back2"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-12 card-container">
+                            <div class="card card-flip">
+                                <div class="front card-block">
+                                    <div class="card-img-top3"></div>
+                                    <h4 class="card-title" style="font-weight: 900;"> 20分鐘手印陶板磚</h4>
+                                    <p class="card-text" style="text-align: justify;">
+                                        手印陶板珍貴紀錄成長每一刻。陶板上打手印製成陶磚。手印陶板珍貴紀錄成長每一刻。陶板上打手印製成陶磚。</p>
+                                </div>
+                                <div class="back card-block">
+                                    <div class="card-img-back3"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <a href="#" class="reservation">
+        <span>
+            我
+            要
+            預
+            約
+        </span>
+    </a>
+    <a href="#" class="gototop"></a>
+
+    <footer>
+        <div class="container">
+            <div class="footer-info">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="footer-box">
+                            <img src="./img/icon-phone-h.svg" alt="服務專線" width="78">
+                            <div class="pl-1">
+                                <h4>服務專線</h4>
+                                <h3 class="tel"><a href="tel:04-9278-1130">04-9278-1130</a></h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="footer-box">
+                            <img src="./img/icon-mail-h.svg" alt="聯絡我們" width="78">
+                            <div class="pl-1">
+                                <h4>聯絡我們</h4>
+                                <h3 class="br"><a href="mailto:tianxingkiln@gmail.com">tianxingkiln@gmail.com</a></h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="footer-box">
+                            <img src="./img/icon-time-h.svg" alt="營業時間" width="78">
+                            <div class="pl-1">
+                                <h4>營業時間<span class="text-note">(週四公休)</span></h4>
+                                <h3 class="br">9:00am~17:30pm</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-social">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <h3>南投縣集集鎮田寮里楓林巷十號</h3>
+                        <h4>All Copyright c Reserved by Tian Xing Kiln Ceramic Art Co., Ltd.</h4>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/txkiln/" target="_blank">
+                                <div class="icon-fb"></div>
+                            </a>
+                            <a href="https://www.instagram.com/txkiln/" target="_blank">
+                                <div class="icon-ig"></div>
+                            </a>
+                            <a href="https://twitter.com/TXKiln" target="_blank">
+                                <div class="icon-twitter"></div>
+                            </a>
+                            <a href="http://line.me/ti/p/@sse5946o" target="_blank">
+                                <div class="icon-line"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!--JS CDN套件-->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <!--JS CDN套件-->
+
+    <!--JS檔外連-->
+    <script src="./js/nav.js"></script>
+    <script src="./js/homepage_banner.js"></script>
+    <script src="./js/homepage_video.js"></script>
+    <script src="./js/homepage_fire.js"></script>
+    <script src="./js/homepage_card.js"></script>
+    <!--JS檔外連-->
+
+
+</body>
+
+</html>
+<!-- https://medium.com/%E5%B0%8F%E9%83%AD-%E0%B9%80%E0%B8%88%E0%B8%99/%E8%8F%9C%E9%B3%A5%E5%B7%A5%E7%A8%8B%E5%B8%AB-youtube-data-api-%E8%BC%89%E5%85%A5%E6%92%AD%E6%94%BE%E6%B8%85%E5%96%AE%E4%B8%A6%E5%88%87%E6%8F%9B%E6%AD%8C%E6%9B%B2-356d8e454ca3 -->

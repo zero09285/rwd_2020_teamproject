@@ -1,0 +1,396 @@
+/* -----------visitInfo -參觀資訊-內容--------------- */
+.container{
+    width: 1140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:auto;
+}
+
+/* 標題(有藍色對話框) */
+h1{
+    width: 300px;
+    margin: auto;
+}
+/* 其他特色標題 */
+h2{
+    width: 300px;
+    margin: auto;
+}
+/* 紅色字 */
+h3{
+    font-size: 21px;
+    color: #a04628;
+    line-height: 50px;
+    text-align: center;
+    font-weight: 900;
+    margin: auto;
+    letter-spacing: 2px;
+}
+/* 黑色字 */
+h4{
+    font-size: 16px;
+    color: black;
+    line-height:30px;
+    text-align: center;
+    font-weight: 900;
+    margin: auto;
+    letter-spacing: 2px;
+}
+.title h4{
+   width: 300px; 
+}
+
+/* 備註文字 */
+p{
+    font-size: 14px;
+    color: black;
+    line-height:22px;
+    text-align: center;
+    font-weight: 400;
+    margin: auto;
+    letter-spacing: 2px;
+    text-align: center;  
+}
+
+
+/* #111111111111111111111111111111111111111111 票價 */
+#visitInfo{
+   position: relative;
+}
+
+.bg-color{
+    margin: 100px 0 0 0;
+    display: flex;
+    justify-content: center;
+    background-image: url(../img/bg-color.svg);
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+
+.bluePeople{
+    width: 18%;
+    left: 1%;
+    top:5%;
+    position: absolute;
+}
+.yellowPeople{
+    width: 18%;
+    right: 3%;
+    top:25%;
+    position: absolute;
+}
+.redPeople{
+    width: 18%;
+    left: 2%;
+    top:56%;
+    position: absolute;
+}
+.pinkPeople{
+    width: 10%;
+    right: 3%;
+    top:80%;
+    position: absolute;
+}
+    
+
+
+#ticket .row{
+    width: 100%;
+    margin: 100px 0 160px 0;
+}
+#ticket .row .card {
+    width: 240px;
+    height: 340px;
+    padding: 30px 30px 30px 30px;
+    box-shadow: 0px 6px 8px #999;
+    border-radius: 8px;
+}
+.redText{
+    border-bottom: 1px solid #c88232;
+}
+.text{
+    height:205px;
+    border-bottom: 1px solid #c88232; 
+}
+#ticket .row .text h4{
+    font-size: 16px;
+    color: black;
+    line-height:50px;
+    text-align: center;
+    font-weight: 900;
+    margin: auto;
+    letter-spacing: 2px;
+}
+#ticket .row .text p{
+    font-size: 14px;
+    color: black;
+    line-height:50px;
+    text-align: center;
+    font-weight: 400;
+    margin: auto;
+    letter-spacing: 2px;
+    text-align: center;  
+}
+   
+/* #2222222222222222222222222222222222222 大眾運輸 */
+#transportation .container .row{
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 6px 8px #999;
+    border-radius: 8px;
+    margin: 100px 0 160px 0;
+}
+#transportation .row .col-12{
+    width: 240px;
+}
+
+#transportation .container .row .midCard{
+    border-left: 1px solid #c88232;
+    border-right: 1px solid #c88232;
+}
+#transportation .row .col-12 h4{
+    padding: 30px 56px 0 56px;
+    text-align: unset;
+}
+
+/* #3333333333333333333333333333333333333 自行開車  */
+#byCar .row{
+    margin: 100px 0 160px 0;
+}
+#byCar .row .card{
+    background-color: white;
+    box-shadow: 0px 6px 8px #999;
+    border-radius: 8px;
+    writing-mode: vertical-lr;
+    padding: 50px 50px 50px 50px;
+}
+#byCar .row h3{
+    font-size: 21px;
+    color: #a04628;
+    line-height: 70px;
+    text-align: center;
+    font-weight: 900;
+    margin: auto;
+    letter-spacing: 2px;
+}
+#byCar .row p{
+    font-size: 16px;
+    color: black;
+    line-height:50px;
+    text-align: center;
+    font-weight: 900;
+    margin: auto;
+    letter-spacing: 2px;
+}
+#byCar .row h4{
+    font-size: 16px;
+    color: black;
+    line-height:70px;
+    text-align: center;
+    font-weight: 900;
+    margin: auto;
+    letter-spacing: 2px;
+}
+
+#byCar .row .yellowBar{
+   background-color:#fadc6e;
+}
+#byCar .row .yellowBar h4{
+    font-size: 16px;
+    color: black;
+    line-height:50px;
+    text-align: center;
+    font-weight: 900;
+    margin: auto;
+    letter-spacing: 3px;
+}
+
+/* #4444444444444444444444444444444444444 地圖 */
+
+#map{
+    position: relative;
+}
+.mapTop{
+    background-image: url(../img/bg-map-top.svg);
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: -40px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------media----------------------- */
+
+@media screen and (max-width: 1200px) {
+    .bluePeople,.yellowPeople, .redPeople, .pinkPeople{
+        display: none;
+    }
+    .container{
+        width: 100%;
+        padding: unset;
+    }
+
+    #ticket .row{
+        display: flex;
+        justify-content: center;
+        margin: 50px 0 100px 0;
+    }
+    #ticket .row .card{
+        margin-bottom: 20px;
+        padding: none;
+    }
+    #transportation .container .row{
+        margin: 50px 0 100px 0;
+    }
+    #transportation .container .row .midCard{
+        border-left: unset;
+        border-right:unset ;
+        /* border-top: 1px solid #c88232;
+        border-bottom: 1px solid #c88232; */
+        
+    }
+    #transportation .row .col-12 h4{
+        padding: 30px 56px 0 56px;
+        text-align: unset;
+
+    }
+
+    #byCar .row .card{
+        padding: 30px 20px 30px 20px;
+        margin: auto !important;
+        margin-bottom: 20px !important;
+    }
+   
+    #byCar .row{
+        margin: 50px 0 100px 0;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    #byCar .row h3{
+        line-height: 60px;
+    }
+    #byCar .row p{
+        line-height:50px;
+    }
+    #byCar .row h4{
+        line-height:60px;
+    }
+    #byCar .row .yellowBar h4{
+        line-height:50px;
+    }
+
+    
+}
+@media screen and (max-width: 980px) {
+    .container{
+        width: 100%;
+        padding: unset;
+    }
+    #ticket .col-sm-6{
+        display: flex;
+        justify-content: center;  
+    }
+
+    #transportation .container .row{
+        width: 80%;
+    }
+    #transportation .row .col-12{
+        width: 100%;
+        height: 100%;
+    }
+   
+    .mapTop{
+        height: 20px;
+        position: absolute;
+        top: 0px;
+    
+    }
+
+
+    
+
+
+
+@media screen and (max-width: 480px) {
+
+    #title{
+        padding: 40px 0 40px 0;
+    }
+    #title h1{
+        width: 300px;
+        margin: auto;
+    }
+
+    #title h2{
+        font-size: 14px;
+        line-height: 18px;
+        text-align: center;
+        font-weight: 200;
+        width: 280px;
+        margin: auto;
+        letter-spacing: 2px;
+        text-align: center;      
+    }
+    .container{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    .container{
+        width: 100%;
+    }
+
+    #ticket .container{
+        padding-right: none;
+    }
+
+    #ticket .container .col-12{
+        display: flex;
+        justify-content: center;
+    }
+    #transportation .row{
+        display: flex;
+        justify-content: center;
+    }
+  
+    #transportation .row .col-12 h4{
+        padding: 30px 0 30px 0;
+    }
+    #byCar .row .card{
+        padding: 30px 20px 30px 20px;
+    }
+    #byCar .row h3{
+        line-height: 30px;
+
+    }
+    #byCar .row p{
+        line-height:30px;
+    }
+    #byCar .row h4{
+        line-height:30px;
+    }
+    #byCar .row .yellowBar h4{
+        line-height:30px;
+    }
+
+}
+
+
+}

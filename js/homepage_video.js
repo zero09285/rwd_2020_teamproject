@@ -4,11 +4,28 @@ window.onload = function () { //Loading效果 與 Aos初始化
     $('body').addClass('scrollY_hidden')
     $(".loading_page").fadeIn(200)
 
+
+
     setTimeout(function () {
         $('.header').removeClass('noactive')
         $('body').removeClass('scrollY_hidden')
         $(".loading_page").fadeOut(500);
-    }, 500); 
+    }, 500);
+
+
+    lax.setup()
+    const updateLax = () => {
+        lax.update(window.scrollY)
+        window.requestAnimationFrame(updateLax)
+    }
+    window.requestAnimationFrame(updateLax)
+}
+
+var section = document.querySelector("#banner")
+
+section.onscroll = function () {
+    console.log(section.sc);
+
 
 };
 
@@ -46,28 +63,28 @@ var jump = anime({
 // });
 
 
-    var fly = anime({
-        targets: ".play_box_son",
-        scale: 4,
-        duration: 8000,
-        elasticity: '10000',
-        easing: 'linear',
-        direction: 'forward',
-        // loop: true
-    });
+var fly = anime({
+    targets: ".play_box_son",
+    scale: 4,
+    duration: 8000,
+    elasticity: '10000',
+    easing: 'linear',
+    direction: 'forward',
+    // loop: true
+});
 
-    $(".play_box_son").css('opacity', 0.35);
+$(".play_box_son").css('opacity', 0.35);
 
-    
-    // var big = anime({
-    //     targets: "canvas",
-    //     scale: 3,
-    //     duration: 10000,
-    //     elasticity: '10000',
-    //     easing: 'linear',
-    //     direction: 'forward',
-    //     // loop: true
-    // });
+
+// var big = anime({
+//     targets: "canvas",
+//     scale: 3,
+//     duration: 10000,
+//     elasticity: '10000',
+//     easing: 'linear',
+//     direction: 'forward',
+//     // loop: true
+// });
 
 
 
@@ -112,7 +129,7 @@ $(".video_slidebox").on("dragstop", function () {//拖動結束後增加現在�
         $('.video_slidebox_section').addClass('noactive');
         $('span').addClass('noactive')
         $('body').addClass('scrollY_hidden')
-        $('body').addClass('noHeight')   
+        $('body').addClass('noHeight')
         // $('.swiper-right').addClass('noactive')
         $('.video_section').fadeOut(1000)
 
@@ -125,7 +142,7 @@ $(".video_slidebox").on("dragstop", function () {//拖動結束後增加現在�
             direction: 'forward',
             // loop: true
         });
-        
+
 
         setTimeout(function () { //設定延遲的函式
             $('.video_section').fadeIn(1)
@@ -141,7 +158,7 @@ $(".video_slidebox").on("dragstop", function () {//拖動結束後增加現在�
     }
 })
 
-$(".videoplayer_box_exit"),$('.videoplayer_box').click(function () {//看完影片按離開之後回復原始畫面
+$(".videoplayer_box_exit"), $('.videoplayer_box').click(function () {//看完影片按離開之後回復原始畫面
 
     $('.video_section').fadeOut(500)
     $('canvas').removeClass('noactive');
@@ -163,7 +180,7 @@ $(".videoplayer_box_exit"),$('.videoplayer_box').click(function () {//看完影�
             $('.video_slidebox').removeClass('alpha');
             $('span').removeClass('noactive')
             $('body').removeClass('scrollY_hidden')
-            $('body').removeClass('noHeight')    
+            $('body').removeClass('noHeight')
             $('#banner').removeClass('noactive')
             $('header').removeClass('noactive')
             $('footer').removeClass('noactive')
@@ -185,9 +202,9 @@ $(".videoplayer_box_exit"),$('.videoplayer_box').click(function () {//看完影�
                     direction: 'forward',
                     // loop: true
                 });
-    
-            },500)
-           
+
+            }, 500)
+
         }, 10)
 
     }, 500);
@@ -203,47 +220,47 @@ $(".videoplayer_box_exit"),$('.videoplayer_box').click(function () {//看完影�
     // $('.video_slidebox').removeClass('alpha');
 })
 
-    $('.RWD_playbox').click(function () {
-        $('#banner').addClass('noactive')
-        $('header').addClass('noactive')
-        $('footer').addClass('noactive')
-        $('.gototop').addClass('noactive')
-        $('.RWD_playbox').addClass('noactive')
-        $('.RWD_playbox_text').addClass('noactive')
-        $('.video_section_bottom').addClass('noactive')
-        $('.reservation').addClass('noactive')
-        $('.diy_section').addClass('noactive')
-        $('.video_switch').addClass('active')
-        $(".video_mask").addClass('noactive')
-        $(".play_box").addClass('noactive')
-        $(".video_slidebox").addClass('noactive')
-        $('.video_slidebox_section').addClass('noactive');
-        $('span').addClass('noactive')
-        $('body').addClass('scrollY_hidden')
-        $('body').addClass('noHeight')   
-        // $('.swiper-right').addClass('noactive')
-        $('.video_section').fadeOut(1000)
+$('.RWD_playbox').click(function () {
+    $('#banner').addClass('noactive')
+    $('header').addClass('noactive')
+    $('footer').addClass('noactive')
+    $('.gototop').addClass('noactive')
+    $('.RWD_playbox').addClass('noactive')
+    $('.RWD_playbox_text').addClass('noactive')
+    $('.video_section_bottom').addClass('noactive')
+    $('.reservation').addClass('noactive')
+    $('.diy_section').addClass('noactive')
+    $('.video_switch').addClass('active')
+    $(".video_mask").addClass('noactive')
+    $(".play_box").addClass('noactive')
+    $(".video_slidebox").addClass('noactive')
+    $('.video_slidebox_section').addClass('noactive');
+    $('span').addClass('noactive')
+    $('body').addClass('scrollY_hidden')
+    $('body').addClass('noHeight')
+    // $('.swiper-right').addClass('noactive')
+    $('.video_section').fadeOut(1000)
 
-        var big = anime({
-            targets: "canvas",
-            scale: 6,
-            duration: 400,
-            elasticity: '10000',
-            easing: 'linear',
-            direction: 'forward',
-            // loop: true
-        });
-        
+    var big = anime({
+        targets: "canvas",
+        scale: 6,
+        duration: 400,
+        elasticity: '10000',
+        easing: 'linear',
+        direction: 'forward',
+        // loop: true
+    });
 
-        setTimeout(function () { //設定延遲的函式
-            $('.video_section').fadeIn(1)
-            $(".videoplayer_box").addClass('active')
-            $(".videoplayer").addClass('active')
-            $('canvas').addClass('noactive');
 
-            setTimeout(function () {//設定延遲的函式
-                $('.video_switch').removeClass('active')
-            }, 10)
+    setTimeout(function () { //設定延遲的函式
+        $('.video_section').fadeIn(1)
+        $(".videoplayer_box").addClass('active')
+        $(".videoplayer").addClass('active')
+        $('canvas').addClass('noactive');
 
-        }, 1000);
-    })
+        setTimeout(function () {//設定延遲的函式
+            $('.video_switch').removeClass('active')
+        }, 10)
+
+    }, 1000);
+})
