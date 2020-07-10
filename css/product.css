@@ -1,0 +1,56 @@
+/* 產品-陶球 */
+
+#product-main{
+    margin-bottom: 120px;
+}
+
+.product-box{
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 6px 8px #999;
+    margin: 10px 10px 20px 10px;
+}
+
+.product-box-text{
+    padding: 20px;
+}
+
+.product-box-text h3{
+    font-size: 21px;
+    color: #a04628;
+}
+
+
+.product-box-text ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.product-box-text li{
+    padding: 10px 0;
+    border-top: 1px solid #dddddd;
+}
+
+.product-title{
+    background-image: url('../img/bg-pottery-left.svg');
+    background-repeat: no-repeat;
+    background-position: top left;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.product-title img{
+    width: 60px;
+}
+
+.product-title p{
+    padding: 20px 0 0 20px;
+    height: 180px;
+    writing-mode: vertical-rl;
+}
+
+
+
+

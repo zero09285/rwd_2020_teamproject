@@ -1,0 +1,260 @@
+*{
+    /* outline: 1px solid red; */
+}
+/* JS操控的CSS樣式 */
+
+.active {
+    transition: 2s;
+    /* opacity: 1; */
+    display: block;
+}
+
+.noactive {
+    transition: 2s;
+    /* opacity: 0; */
+    display: none;
+}
+
+.alpha {
+    transition: 1s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.scrollY_hidden {
+    overflow-y: hidden;
+}
+
+.noHeight {
+    height: unset;
+}
+
+
+/*-----強調SEO-----*/
+h2{
+    font-size: 0;
+}
+/*---------------*/
+
+.header {
+    background-color: white;
+    box-shadow: 0px 3px 5px rgba(153, 153, 153, 0.7);
+}
+
+#headerSection {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.headerContent {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.headerContent .logo {
+    width: 35%;
+    justify-content: center;
+    display: flex;
+}
+.headerContent .logo img {
+    width: 250px;
+}
+.headerContent .navBar {
+    width: 80%;
+}
+.headerContent .navBar .mainMenu {
+    display: flex;
+    justify-content: space-around;
+}
+.navBar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.navBar .mainMenu>li {
+    position: relative; 
+}
+.navBar a {
+    display: block;
+    padding: 31px 9px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 15px;
+}
+.navBar a:hover {
+color: rgb(153, 77, 22);
+}
+.navBar li ul {
+background: rgb(153, 77, 22);
+}
+.navBar li ul li {
+text-align: center;
+}
+.navBar li ul a:hover {
+    background: rgba(0, 0, 0, 0.19999999999999996);
+    color: white;
+    font-weight: 100;
+}
+.subMenu>li {
+width: 120px;
+}
+.subMenu>li a{
+    color: white;
+}
+.navBar ul>li:hover ul {
+    max-height: 1000px;
+    -webkit-transform: perspective(400) rotate3d(0, 0, 0, 0);
+}
+.navBar li ul {
+    position: absolute;
+    left: -25px;
+    z-index: 1;
+    max-height: 0;
+    overflow: hidden;
+    -webkit-transform: perspective(400) rotate3d(1, 0, 0, -90deg);
+    -webkit-transform-origin: 50% 0;
+    -webkit-transition: 350ms;
+    -moz-transition: 350ms;
+    -o-transition: 350ms;
+    transition: 350ms;
+}
+.icon{
+ display: none;   
+}
+
+.selectph{
+    display: none;
+}
+
+  /*-----------RWD設定---------*/
+  @media (max-width: 768px) {
+    .headerContent{
+      justify-content: center;
+    }
+    .header{
+        position: relative;
+        position: sticky;
+    }
+    .headerContent .logo img {
+        width: 260px;
+    }
+    .headerContent .navBar  {
+      display: none;
+      position: absolute;
+      top:0;
+      width: 100%;
+      height: 100vh;
+      background: #F0E6DC;
+      text-align: center;
+      z-index: 98;
+    }
+    .navBar.nav_active{
+        display: block;
+        padding: 89px 0 0 0 ;
+    }
+
+    .headerContent .navBar .mainMenu{
+        display: block;
+        padding: 0;
+    }
+
+    .navBar .mainA{
+        padding: 18px 0px;
+        display: inline-block;
+        font-weight: 800;
+    }
+    .select:hover{
+    font-weight: 800;
+    border-bottom: 3px solid #804628;   
+    }
+    .select{
+    padding: 15px 0px;
+    font-size: 20px;
+    }
+    .subMenu>li{
+    display: none;
+    }
+    .selectph{
+        display: block;
+    }
+    .navBar a{
+        padding: unset;
+    }
+    .visit{
+        display: none;
+    }
+    /*-----icon圖片轉換-----*/
+    .icon{
+    width: 100%;
+    display: block;
+    display: flex;
+    justify-content: center;
+
+    }
+    .icon .icon_change{
+    width: 10%;
+    display: flex;
+    position: relative;
+    margin: 100px 19px 0 19px;
+    }
+    .icon_pic{
+    width: 100%;
+    position: absolute;
+    }
+    .icon_change img:last-child:hover{
+    opacity:0;
+    }
+
+    #icon_a{
+        padding: 0;
+    }
+    /*------------------*/
+    .burgar_btn {
+        display: block;
+        position: absolute;
+        right: 10px;
+        z-index: 99;
+    }
+      .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: #333;
+        margin: 6px 0;
+        transition: 0.4s;
+      }
+      .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+    }
+
+    .change .bar2 {
+        opacity: 0;
+    }
+
+    .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
+    }
+
+
+
+
+
+}
+   
+/* 
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+ */
+
+

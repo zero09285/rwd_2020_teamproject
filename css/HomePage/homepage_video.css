@@ -1,0 +1,304 @@
+body {
+    background: linear-gradient(180deg, rgba(171, 136, 93, 1)29%, rgba(189, 158, 143, 1)60%);
+    margin: 0;
+    /* height:2860px; */
+    overflow-x: hidden;
+    font-family: Arial, "Noto Sans TC", STXihei, "HEITI TC", "HEITI TC", 黑體-繁, 微軟正黑體, 黑體, sans-serif;
+    background-image: url('../../img/background.jpg');
+}
+
+
+.video_section {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../img/index-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    /* z-index: 20; */
+    /* z-index: 10; */
+}
+
+.video_section_bottom {
+    width: 100%;
+    height: 20vh;
+    background-image: url('../../img/index-bg-brick.jpg');
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* z-index: 0; */
+}
+
+.video_section>span {
+    position: absolute;
+    top: 60%;
+    left: 160px;
+    font-size: 25px;
+    color: black;
+    font-weight: 900;
+    /* z-index: 99; */
+    /* font-family: 'Times New Roman', Times, serif; */
+
+}
+
+/* .swiper-right { //左右滑動的小手
+    position: absolute;
+    visibility: visible;
+    top: 55%;
+    left: 20px;
+    height: 40px;
+    width: 40px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('./img/right.png');
+    z-index: 6;
+} */
+
+.video_slidebox_section {
+    width: 40%;
+    height: 100px;
+    background-image: url('../../img/home/road.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    /* visibility: hidden; */
+    top: 50%;
+    left: 200px;
+    z-index: 10;
+    transition: 0.5s;
+    transform: translateY(-50%);
+}
+
+/* .video_slidebox_section>span {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    visibility: visible;
+    font-size: 30px;
+    z-index: 3;
+    font-weight: 900;
+    color: white;
+
+} */
+
+.video_slidebox_alpha {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    background-color: black;
+    opacity: 0;
+}
+
+.video_slidebox {
+    visibility: visible;
+    width: 100px;
+    height: 100px;
+    background-image: url('../../img/home/play3.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    z-index: 99;
+    justify-content: center;
+    align-items: center;
+}
+
+.play_box {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    z-index: 4;
+    background-image: url('../../img/home/play_box.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* border: 2px solid black; */
+    position: absolute;
+    top: 43%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+
+
+}
+
+/* .play_box_son {
+
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255, 50, 50, 1), rgba(255, 129, 70, 1), transparent 90%);
+    opacity: 0.8;
+    position: relative;
+    top: -100%;
+    left: -100%;
+    z-index: 4;
+    transform: translate(-50%, -50%);
+
+}  */
+
+.video_mask {
+    width: 100%;
+    height: 100vh;
+    background: radial-gradient(circle, orange, gray, transparent 50%);
+    position: absolute;
+    opacity: 0.8;
+    z-index: 3;
+    transition: 0.5s;
+}
+
+.videoplayer {
+    position: absolute;
+    display: none;
+    /* position: fixed; */
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    height: 80%;
+    z-index: 13;
+
+
+    /* display: none; */
+}
+
+.videoplayer_box{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    display: none;
+    background: radial-gradient(circle,gray,black);
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    opacity: 0.9;
+    top: 50%;
+    left: 50%;
+    z-index: 12;
+}
+
+.videoplayer_box_exit {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background-image: url('../../img/home/exit.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.videoplayer_box_exit:hover {
+    transition: 0.5s;
+    transform: scale(1.5);
+}
+
+.RWD_playbox {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-image: url('../../img/home/play3.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 13;
+    opacity: 0;
+}
+
+.RWD_playbox:hover {
+    width: 120px;
+    height: 120px;
+    transition: 0.5s;
+}
+
+.RWD_playbox_text {
+    width: 300px;
+    height: 150px;
+    text-align: center;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-weight: 900;
+    font-size: 20px;
+    z-index: 13;
+    opacity: 0;
+}
+
+
+/* JS操控的CSS樣式 */
+
+.active {
+    transition: 2s;
+    /* opacity: 1; */
+    display: block;
+}
+
+.noactive {
+    transition: 2s;
+    /* opacity: 0; */
+    display: none;
+}
+
+.alpha {
+    transition: 1s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.scrollY_hidden {
+    overflow-y: hidden;
+}
+
+.noHeight {
+    height: unset;
+}
+
+@media (max-width:1360px){
+    .video_section>span{
+        color:white
+    }
+}
+
+@media (max-width:992px){
+    .video_section {
+        background-image: url('../../img/home/RWD_videoBC.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+
+    .RWD_playbox {
+        opacity: 1;
+    }
+    .RWD_playbox_text {
+        opacity: 1;
+    }
+    .video_slidebox {
+        display: none;
+    }
+    .play_box {
+        display: none;
+    }
+    .video_slidebox_section {
+        display: none;
+    }
+    .video_section>span {
+        display: none;
+    }
+
+}

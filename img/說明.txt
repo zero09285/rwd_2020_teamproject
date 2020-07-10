@@ -1,0 +1,11 @@
+about  關於
+commodity  商品
+diy
+facility  設施 
+reservation 預約
+sights 景點
+ticket&traffic 票務和交通
+
+
+
+

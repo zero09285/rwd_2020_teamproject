@@ -1,0 +1,434 @@
+body {
+    background: linear-gradient(180deg, rgba(171, 136, 93, 1)29%, rgba(189, 158, 143, 1)60%);
+    margin: 0;
+    font-family: Arial, "Noto Sans TC", STXihei, "HEITI TC", "HEITI TC", 黑體-繁, 微軟正黑體, 黑體, sans-serif;
+    overflow-x: hidden;
+    background-image: url('../../img/background.jpg');
+}
+
+.container {
+    width: 100%;
+    /* background-color: gray; */
+    margin-bottom: 10px;
+}
+
+#title{
+    padding: 90px 0 120px 0;
+}
+
+#title h1{
+    width: 300px;
+    margin: auto;
+
+}
+
+#title h2{
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    font-weight: 200;
+    width: 360px;
+    margin: auto;
+    letter-spacing: 2px;
+    text-align: center;
+    
+}
+
+/* .about-top {
+    width: 100%;
+    background-color: darkkhaki;
+}
+
+.about {
+    width: 100%;
+    height: 20vh;
+    background-image: url('../../img/about.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+} */
+
+.about-top {
+    width: 100%;
+    /* height: calc(80vh - 68px); 
+     background-color: rgb(107, 189, 148); */
+}
+
+.row {
+    padding: 10px;
+}
+
+.about-top_left {
+    background-image: url('../../img/about/about_top.jpg');
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 200px;
+    /* background-color: coral; */
+}
+
+.about-top_right {
+    font-size: 16px;
+}
+
+.about-map {
+    width: 100%;
+    height: 80vh;
+    background-image: url('../../img/snake-kiln.png');
+    background-size:60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-color: cadetblue; */
+}
+
+.about-bottom_left {
+    background-image: url('../../img/about/about_bottom.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    /* background-color: coral; */
+}
+
+.about-bottom_right {
+    font-size: 16px;
+}
+
+.about-text_title {
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 40px;
+}
+
+.about-text_01 {
+    border-top: solid 1.2px burlywood;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 40px;
+}
+
+.about-text_02 {
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.about-text_03 {
+    border-bottom: solid 1.2px burlywood;
+    padding-bottom: 20px;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 25px;
+    
+}
+
+.about-text_04 {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 20px;
+}
+
+section {
+    width: 100%;
+    /* background-color: aquamarine; */
+}
+
+#title{
+    padding: 90px 0 120px 0;
+}
+
+#title h1{
+    width: 300px;
+    margin: auto;
+
+}
+
+#title h2{
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    font-weight: 200;
+    width: 360px;
+    margin: auto;
+    letter-spacing: 2px;
+    text-align: center;
+    
+}
+
+
+.man-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* background-color: salmon; */
+}
+
+/* .man {
+    width: 300px;
+    height: 10vh;
+    background-color: blueviolet;
+} */
+
+.man-bottom {
+    width: 100%;
+    height: 90vh;
+    padding: 50px 100px;
+    position: relative;
+    /* background-color: skyblue; */
+}
+
+.masterbox {
+    width: 900px;
+    height: 98%;
+    z-index: 14;
+    position: absolute;
+    left: 50px;
+    bottom: 100px;
+}
+
+.master {
+    width: 100%;
+    height: 100%;
+    background-image: url('../../img/leader.png');
+    background-size: 80%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    
+}
+
+.bottleB {
+    width: 980px;
+    height: 750px;
+    position: absolute;
+    bottom: 145px;
+    left: 130px;
+    background-image: url('../../img/bg-about-pottery-b.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 9;
+
+}
+
+.tab_cricle {
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    position: absolute;
+    /* position: relative; */
+    right: 450px;
+    bottom: 120px;
+    background-color: white;
+    z-index: 15;
+}
+
+.tab-btn:hover{
+    transition: 1s;
+}
+
+
+.tab-btn-group {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    /* background-color: bisque; */
+    /* padding: 0 10%; */
+    /* border-radius: 0% 0% 50% 50%; */
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    z-index: 6;
+}
+
+.tab-btn {
+    outline:none;
+    border: 0;
+    width: 25%;
+    height: 50%;
+    border-radius: 50px;
+    background-color: rgb(224, 138, 9);
+    text-align: center;
+    line-height: 40px;
+    font-size: 15px;
+    color: white;
+    margin-right: 30px;
+}
+
+.tab-btn.tab_active {
+    background: rgb(224, 51, 51);
+    color: black;
+}
+
+.tab_title {
+    position: absolute;
+    top: 40px;
+    z-index: 5;
+}
+
+.tab-content-group {
+    padding: 0 20%;
+}
+
+.tab-btn:hover {
+    background-color: rgb(235, 68, 27);
+}
+
+.tab_text {
+    font-weight: 600;
+}
+
+h3 {
+    font-weight: 900;
+}
+
+.tab-content {
+    position: absolute;
+    left: 0;
+    top: 190px;
+    width: 100%;
+    /* height: 400px; */
+    padding: 20px 100px;
+    text-align: justify;
+    /* background: radial-gradient(circle,rgb(255, 3, 3),rgb(231, 116, 9)); */
+
+    display: none;
+}
+
+.tab-content.tab_active {
+    display: block;
+}
+
+.bottleS {
+    width: 600px;
+    height: 600px;
+    background-image: url('../../img/bg-about-pottery-s.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 200px;
+    bottom: 120px;
+}
+
+
+
+/*  */
+
+@media (max-width:1620px) {
+    .masterbox {
+        display: none;
+    }
+
+    .bottleB {
+        width: 1000px;
+        height: 800px;
+        top: 45%;
+        left: 50%;
+        bottom: unset;
+        transform: translate(-50%,-50%);
+    }
+
+    .tab_cricle {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .bottleS {
+        /* position: unset; */
+        display: none;
+    }
+}
+
+@media (max-width:1220px) {
+    
+    .tab_cricle {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .bottleB {
+        display: none;
+    }
+}
+
+@media (max-width:750px) {
+    .tab-btn-group {
+        width: 100%;
+        height: 100px;
+        position: absolute;
+        top: 20px;
+        left: 25px;
+    }
+    /* #btn-1 {
+        position: absolute;
+        top: 25px;
+        left: 105px;
+    }
+
+    #btn-2 {
+        position: absolute;
+        top: -40px;
+        left: 29%;
+    }
+
+    #btn-3 {
+        position: absolute;
+        top: 25px;
+        left: 315px;
+    } */
+
+    .tab_cricle {
+        width: 90%;
+        height: 80%;
+        border-radius: 5px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    .tab-content {
+        position: absolute;
+        left: 20px;
+        width: 92%;
+        /* height: 400px; */
+        padding: 0;
+        text-align: justify;
+        /* background: radial-gradient(circle,rgb(255, 3, 3),rgb(231, 116, 9)); */
+    
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+#title{
+    padding: 40px 0 40px 0;
+}
+
+#title h1{
+    width: 300px;
+    margin: auto;
+
+}
+
+#title h2{
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    font-weight: 200;
+    width: 280px;
+    margin: auto;
+    letter-spacing: 2px;
+    text-align: center;      
+}
+
+.tab-btn-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 6;
+}
+
+}

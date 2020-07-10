@@ -1,0 +1,275 @@
+.diy_section {
+    width: 100%;
+    /* height: 100vh; */
+    position: relative;
+    /* z-index: -1; */
+}
+
+.container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 100%;
+    /* background-color: gray; */
+}
+
+.diy_section_top {
+    width: 100%;
+    /* background-color: cornflowerblue; */
+}
+
+
+
+.diy_intro {
+    /* background-color: tomato; */
+    background-image: url('../../img/home/diy_intro.png');
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    width: 68%;
+    height: 500px;
+}
+
+.diy_image_box {
+  width: 650px;
+  height: 650px;
+  position: absolute;
+  right: 4%;
+  bottom: 46%;
+}
+.diy_image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-image: url('../../img/home/diy_image.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 6px 8px #999;
+    -webkit-transform:scale(.85);
+    transform:scale(.85);
+    
+}
+
+.diy_section_bottom {
+    /* background-color: rgb(206, 186, 186); */
+    /* width: 1140px; */
+    display: flex;
+    /* margin: 10px 0; */
+}
+
+.card-top {
+    width: 100px;
+    height: 100px;
+    
+}
+
+.row {
+  margin: 0;
+}
+
+/* .card-img-top {
+    
+} */
+
+
+
+/* .row .col-7 {
+    width: 70%;
+    height: calc(100% - 20px);
+    background-color: cadetblue;
+}
+
+.row .col-5 {
+    width: 30%;
+    height: calc(100% - 20px);
+    background-color: blueviolet;
+} */
+
+/* .row>.col {
+    height: calc(100% - 20px);
+    background-color: rgb(135, 166, 222);
+} */
+
+/* .card-block .btn-outline-primary {
+    width: 100%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+  } */
+  
+  .card {
+    /* background-color: darkred; */
+    margin: 20px 0;
+    box-shadow: 0px 6px 8px #999;
+    -webkit-transform:scale(.85);
+    transform:scale(.85);
+  }
+  
+  /* Flip Cards CSS */
+  .card-container {
+    /* background-color: darkred; */
+    margin-bottom: 200px;
+    perspective: 700px;
+  }
+  .card-flip {
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    padding: 0 20px;
+    transform-style: preserve-3d;
+    height: 200%;
+    transition: all 0.7s ease-out;
+    background: white;
+    border: none;
+  }
+
+  .card-img-top1 {
+      width: 60px;
+      height: 60px;
+      background-image: url('../../img/home/diy_bottom_image1.png');
+      background-size: 60%;
+      background-position: center;
+      background-repeat: no-repeat;
+      border: none;
+  }
+
+  .card-img-top2 {
+    width: 60px;
+    height: 60px;
+    background-image: url('../../img/home/diy_bottom_image2.png');
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+}
+
+.card-img-top3 {
+    width: 60px;
+    height: 60px;
+    background-image: url('../../img/home/diy_bottom_image2.png');
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+}
+
+  .text-center {
+      width: 100%;
+  }
+  
+  .card-flip div {
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    height: 150%;
+    width: 100%;
+    border: none;
+  }
+  
+  .card-flip .front {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .card-flip .back {
+    position: relative;
+    z-index: 0;
+    transform: rotateY(-180deg);
+  }
+  
+  .card-container:hover .card-flip {
+    transform: rotateY(180deg);
+  }
+
+  @media (max-width:1500px) {
+    .diy_image_box {
+      /* margin: auto; */
+      width: 580px;
+      border-radius: 50%;
+      height: 580px;
+      /* position: unset; */
+    }
+  }
+
+  @media (max-width:1250px) {
+    .diy_image_box {
+      /* margin: auto; */
+      width: 520px;
+      border-radius: 50%;
+      height: 520px;
+      /* position: unset; */
+    }
+  }
+
+  @media (max-width:1180px) {
+    .diy_image_box {
+      /* margin: auto; */
+      width: 420px;
+      background-position: top;
+      border-radius: 50%;
+      height: 420px;
+      /* position: unset; */
+      
+  }
+
+  }
+
+  @media (max-width:992px) {
+
+    .diy_intro { 
+      background-size: 100%;
+      background-position: bottom;
+      width: 103%;
+      height: 500px;
+  }
+
+  .diy_image_box {
+    margin: auto;
+    width: 500px;
+    border-radius: 50%;
+    height: 500px;
+    position: unset;
+    
+ }
+
+.diy_image {
+  margin: auto;
+  width: 100%;
+  height: 100%;
+ }
+
+    .card-img-top1 {
+      width: 400px;
+      height: 4000px;
+      background-size: 35%;
+    }
+  .card-img-top2 {
+    width: 400px;
+    height: 4000px;
+    background-size: 35%;
+    }
+  .card-img-top3 {
+      width: 400px;
+      height: 4000px;
+      background-size: 35%;
+    }
+}
+
+@media (max-width:576px) {
+
+  .diy_intro {
+    background-size: 100%;
+    height: 300px;
+    background-position: right;
+  }
+
+  .diy_image_box {
+    position: top;
+    /* margin: auto; */
+    width: 300px;
+    border-radius: 50%;
+    height: 300px;
+    /* position: unset; */
+  }
+}

@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>添興窯官方網站</title>
+
+  <!--套件CDN-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <!--套件CDN-->
+
+  <!--CSS檔外連-->
+  <link rel="stylesheet" href="./css/loading.css">
+  <link rel="stylesheet" href="./css/nav.css">
+  <link rel="stylesheet" href="./css/nav_list.css">
+  <link rel="stylesheet" href="./css/AboutPage/AboutPage.css">
+  <link rel="stylesheet" href="./css/AboutPage/AboutPage_timeline.css">
+  <link rel="stylesheet" href="./css/AboutPage/AboutPage_marquee.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <!--CSS檔外連-->
+
+
+
+</head>
+
+<body>
+
+  <div class="loading_page fixed-top">
+    <!--Loading-->
+    <div class="loader">Loading...</div>
+  </div>
+
+  <header class="header fixed-top">
+    <div id="headerSection" class="container">
+        <div class="headerContent">
+            <h2 class="logo">
+                <a href="homepage.html"><img src="./img/logo.png" alt="添興窯logo"></a>
+            </h2>
+
+
+            <nav class="navBar">
+                <ul class="mainMenu">
+                    <h2>Nav Bar</h2>
+                    <li class="mainLi">
+                        <a class="mainA" href="about.html"><span class="select">關於添興</span></a>
+                    </li>
+                    <li class="mainLi">
+                        <a class="mainA" href="#"><span class="select">參觀資訊</span></a>
+                        <ul class="subMenu">
+                            <li><a href="#"><span class="select">車票與交通</span></a></li>
+                            <li><a href="facility.html"><span class="select">環境設施</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="mainLi">
+                        <a class="mainA" href="diy.html"><span class="select">DIY體驗</span></a>
+                    </li>
+                    <li class="mainLi">
+                        <a class="mainA" href="product.html"><span class="select">經典商品</span></a>
+                    </li>
+                    <li class="mainLi">
+                        <a class="mainA" href="#"><span class="select">周邊景點</span></a>
+                    </li>
+                    <li class="mainLi">
+                        <a class="mainA" href="#"><span class="select">團體預約</span></a>
+                    </li>
+                </ul>
+                <div class="icon">
+
+                    <div class="icon_change ">
+                        <a id="icon_a" href="#">
+                            <img class="icon_pic " src="./img/icon-fb-h.svg" alt="">
+                            <img class="icon_pic" src="./img/icon-fb.svg" alt="">
+                        </a>
+                    </div>
+
+                    <div class="icon_change ">
+                        <a id="icon_a" href="#">
+                            <img class="icon_pic " src="./img/icon-ig-h.svg" alt="">
+                            <img class="icon_pic" src="./img/icon-ig.svg" alt="">
+                        </a>
+                    </div>
+
+                    <div class="icon_change ">
+                        <a id="icon_a" href="#">
+                            <img class="icon_pic " src="./img/icon-twitter-h.svg" alt="">
+                            <img class="icon_pic" src="./img/icon-twitter.svg" alt="">
+                        </a>
+                    </div>
+
+                    <div class="icon_change ">
+                        <a id="icon_a" href="#">
+                            <img class="icon_pic " src="./img/icon-youtube-h.svg" alt="">
+                            <img class="icon_pic" src="./img/icon-youtube.svg" alt="">
+                        </a>
+                    </div>
+
+                </div>
+            </nav>
+
+            <div class="burgar_btn ">
+                <a href="#">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </a>
+            </div>
+
+
+        </div>
+    </div>
+</header>
+
+
+  <!-- <nav id="nav" class="sticky-top">
+    <div class="container">
+      <div class="navlist">
+        <a class="icon" href="./homepage.html" target="_blank">
+          <img class="img" src="./img/icon.png" alt="">
+        </a>
+        <nav class="navs nav5">
+          <ul class="nav_ul">
+            <li class="nav_li">
+              <a href="#">關於添興窯</a>
+            </li>
+            <li class="nav_li">
+              <a href="#">參觀資訊</a>
+              <ul>
+                <li><a href="#">票價與交通</a></li>
+                <li><a href="#">環境設施</a></li>
+              </ul>
+            </li>
+            <li class="nav_li">
+              <a href="#">DIY體驗</a>
+            </li>
+            <li class="nav_li">
+              <a href="#">經典商品</a>
+            </li>
+            <li class="nav_li">
+              <a href="#">周邊商品</a>
+            </li>
+            <li class="nav_li">
+              <a href="#">團體預約</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </nav> -->
+
+  <div id="main">
+    <div class="container">
+      <section id="title">
+        <div class="container">
+          <div class="title-main">
+            <h1><img src="./img/title-about.svg" alt="DIY體驗" width="300" /></h1>
+            <h2>提供一個完善之作陶空間與簡易的技巧指導，讓您盡情享受親手作陶的樂趣。</h2>
+          </div>
+        </div>
+      </section>
+      <div class="about-top">
+
+        <div class="row">
+          <div class="about-top_left col-lg-5 col-12"></div>
+          <div class="about-top_right col-lg-7 col-12">
+            蛇窯沿自於大陸福州，被燒陶人採用超過300年以上，是近代製陶業普遍採用的窯種，由於窯身瘦長，昔日此類官窯稱為【龍窯】，民窯則稱【蛇窯】。<p>
+            <p>
+              添興窯於1955年創窯時，即建立第一座蛇窯，921大地震，遭受嚴重的損傷，終於在2000年8月3日修復完成，現已成為台灣地區現存仍實際燒窯的老蛇窯，繼續擔負延續台灣陶藝傳統的使命。
+          </div>
+        </div>
+
+        <div class="about-map"></div>
+
+        <div class="row">
+          <div class="about-bottom_left col-lg-5 col-12"></div>
+          <div class="about-bottom_right col-lg-7 col-12">
+            <div class="about-text_title col-13">集集蛇窯小檔案</div>
+            <div class="about-text_01 col-12">．窯室身長75台尺，窯頭長20台尺，總長95台尺，身高12台尺，煙囪高20台尺。</div>
+            <div class="about-text_02 col-12">．按15度斜坡建築， 共有窯門3個，左右窯窗各25個〈共50個〉，窯頭柴灶孔2個及通氣孔1個。</div>
+            <div class="about-text_02 col-12">．每年燒窯三到六次外，可供遊客走入窯中欣賞內部多年燒窯的痕跡，及緬懷先民燒</div>
+            <div class="about-text_03 col-12">陶之辛苦，宛如走入時空隧道 。</div>
+            <div class="about-text_04 col-12">由於目前需用以蛇窯燒的陶藝品不多，故每窯僅燒約全窯容積的三分之一，其他三分之二容積必須維持空燒，成本雖高但是為了維持老蛇窯的長壽，仍是值得。
+              (註：一般窯爐若長久不燒窯容易風化塌陷 。)</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <section>
+      <div class="man-top">
+        <section id="title">
+          <div class="container">
+            <div class="title-main">
+              <h1><img src="./img/title-master.svg" alt="DIY體驗" width="300" /></h1>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="man-bottom">
+        <div class="masterbox">
+          <div class="master"></div>
+        </div>
+
+        <div class="bottleB"></div>
+        <div class="tab_cricle">
+
+          <div class="tab-btn-group">
+            <input id="btn-1" class="tab-btn tab_active" type="button" value="理念&使命">
+            <input id="btn-2" class="tab-btn" type="button" value="得獎經歷">
+            <!-- <div id="btn-3" class="tab-btn">分頁3</div> -->
+            <input id="btn-3" class="tab-btn" type="button" value="作品賞析">
+          </div>
+          <section id="title" class="tab_title">
+            <div class="container">
+              <div class="title-main">
+                <h1><img src="./img/title-master.svg" alt="DIY體驗" width="300" /></h1>
+              </div>
+            </div>
+          </section>
+          <div class="tab-content-group">
+            <div id="content-1" class="tab-content tab_active">
+              <h3>理念</h3>
+              <span
+                class="tab_text">使命傳承陶藝文化，以傳統陶製品為基礎之創意生活產業，並繼續在窯場中注入「休閒體驗」及「陶藝文化園區」合併的精神，作為永續經營的模式。陶瓷商品跟陶藝品最大的差別，就是在內涵
+                很多人把藝術這二個字的定義，講得天花亂墜，但是我用那個洋人給我們一個最簡單的定義就是真善美！
+                真就是誠實，善就是把所有的事情，所有的作品做到盡善，那美，當然是一個結果。
+                我們希望這個作品是讓你越看越愛，越愛越用，這樣能夠長久的東西，我才認為它是陶藝品。
+              </span>
+              <p>
+              <p>
+              <p>
+              <p>
+              <h3>使命</h3>
+              <span class="tab_text">傳承陶藝文化，以傳統陶製品為基礎之創意生活產業，並繼續在窯場中注入「休閒體驗」及「陶藝文化園區」合併的精神，作為永續經營的模式。</span>
+            </div>
+            <div id="content-2" class="tab-content">
+              <h3>理念</h3>
+              <span
+                class="tab_text">2使命傳承陶藝文化，以傳統陶製品為基礎之創意生活產業，並繼續在窯場中注入「休閒體驗」及「陶藝文化園區」合併的精神，作為永續經營的模式。陶瓷商品跟陶藝品最大的差別，就是在內涵
+                很多人把藝術這二個字的定義，講得天花亂墜，但是我用那個洋人給我們一個最簡單的定義就是真善美！
+                真就是誠實，善就是把所有的事情，所有的作品做到盡善，那美，當然是一個結果。
+                我們希望這個作品是讓你越看越愛，越愛越用，這樣能夠長久的東西，我才認為它是陶藝品。
+              </span>
+              <p>
+              <p>
+              <p>
+              <p>
+              <h3>使命</h3>
+              <span class="tab_text">傳承陶藝文化，以傳統陶製品為基礎之創意生活產業，並繼續在窯場中注入「休閒體驗」及「陶藝文化園區」合併的精神，作為永續經營的模式。</span>
+            </div>
+            <div id="content-3" class="tab-content">
+              <h3>理念</h3>
+              <span
+                class="tab_text">3使命傳承陶藝文化，以傳統陶製品為基礎之創意生活產業，並繼續在窯場中注入「休閒體驗」及「陶藝文化園區」合併的精神，作為永續經營的模式。陶瓷商品跟陶藝品最大的差別，就是在內涵
+                很多人把藝術這二個字的定義，講得天花亂墜，但是我用那個洋人給我們一個最簡單的定義就是真善美！
+                真就是誠實，善就是把所有的事情，所有的作品做到盡善，那美，當然是一個結果。
+                我們希望這個作品是讓你越看越愛，越愛越用，這樣能夠長久的東西，我才認為它是陶藝品。
+              </span>
+              <p>
+              <p>
+              <p>
+              <p>
+              <h3>使命</h3>
+              <span class="tab_text">傳承陶藝文化，以傳統陶製品為基礎之創意生活產業，並繼續在窯場中注入「休閒體驗」及「陶藝文化園區」合併的精神，作為永續經營的模式。</span>
+            </div>
+
+          </div>
+
+
+        </div>
+        <div class="bottleS"></div>
+
+      </div>
+
+      <div class="history"></div>
+
+      <section class="timeline overflow-auto">
+        <section id="title">
+          <div class="container">
+            <div class="title-main">
+              <h1><img src="./img/title-history.svg" alt="DIY體驗" width="300" /></h1>
+            </div>
+          </div>
+        </section>
+        <ul>
+          <li>
+            <div>
+              <time>1995年</time> 創立於今集集綠色隧道旁，早期生產大水缸、酒甕、琉璃瓦及民生用粗陶等聞名全台。
+            </div>
+          </li>
+          <li>
+            <div>
+              <time>1980年</time> 因應台灣陶瓷生態逐漸轉型為「陶藝」結合「體驗」的創意文化窯場，並致力於陶藝推廣及傳承，以「生活陶藝化‧陶藝生活化」為發展主軸，多年來不斷創新、開發各種陶瓷產品。
+            </div>
+          </li>
+          <li>
+            <div>
+              <time>2005年</time> 獨家與工研院合作開發的「竹碳陶」技術已成為普受肯定的「文化結合科技」台灣原生文創產品。
+            </div>
+          </li>
+          <li>
+            <div>
+              <time>2009年</time> 獲登錄為南投縣文化資產歷史建築類別。
+            </div>
+          </li>
+          <li>
+            <div>
+              <time>2014年</time> 推出醞釀一甲子採用天然環保原物料的「璞真燒」系列
+            </div>
+          </li>
+          <li>
+            <div>
+              <time>2016年</time> 打造全新「樟香」質感系列，以綠色隧道的老樟樹外型發想，天然泥質釉呈現渾然天成的手藝質感。
+            </div>
+          </li>
+        </ul>
+      </section>
+
+    </section>
+
+    <div class="marquee">
+      <div class="marquee--inner">
+        <span>
+          <div class="orb marquee_1"></div>
+          <div class="orb marquee_2"></div>
+          <div class="orb marquee_3"></div>
+          <div class="orb marquee_4"></div>
+          <div class="orb marquee_5"></div>
+        </span>
+        <span>
+          <div class="orb marquee_1"></div>
+          <div class="orb marquee_2"></div>
+          <div class="orb marquee_3"></div>
+          <div class="orb marquee_4"></div>
+          <div class="orb marquee_5"></div>
+        </span>
+        <span>
+          <div class="orb marquee_1"></div>
+          <div class="orb marquee_2"></div>
+          <div class="orb marquee_3"></div>
+          <div class="orb marquee_4"></div>
+          <div class="orb marquee_5"></div>
+        </span>
+
+      </div>
+      <div class="marquee--inner2">
+        <span>
+          <div class="orb marquee_6"></div>
+          <div class="orb marquee_7"></div>
+          <div class="orb marquee_8"></div>
+          <div class="orb marquee_9"></div>
+          <div class="orb marquee_10"></div>
+        </span>
+        <span>
+          <div class="orb marquee_6"></div>
+          <div class="orb marquee_7"></div>
+          <div class="orb marquee_8"></div>
+          <div class="orb marquee_9"></div>
+          <div class="orb marquee_10"></div>
+        </span>
+        <span>
+          <div class="orb marquee_6"></div>
+          <div class="orb marquee_7"></div>
+          <div class="orb marquee_8"></div>
+          <div class="orb marquee_9"></div>
+          <div class="orb marquee_10"></div>
+        </span>
+
+      </div>
+    </div>
+
+  </div>
+
+  <a href="#" class="reservation">
+    <span>
+      我
+      要
+      預
+      約
+
+    </span>
+  </a>
+  <a href="#" class="gototop"></a>
+
+
+
+
+  <footer>
+    <div class="container">
+        <div class="footer-info">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="footer-box">
+                        <img src="./img/icon-phone-h.svg" alt="服務專線" width="78">
+                        <div class="pl-1">
+                            <h4>服務專線</h4>
+                            <h3 class="tel"><a href="tel:04-9278-1130">04-9278-1130</a></h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="footer-box">
+                        <img src="./img/icon-mail-h.svg" alt="聯絡我們" width="78">
+                        <div class="pl-1">
+                            <h4>聯絡我們</h4>
+                            <h3 class="br"><a href="mailto:tianxingkiln@gmail.com">tianxingkiln@gmail.com</a></h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="footer-box">
+                        <img src="./img/icon-time-h.svg" alt="營業時間" width="78">
+                        <div class="pl-1">
+                            <h4>營業時間<span class="text-note">(週四公休)</span></h4>
+                            <h3 class="br">9:00am~17:30pm</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-social">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <h3>南投縣集集鎮田寮里楓林巷十號</h3>
+                    <h4>All Copyright c Reserved by Tian Xing Kiln Ceramic Art Co., Ltd.</h4>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/txkiln/" target="_blank">
+                            <div class="icon-fb"></div>
+                        </a>
+                        <a href="https://www.instagram.com/txkiln/" target="_blank">
+                            <div class="icon-ig"></div>
+                        </a>
+                        <a href="https://twitter.com/TXKiln" target="_blank">
+                            <div class="icon-twitter"></div>
+                        </a>
+                        <a href="http://line.me/ti/p/@sse5946o" target="_blank">
+                            <div class="icon-line"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+  <!--JS CDN套件-->
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  <!--JS CDN套件-->
+
+  <!--JS檔外連-->
+  <script src="./js/loading.js"></script>
+  <script src="./js/nav.js"></script>
+  <script src="./js/aboutpage_timeline.js"></script>
+  <script src="./js/aboutpage_tabs.js"></script>
+  <!--JS檔外連-->
+
+
+</body>
+
+</html>

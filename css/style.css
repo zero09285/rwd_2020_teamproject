@@ -1,0 +1,124 @@
+body{
+    margin: 0;
+    background-image: url(../img/bg.jpg); 
+}
+
+*{
+scroll-behavior: smooth !important;
+box-sizing: border-box;
+font-family: Arial, "Noto Sans TC", STXihei, "HEITI TC", "HEITI TC", 黑體-繁, 微軟正黑體, 黑體, sans-serif;
+}
+
+/* 每頁上方標題 */
+#title{
+    padding: 160px 0 120px 0;
+}
+
+#title h1{
+    width: 300px;
+    margin: auto;
+
+}
+
+#title h3{
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    font-weight: 200;
+    width: 360px;
+    margin: auto;
+    letter-spacing: 2px;
+    text-align: center;
+    
+}
+@media screen and (max-width: 480px) {
+#title{
+    padding: 40px 0 40px 0;
+}
+
+#title h1{
+    width: 300px;
+    margin: auto;
+
+}
+
+#title h3{
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    font-weight: 200;
+    width: 280px;
+    margin: auto;
+    letter-spacing: 2px;
+    text-align: center;      
+}
+
+}
+
+/* 我要預約 */
+
+.reservation {
+    padding: 0 2px;
+    position: absolute;
+    background-color:#fadc6e;
+    position: fixed;
+    right: 30px;
+    bottom: 160px;
+    width: 40px;
+    height: 160px;
+    border-radius: 30px;
+    z-index: 80;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.reservation>span {
+    writing-mode: vertical-lr;
+    text-align: center;
+    color: #a04628;
+    font-weight: 900;
+    font-size: 18px;
+    letter-spacing: 5px;
+}
+
+/* gotoTOP */
+
+.gototop {
+    position: absolute;
+    position: fixed;
+    right: 30px;
+    bottom: 100px;
+    width: 40px;
+    height: 40px;
+    background-image: url('../img/icon-top-h.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    z-index: 80;
+}
+
+.reservation:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.gototop:hover {
+    transform: scale(1.25);
+    transition: 0.5s;
+}
+
+
+@media (max-width:576px) {
+    .reservation {
+        display: none;
+    }
+    
+    .gototop {
+        display: none;
+
+}

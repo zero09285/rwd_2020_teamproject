@@ -1,0 +1,175 @@
+/* footer */
+
+footer {
+    background-image: url('../img/footer.png');
+    background-position: left top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px 0 0 0;
+    }
+
+
+footer a{
+    color: #9a4628;
+}
+
+footer a:hover{
+    text-decoration:none;
+    color: #000;
+}
+
+.footer-info{
+    padding: 10px 0 20px 0;
+    border-bottom: 1px solid #dcc8b4;
+}
+
+.footer-box{
+    width: 100%;
+    background-color: #dcc8b4;
+    padding: 20px 20px 10px 20px;
+    border-radius: 8px;
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+    margin: 0 0 10px 0;
+   
+}
+
+
+
+.footer-box h3{
+    font-size: 18px;
+    color: #9a4628;
+}
+
+.footer-box .tel{
+    font-size: 24px;
+}
+
+.footer-box h4{
+    font-size: 14px;
+    color: #000;
+}
+
+
+.footer-social{
+    padding: 30px 0;
+}
+
+.footer-social h3{
+    font-size: 21px;
+    color: #fff;
+    font-weight: 400;
+}
+
+
+.footer-social h4{
+    font-size: 12px;
+    color: #dcc8b4;
+}
+
+
+.social-icons{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.icon-fb, .icon-ig, .icon-twitter, .icon-line{
+    margin: 0 0 0 10px;
+    width: 36px;
+    height: 36px;
+}
+
+
+.icon-fb{
+    background-image: url('../img/icon-fb.svg');
+}
+
+.icon-fb:hover{
+    background-image: url('../img/icon-fg-h.svg');
+    transition: 0.4s;
+    transform:rotate(360deg);
+}
+
+
+.icon-ig{
+    background-image: url('../img/icon-ig.svg');
+}
+
+.icon-ig:hover{
+    background-image: url('../img/icon-ig-h.svg');
+    transition: 0.4s;
+    transform:rotate(360deg);
+}
+
+
+.icon-twitter{
+    background-image: url('../img/icon-twitter.svg');
+}    
+
+.icon-twitter:hover{
+    background-image: url('../img/icon-twitter-h.svg');
+    transition: 0.4s;
+    transform:rotate(360deg);
+} 
+
+
+.icon-line{
+    background-image: url('../img/icon-line.svg');
+}
+
+.icon-line:hover{
+    background-image: url('../img/icon-line-h.svg');
+    transition: 0.4s;
+    transform:rotate(360deg);
+}
+
+
+.text-note{
+    font-size: 12px;
+    color: #666;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+    footer {
+        background-position: center top;
+        padding: 180px 0 0 0;
+    }
+
+    .footer-info{
+        padding: 10px 0 10px 0;
+    }
+    
+
+    .footer-box{
+        justify-content: start;
+        margin: 0 0 20px 0;
+    }
+
+    .social-icons{
+        margin: 10px 0 0 0;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .footer-social h3{
+        font-size: 18px;
+        text-align: center;
+        font-weight: 400;
+    }
+
+    .footer-social h4{
+        text-align: center;
+        font-size: 12px;
+        counter-reset: #dcc8b4;
+    }
+
+
+    
+
+}

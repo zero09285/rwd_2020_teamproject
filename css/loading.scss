@@ -1,0 +1,56 @@
+$color-background: #eaecfa;
+$color-loader: red;
+
+body {
+  background: $color-background;
+}
+
+.loading_page{
+  width: 100%;
+  height: 100vh;
+  background: radial-gradient(circle,  rgb(214, 166, 106), rgb(219, 193, 159),transparent 200%);
+  z-index: 99999 !important;
+
+  .loader {
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: helvetica, arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: $color-loader;
+    letter-spacing: 0.2em;
+    
+    &::before, &::after {
+      content: "";
+      display: block;
+      width: 15px;
+      height: 15px;
+      background: $color-loader;
+      position: absolute;
+      animation: load .7s infinite alternate ease-in-out;
+    }
+    
+    &::before {
+      top: 0;
+    }
+    
+    &::after {
+      bottom: 0;
+    }
+  }
+  
+  @keyframes load {
+    0% { left: 0; height: 30px; width: 15px }
+    50% { height: 8px; width: 40px }
+    100% { left: 235px; height: 30px; width: 15px}
+  }
+
+
+}
+

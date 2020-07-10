@@ -1,0 +1,517 @@
+/* diy體驗內容 */
+#diy{
+    margin-bottom: 80px;
+}
+
+.diy-box{
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 40px;
+    text-align: center;
+    margin: 0 0 40px 0;
+    box-shadow: 0px 6px 8px #999;
+}
+
+
+.diy-box h2{
+    text-align: center;
+    font-size: 32px;
+    color: #a04628;
+    font-weight: 600;
+}
+
+.border-color-yellow{
+    border-top: 70px solid #c88232  ;
+}
+
+.border-color-blue{
+    border-top: 70px solid #82b4be  ;
+}
+
+.border-color-pink{
+    border-top: 70px solid #e09090 ;
+}
+
+/* diy-票價 */
+.diy-ticket{
+    text-align: center;
+    padding: 20px 0;
+
+}
+.diy-ticket h3{
+    font-size: 32px;
+}
+
+.diy-ticket h4{
+    font-size: 18px;
+}
+
+.diy-ticket span{
+    font-size: 16px;
+    color: #666;
+}
+
+
+.diy-ticket ul{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.diy-ticket li{
+    width: 50%;
+    text-align: center;
+}
+
+.diy-ticket li:last-child{
+    border-left: 1px solid #999;
+}
+
+.diy-ticket h4{
+    font-size: 18px;
+}
+
+
+
+.diy-item img{
+    display:block; 
+    margin: auto;
+    margin-top: -80px;
+}
+
+.diy-item h2{
+    text-align: center;
+    font-size: 32px;
+    color: #a04628;
+    padding: 20px 0 0 0;
+    font-weight: 600;
+}
+
+/* 體驗課程 */
+
+.diy-list-icon{
+    width: 80%;
+    margin: auto;
+}
+
+.diy-list ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.diy-list li{
+    margin: 0 5px;
+}
+
+.diy-list li.w33{
+    width: 33%;
+}
+
+.diy-list li.w25{
+    width: 25%;
+}
+
+.diy-list li:nth-child(2), .diy-list li:nth-child(4),.diy-list li:nth-child(6){
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-size: 18px;
+ }
+
+.diy-list h3{
+    margin: 10px 0 0 0;
+    font-size: 18px;
+}
+
+.diy-list p{
+    font-size: 14px;
+    color: #666;
+}
+
+
+/* 重疊區塊設定*/
+
+.diy-combo-box{
+    width: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 60px 40px 40px 40px;
+    text-align: center;
+    margin: 0 0 40px 0;
+    box-shadow: 0px 6px 8px #999;
+}
+
+.combo{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 600px;
+    margin: 0 0 200px 0;
+}
+
+.z1{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index:30;
+}
+
+.z1 img{
+    width: 20vw;
+}
+
+
+.z2{
+    position: absolute;
+    top: 100px;
+    left: 15%;
+    z-index:20;
+
+}
+
+.z3{
+    position: absolute;
+    right:0;
+    z-index:10;
+
+}
+
+/* 重疊區塊設定-手印磚*/
+
+.hand-1{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index:30;
+}
+
+.hand-1 img{
+    width: 20vw;
+}
+
+
+.hand-2{
+    position: absolute;
+    top: 100px;
+    right: 15%;
+    z-index:20;
+
+}
+
+.hand-3{
+    position: absolute;
+    left:0;
+    z-index:10;
+}
+
+
+.diy-bg{
+    background-image: url('../img/diy-bg.svg');
+    background-repeat: no-repeat;
+    background-size:100vw;
+    background-position: 0 10%;
+
+}
+
+/* DIY課程介紹 */
+
+#diy-info{
+    padding: 100px 40px 40px 40px;
+    background-color: #eeeeee;
+    background-image: url('../img/bg-gray-wave.png');
+    background-repeat: no-repeat;
+    background-position: top;
+    position: relative;
+}
+
+/* 
+#diy-info::before{
+    content:"";
+    background-image: url('../img/bg-gray-wavewave-bottom.png');
+    position: absolute;
+    bottom: 0;
+} */
+
+
+
+
+.bg-b{
+    background-image: url('../img/bg-gray-twave.png');
+    background-repeat: no-repeat;
+    background-position:bottom;
+
+}
+
+.diy-info-box{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+ 
+}
+
+.diy-info-box-img{
+    width: 30%;
+    margin: 0 20px 0 0;
+    
+}
+
+.diy-info-box-img img{
+    width: 100%;
+    
+}
+
+.diy-info-box-text{
+    width: 70%;
+
+}
+
+.diy-info-box h3{
+    font-size: 24px;
+}
+
+.diy-info-box p{
+    font-size: 16px;
+    line-height: 22px;
+}
+
+
+/* DIY-注意事項 */
+
+#diy-note{
+    padding: 160px;
+}
+
+.diy-note-box{
+    background-color: #fff;
+    box-shadow: 0px 6px 8px #999;
+    border-radius: 8px;
+    padding: 60px;
+    min-height: 460px;
+
+}
+
+.diy-note-box h2{
+    font-size: 24px;
+    color: #000;
+    text-align: center;
+    line-height: 36px;
+}
+
+.diy-note-box h3{
+    font-size: 18px;
+    color: #a04628;
+
+}
+
+.diy-note-box ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.diy-note-box li{
+    padding: 15px 0;
+    border-top: 1px solid #dddddd;
+
+}
+.diy-note-box li:last-child{
+    border-bottom: 1px solid #dddddd;
+    margin: 0 0 10px 0;
+}
+
+.diy-note-box p{
+    padding: 0;
+    margin: 0;
+}
+
+.diy-note-bg{
+    background-image: url('../img/bg-diy-info.svg');
+    background-repeat: no-repeat;
+    background-size:20vw;
+    background-position: 100% 75%;;
+
+}
+
+
+@media screen and (max-width: 576px) {
+
+    .diy-box{
+        padding: 20px;
+        text-align: left;
+    }
+
+    .diy-ticket ul{
+        display: block;
+    }
+
+    .diy-ticket li{
+        width: 100%;
+        display: flex;
+    }
+
+    .diy-item img{
+        width: 80%;
+        display:block; 
+        margin: auto;
+        margin-top: -60px;
+    }
+
+
+    /* diy-票價-phone */
+    .diy-ticket li{
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+    
+    .diy-ticket li:last-child{
+        border-left:none;
+        border-top: 1px solid #999;
+    }
+
+
+    .diy-ticket h4{
+        font-size: 18px;
+        line-height: 36px;
+        margin-right: 20px;
+    }
+    
+  
+
+    /* 體驗課程-phone */
+    
+  
+    .diy-list-icon{
+        width: 20%;
+        margin: 0 10px 0 0;
+    }
+
+    .diy-list ul{
+        display: block;
+    }
+
+    .diy-list li{
+        width: 100%;
+        margin: 0 10px;
+        padding: 10px 0;
+        display: flex;
+        justify-content: start;
+        align-items: center; 
+    }
+
+    .diy-list li.w33{
+        width: 100%;
+    }
+    
+    .diy-list li.w25{
+        width: 100%;
+    }
+
+    .diy-list li:nth-child(2), .diy-list li:nth-child(4),.diy-list li:nth-child(6){
+        display: none;
+    }
+
+    /* 重疊區塊設定--phone*/
+
+    .combo{
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        margin: 0;
+
+    
+    }
+
+   
+    .z1 {
+        display: none;
+    }
+
+    .z2{
+        width: calc(100% - 30px);
+        position: unset;
+        top:unset;
+        right:unset;
+
+    }
+
+    .z3{
+        display: none;
+    }
+
+    .hand-1{
+        display: none;
+    }
+
+    .hand-2{
+        width: calc(100% - 30px);
+        position: unset;
+        top:unset;
+        right:unset;
+    }
+
+    .hand-3{
+        display: none;
+    }
+
+
+    .diy-bg{
+        background-image: none;
+       
+    }
+
+    /* DIY課程介紹-phone */
+
+    #diy-info{
+        padding:0;
+    }
+    
+    .diy-info-box{
+        display: block;
+    
+    }
+
+    .diy-info-box-img{
+        width: 50%;
+        margin: 0 auto 20px auto;
+    }
+
+    .diy-info-box h3{
+        text-align: center;
+    }
+
+    .diy-info-box-text{
+        width:100%;
+    
+    }
+
+
+    /* DIY-課程注意-phone */
+
+    #diy-note{
+        padding: 0;
+    }
+
+    .diy-note-box{
+        padding: 20px;
+        min-height: unset;
+
+    }
+
+    .diy-note-bg{
+        background-image: none;
+       
+    }
+    
+
+
+   
+
+
+}
+
