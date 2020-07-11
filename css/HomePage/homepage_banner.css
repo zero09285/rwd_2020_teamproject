@@ -16,8 +16,8 @@
     height: 200px;
     text-align: center;
     position: sticky;
-    top: 93%;
-    left: 46.5%;
+    top: 90vh;
+    left: 45vw;
     font-weight: 900;
     color: black;
     z-index: 99;
@@ -70,8 +70,8 @@
         height: 0;
         text-align: center;
         position: sticky;
-        top: 93%;
-        left: 43%;
+        top: 90vh;
+        left: 40vw;
         font-weight: 900;
         color: red;
         z-index: 99;
