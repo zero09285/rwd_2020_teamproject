@@ -8,6 +8,9 @@ footer {
     padding: 100px 0 0 0;
     }
 
+.footer_padding {
+    padding-top: 80px;
+}
 
 footer a{
     color: #9a4628;

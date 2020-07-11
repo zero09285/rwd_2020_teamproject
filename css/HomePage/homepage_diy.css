@@ -99,6 +99,11 @@
     position: absolute;
   } */
   
+.card-block {
+  position: unset !important;
+}
+
+
   .card {
     /* background-color: darkred; */
     margin: 20px 0;
@@ -110,16 +115,16 @@
   /* Flip Cards CSS */
   .card-container {
     /* background-color: darkred; */
-    margin-bottom: 200px;
+    /* margin-bottom: 200px; */
     perspective: 700px;
   }
   .card-flip {
     position: relative;
     border-radius: 10px;
     width: 100%;
-    padding: 50px 30px;
+    padding: 50px 20px;
     transform-style: preserve-3d;
-    height: 155%;
+    height: 100%;
     transition: all 0.7s ease-out;
     background: white;
     border: none;
@@ -157,41 +162,47 @@
 
 .card-img-back1 {
   background-image: url(../../img/home/diy-1.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100% !important;
-    height: 379% !important;
-    border-radius: 10px;
-    top: -50px;
-    left: 30px;
-    position: absolute;
+ 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 113% !important;
+  height: 331% !important;
+  border-radius: 10px;
+  top: -182px;
+  left: -20px;
+  position: absolute;
+
 }
 
 .card-img-back2 {
   background-image: url(../../img/home/diy-2.jpg);
+ 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 100% !important;
-    height: 379% !important;
-    border-radius: 10px;
-    top: -50px;
-    left: 30px;
-    position: absolute;
+  width: 113% !important;
+  height: 331% !important;
+  border-radius: 10px;
+  top: -182px;
+  left: -20px;
+  position: absolute;
+
 }
 
 .card-img-back3 {
   background-image: url(../../img/home/diy-3.jpg);
+ 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 100% !important;
-    height: 379% !important;
-    border-radius: 10px;
-    top: -50px;
-    left: 30px;
-    position: absolute;
+  width: 113% !important;
+  height: 331% !important;
+  border-radius: 10px;
+  top: -182px;
+  left: -20px;
+  position: absolute;
+
 }
 
   .text-center {
