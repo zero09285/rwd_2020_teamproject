@@ -264,7 +264,7 @@ section {
 
 .tab_title {
     position: absolute;
-    top: 40px;
+    top: -50px;
     z-index: 5;
 }
 
@@ -359,8 +359,8 @@ h3 {
         width: 100%;
         height: 100px;
         position: absolute;
-        top: 20px;
-        left: 25px;
+        top: 5px;
+        left: 18px;
     }
     /* #btn-1 {
         position: absolute;
@@ -429,6 +429,21 @@ h3 {
     justify-content: space-between;
     align-items: center;
     z-index: 6;
+}
+
+.tab_title {
+    position: absolute;
+    top: 60px;
+    z-index: 5;
+}
+
+.tab_cricle {
+    width: 90%;
+        height: 100%;
+        border-radius: 5px;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%,-50%);
 }
 
 }
