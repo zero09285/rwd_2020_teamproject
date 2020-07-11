@@ -1,24 +1,30 @@
-/* -----------visitInfo -參觀資訊-內容--------------- */
-.container{
+body {
+    background: linear-gradient(180deg, rgba(171, 136, 93, 1)29%, rgba(189, 158, 143, 1)60%);
+    margin: 0;
+    font-family: Arial, "Noto Sans TC", STXihei, "HEITI TC", "HEITI TC", 黑體-繁, 微軟正黑體, 黑體, sans-serif;
+    overflow-x: hidden;
+    background-image: url('../img/background.jpg');
+}
+
+#visitInfo .container{
     width: 1140px;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin:auto;
-}
-
+} 
 /* 標題(有藍色對話框) */
-h1{
+#visitInfo h1{
     width: 300px;
     margin: auto;
-}
+} 
 /* 其他特色標題 */
-h2{
+#visitInfo h2{
     width: 300px;
     margin: auto;
 }
 /* 紅色字 */
-h3{
+#visitInfo h3{
     font-size: 21px;
     color: #a04628;
     line-height: 50px;
@@ -26,9 +32,9 @@ h3{
     font-weight: 900;
     margin: auto;
     letter-spacing: 2px;
-}
+} 
 /* 黑色字 */
-h4{
+#visitInfo h4{
     font-size: 16px;
     color: black;
     line-height:30px;
@@ -37,65 +43,61 @@ h4{
     margin: auto;
     letter-spacing: 2px;
 }
-.title h4{
-   width: 300px; 
-}
-
+#visitInfo .title h4{
+    width: 300px; 
+ } 
+ 
 /* 備註文字 */
-p{
-    font-size: 14px;
-    color: black;
-    line-height:22px;
-    text-align: center;
-    font-weight: 400;
-    margin: auto;
-    letter-spacing: 2px;
-    text-align: center;  
+ #visitInfo p{
+     font-size: 14px;
+     color: black;
+     line-height:22px;
+     text-align: center;
+     font-weight: 400;
+     margin: auto;
+     letter-spacing: 2px;
+     text-align: center;  
 }
 
 
-/* #111111111111111111111111111111111111111111 票價 */
 #visitInfo{
-   position: relative;
-}
-
-.bg-color{
-    margin: 100px 0 0 0;
-    display: flex;
-    justify-content: center;
-    background-image: url(../img/bg-color.svg);
-    background-repeat: no-repeat;
     position: relative;
 }
 
-
+ 
+.bg-color{
+    margin: 150px 0 0 0 ;
+     display: flex;
+     justify-content: center;
+     background-image: url(../img/bg-color.svg);
+     background-repeat: no-repeat;
+     position: relative;
+}
+ 
 .bluePeople{
-    width: 18%;
-    left: 1%;
-    top:5%;
-    position: absolute;
+     width: 18%;
+     left: 1%;
+     top:5%;
+     position: absolute;
 }
 .yellowPeople{
-    width: 18%;
-    right: 3%;
-    top:25%;
-    position: absolute;
+     width: 18%;
+     right: 3%;
+     top:28%;
+     position: absolute;
 }
 .redPeople{
-    width: 18%;
-    left: 2%;
-    top:56%;
-    position: absolute;
+     width: 18%;
+     left: 2%;
+     top:56%;
+     position: absolute;
 }
 .pinkPeople{
-    width: 10%;
-    right: 3%;
-    top:80%;
-    position: absolute;
+     width: 10%;
+     right: 3%;
+     top:80%;
+     position: absolute;
 }
-    
-
-
 #ticket .row{
     width: 100%;
     margin: 100px 0 160px 0;
@@ -133,7 +135,6 @@ p{
     letter-spacing: 2px;
     text-align: center;  
 }
-   
 /* #2222222222222222222222222222222222222 大眾運輸 */
 #transportation .container .row{
     width: 100%;
@@ -154,7 +155,6 @@ p{
     padding: 30px 56px 0 56px;
     text-align: unset;
 }
-
 /* #3333333333333333333333333333333333333 自行開車  */
 #byCar .row{
     margin: 100px 0 160px 0;
@@ -206,7 +206,6 @@ p{
     margin: auto;
     letter-spacing: 3px;
 }
-
 /* #4444444444444444444444444444444444444 地圖 */
 
 #map{
@@ -222,27 +221,15 @@ p{
 }
 
 
-
-
-
-
-
-
-
-
-
-
 /* --------------------media----------------------- */
 
 @media screen and (max-width: 1200px) {
     .bluePeople,.yellowPeople, .redPeople, .pinkPeople{
         display: none;
     }
-    .container{
+    #visitInfo .container{
         width: 100%;
-        padding: unset;
     }
-
     #ticket .row{
         display: flex;
         justify-content: center;
@@ -258,29 +245,21 @@ p{
     #transportation .container .row .midCard{
         border-left: unset;
         border-right:unset ;
-        /* border-top: 1px solid #c88232;
-        border-bottom: 1px solid #c88232; */
-        
     }
     #transportation .row .col-12 h4{
         padding: 30px 56px 0 56px;
         text-align: unset;
-
     }
-
     #byCar .row .card{
         padding: 30px 20px 30px 20px;
         margin: auto !important;
         margin-bottom: 20px !important;
     }
-   
     #byCar .row{
         margin: 50px 0 100px 0;
         display: flex;
         justify-content: center;
-
     }
-
     #byCar .row h3{
         line-height: 60px;
     }
@@ -293,19 +272,18 @@ p{
     #byCar .row .yellowBar h4{
         line-height:50px;
     }
-
-    
 }
+
+
 @media screen and (max-width: 980px) {
-    .container{
+    
+    #visitInfo .container{
         width: 100%;
-        padding: unset;
     }
     #ticket .col-sm-6{
         display: flex;
         justify-content: center;  
     }
-
     #transportation .container .row{
         width: 80%;
     }
@@ -313,21 +291,20 @@ p{
         width: 100%;
         height: 100%;
     }
-   
     .mapTop{
         height: 20px;
         position: absolute;
         top: 0px;
-    
     }
+}
 
-
-    
-
-
+@media screen and (max-width: 768px) {
+    .bg-color{
+        margin: 50px 0 0 0 ;
+    }
+}
 
 @media screen and (max-width: 480px) {
-
     #title{
         padding: 40px 0 40px 0;
     }
@@ -335,7 +312,6 @@ p{
         width: 300px;
         margin: auto;
     }
-
     #title h2{
         font-size: 14px;
         line-height: 18px;
@@ -346,21 +322,18 @@ p{
         letter-spacing: 2px;
         text-align: center;      
     }
-    .container{
+    #visitInfo .container{
         width: 100%;
     }
-
 }
 
 @media screen and (max-width: 320px) {
-    .container{
+    #visitInfo .container{
         width: 100%;
     }
-
     #ticket .container{
         padding-right: none;
     }
-
     #ticket .container .col-12{
         display: flex;
         justify-content: center;
@@ -369,7 +342,6 @@ p{
         display: flex;
         justify-content: center;
     }
-  
     #transportation .row .col-12 h4{
         padding: 30px 0 30px 0;
     }
@@ -378,7 +350,6 @@ p{
     }
     #byCar .row h3{
         line-height: 30px;
-
     }
     #byCar .row p{
         line-height:30px;
@@ -389,8 +360,4 @@ p{
     #byCar .row .yellowBar h4{
         line-height:30px;
     }
-
-}
-
-
 }
