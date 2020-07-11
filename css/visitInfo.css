@@ -327,7 +327,7 @@ body {
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 375px) {
     #visitInfo .container{
         width: 100%;
     }
@@ -359,5 +359,11 @@ body {
     }
     #byCar .row .yellowBar h4{
         line-height:30px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #visitInfo .container{
+        width: 320px;
     }
 }
