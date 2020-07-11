@@ -248,6 +248,13 @@ width: 120px;
 
 
 }
+
+
+@media (max-width: 576px) {
+    .headerContent {
+        width: 85%;
+    }
+}
    
 /* 
 p {
