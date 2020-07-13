@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>添興窯官方網站</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/loading.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/ViewpointPage/viewpoint.css">
+    <link rel="stylesheet" href="./css/ViewpointPage/train.css">
+    <link rel="stylesheet" href="./css/footer.css">
+</head>
+
+<body>
+
+    <div class="loading_page fixed-top">
+        <!--Loading-->
+        <div class="loader">Loading...</div>
+    </div>
+
+    <header class="header fixed-top">
+        <div id="headerSection" class="container">
+            <div class="headerContent">
+                <h2 class="logo">
+                    <a href="index.html"><img src="./img/logo.png" alt="添興窯logo"></a>
+                </h2>
+
+
+                <nav class="navBar">
+                    <ul class="mainMenu">
+                        <h2>Nav Bar</h2>
+                        <li class="mainLi">
+                            <a class="mainA" href="about.html"><span class="select">關於添興</span></a>
+                        </li>
+
+                        <!--  -->
+                        <li class="mainLi selectph">
+                            <a href="visitInfo.html"><span class="mainA select">車票與交通</span></a>
+                        </li>
+
+                        <li class="mainLi selectph">
+                            <a href="facility.html"><span class="mainA select">環境設施</span></a>
+                        </li>
+                        <!--  -->
+                        <li class="mainLi mainB">
+                            <a class="mainA" href="visitInfo.html"><span class="select">參觀資訊</span></a>
+                            <ul class="subMenu">
+                                <li><a href="visitInfo.html"><span class="select">車票與交通</span></a></li>
+                                <li><a href="facility.html"><span class="select">環境設施</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="mainLi">
+                            <a class="mainA" href="diy.html"><span class="select">DIY體驗</span></a>
+                        </li>
+                        <li class="mainLi">
+                            <a class="mainA" href="product.html"><span class="select">經典商品</span></a>
+                        </li>
+                        <li class="mainLi">
+                            <a class="mainA" href="viewpoint.html"><span class="select">周邊景點</span></a>
+                        </li>
+                        <li class="mainLi">
+                            <a class="mainA" href="reservation.html"><span class="select">團體預約</span></a>
+                        </li>
+                    </ul>
+                    <div class="icon">
+
+                        <div class="icon_change ">
+                            <a id="icon_a" href="#">
+                                <img class="icon_pic " src="./img/icon-fb-h.svg" alt="">
+                                <img class="icon_pic" src="./img/icon-fb.svg" alt="">
+                            </a>
+                        </div>
+
+                        <div class="icon_change ">
+                            <a id="icon_a" href="#">
+                                <img class="icon_pic " src="./img/icon-ig-h.svg" alt="">
+                                <img class="icon_pic" src="./img/icon-ig.svg" alt="">
+                            </a>
+                        </div>
+
+                        <div class="icon_change ">
+                            <a id="icon_a" href="#">
+                                <img class="icon_pic " src="./img/icon-twitter-h.svg" alt="">
+                                <img class="icon_pic" src="./img/icon-twitter.svg" alt="">
+                            </a>
+                        </div>
+
+                        <div class="icon_change ">
+                            <a id="icon_a" href="#">
+                                <img class="icon_pic " src="./img/icon-youtube-h.svg" alt="">
+                                <img class="icon_pic" src="./img/icon-youtube.svg" alt="">
+                            </a>
+                        </div>
+
+                    </div>
+                </nav>
+
+                <div class="burgar_btn ">
+                    <a href="#">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+    </header>
+
+
+    <section id="title">
+        <div class="container">
+            <div class="title-main">
+                <h1><img src="./img/title-viewpoint.svg" alt="DIY體驗"></h1>
+                <h3>發揮創意製作陶器之餘，還可以從園內的導覽介紹了解到台灣近代陶藝發展情形。</h3>
+            </div>
+        </div>
+    </section>
+    <section class="view_tab">
+        <div class="view_btns">
+            <div class="btnstyle">
+                <img class="viewbtn_pic" src="./img/icon/green.svg" alt="">
+                <a class="view_a btn" href="#fakebox"><img src="./img/icon/green-h.svg" alt=""></a>
+            </div>
+
+            <div class="btnstyle">
+                <img class="viewbtn_pic" src="./img/icon/factor.svg" alt="">
+                <a class="view_a btn" href="#fakebox"><img src="./img/icon/factor-h.svg" alt=""></a>
+            </div>
+            <div class="btnstyle">
+                <img class="foodbtn_pic" src="./img/icon/noodles.svg" alt="">
+                <a class="food_a btn" href="#fakebox"><img src="./img/icon/noodles-h.svg" alt=""></a>
+            </div>
+            <div class="btnstyle">
+                <img class="foodbtn_pic" src="./img/icon/meatball.svg" alt="">
+                <a class="food_a btn" href="#fakebox"><img src="./img/icon/meatball-h.svg" alt=""></a>
+            </div>
+
+            <div class="btnstyle">
+                <img class="viewbtn_pic" src="./img/icon/jiji.svg" alt="">
+                <a class="view_a btn" href="#fakebox"><img src="./img/icon/jiji-h.svg" alt=""></a>
+            </div>
+
+            <div class="btnstyle">
+                <img class="foodbtn_pic" src="./img/icon/ice.svg" alt="">
+                <a class="food_a btn" href="#fakebox"><img src="./img/icon/ice-h.svg" alt=""></a>
+            </div>
+            <div class="btnstyle">
+                <img class="viewbtn_pic" src="./img/icon/book.svg" alt="">
+                <a class="view_a btn" href="#fakebox"><img src="./img/icon/book-h.svg" alt=""></a>
+            </div>
+        </div>
+        <div class="center">
+            <!-- 背景山 -->
+            <div class="mountains"></div>
+
+            <!-- ----------------------------- -->
+
+            <!-- 火車煙霧 -->
+            <div class="train">
+                <div class="engine-front">
+                    <div class="chimney">
+                        <div class="smoke"></div>
+                        <div class="smoke smoke-2"></div>
+                        <div class="smoke smoke-3"></div>
+                        <div class="smoke smoke-4"></div>
+                    </div>
+                </div>
+
+                <!-- ----------------------------- -->
+
+                <!-- 車頭 -->
+                <div class="engine-body"></div>
+
+                <!-- ----------------------------- -->
+                <!-- 車廂1~3 -->
+                <div class="compartment">
+                    <div class="compartment-window"></div>
+                </div>
+
+                <div class="compartment compartment-two">
+                    <div class="compartment-window"></div>
+                </div>
+
+                <div class="compartment compartment-three">
+                    <div class="compartment-window"></div>
+                </div>
+                <!-- ----------------------------- -->
+
+                <!-- 輪子滾動 -->
+                <div class="wheel-holder">
+                    <div class="wheel"></div>
+                    <div class="wheel wheel-2">
+                        <div class="wheel-joint"></div>
+                        <div class="wheel-joint wheel-joint-2"></div>
+                    </div>
+                    <div class="wheel wheel-3"></div>
+                    <div class="wheel wheel-4"></div>
+                    <div class="wheel wheel-5"></div>
+                    <div class="wheel wheel-6"></div>
+                    <div class="wheel wheel-7"></div>
+                    <div class="wheel wheel-8"></div>
+                    <div class="wheel wheel-9"></div>
+                </div>
+                <!-- ----------------------------- -->
+            </div>
+            <!-- 橋 -->
+            <div class="bridge"></div>
+        </div>
+        <div style="text-align:center;clear:both;">
+            <script src="/gg_bd_ad_720x90.js" type="text/javascript"></script>
+            <script src="/follow.js" type="text/javascript"></script>
+        </div>
+    </section>
+    <section class="viewinfo_ph">
+        <div class="contantgroup_ph">
+            <div class="contant_ph">
+                <div class="view_pic_ph">
+                    <img class="pic_ph" src="./img/green.jpg" alt="">
+                </div>
+                <div class="view_word_ph">
+                    <h3 class="infotitle_ph">綠色隧道</h3>
+                    <p class="infocontent_ph">
+                        位於名間鄉與集集鎮之間，長達4.5公里的樟樹自然景觀，這些種植於1940年的樟樹，枝葉茂密，夾道成蔭，蔚為奇觀，路旁是觀光鐵道，小火車緩緩經過，更添詩意盎然，是許多新婚佳人、攝影留念的好景點。
+                    </p>
+                </div>
+            </div>
+            <div class="contant_ph">
+                <div class="view_pic_ph">
+                    <img class="pic_ph" src="./img/factory.jpg" alt="">
+                </div>
+                <div class="view_word_ph">
+                    <h3 class="infotitle_ph">集元果觀光工廠</h3>
+                    <p class="infocontent_ph">
+                        集集山蕉是日治時期專供日本天皇品嚐的「御用蕉」，也是集集最具代表的農特產品，為了讓這段榮耀的歷史能被了解，集元果2016年10月成立了以「香蕉」為主題的觀光工廠，適合親子同遊的空間設計，來此能親近大自然，享用美味的山蕉美食，還兼具了教育、知識、趣味的功能。
+                    </p>
+                </div>
+            </div>
+            <div class="contant_ph">
+                <div class="view_pic_ph">
+                    <img class="pic_ph" src="./img/jiji.jpg" alt="">
+                </div>
+                <div class="view_word_ph">
+                    <h3 class="infotitle_ph">集集火車站</h3>
+                    <p class="infocontent_ph">
+                        集集火車站建於民國22年（西元1933年），以純檜木建造，具古樸風格。早期鐵道運輸沿線鄉鎮的旅客、香蕉、稻米、水果和木材，是附近鄉鎮的農產品集散地，經歷九二一地震造成嚴重傾斜，經修復後的集集車站保有日式木造外觀，是目前碩果僅存日治時代留下來的火車站。
+                    </p>
+                </div>
+            </div>
+            <div class="contant_ph">
+                <div class="view_pic_ph">
+                    <img class="pic_ph" src="./img/book.jpg" alt="">
+                </div>
+                <div class="view_word_ph">
+                    <h3 class="infotitle_ph">明新書院</h3>
+                    <p class="infocontent_ph">
+                        明新書院為古僕風貌的三合院建築物，座中為三開間正殿， 三面有紅磚圍牆。 集集光緒初年由於開發中央山脈及樟業大興的影響，街肆繁榮，人文跡象呈活躍，於是士紳倡議建明新書院於柴橋庄。
+                        神龕上主要奉祀文昌帝君神位，配祀有制字聖、紫陽夫子神位，大成至聖先師孔夫子神位。
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="ph_wave">
+            <img class="wavetop_ph" src="./img/wave-top.png" alt="">
+            <img class="wavetop_ph_fake" src="./img/wave-top.png" alt="">
+        </div>
+        <div class="food_bg_ph">
+            <div class="contant_ph">
+                <div class="view_pic_ph">
+                    <img class="pic_ph" src="./img/noodles.jpg" alt="">
+                </div>
+                <div class="view_word_ph">
+                    <h3 class="infotitle_ph">八張牛肉麵
+                    </h3>
+                    <p class="infocontent_ph">
+                        地址：南投縣集集鎮文心街291巷11號<br>
+                        電話：04-9276-4539<br>
+                        營業時間10:30~14:30,16:30~ 20:00 (週日公休)
+                    </p>
+                </div>
+            </div>
+            <div class="contant_ph">
+                <div class="view_pic_ph">
+                    <img class="pic_ph" src="./img/Meatballs.webp" alt="">
+                </div>
+                <div class="view_word_ph">
+                    <h3 class="infotitle_ph">水里肉圓</h3>
+                    <p class="infocontent_ph">
+                        地址：南投縣集集鎮民生路152號<br>
+                        電話：0915161801<br>
+                        營業時間14:30 - 19:30 (週三公休)
+                    </p>
+                </div>
+            </div>
+            <div class="contant_ph">
+                <div class="view_pic_ph">
+                    <img class="pic_ph" src="./img/ice.webp" alt="">
+                </div>
+                <div class="view_word_ph">
+                    <h3 class="infotitle_ph">碧雲製冰城</h3>
+                    <p class="infocontent_ph">
+                        地址： 南投縣集集鎮八張街130號<br>
+                        電話：04-5266-4559<br>
+                        營業時間：08:00–18:00
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="ph_wave">
+            <img class="wavebottom_ph" src="./img/wavewave-bottom.png" alt="">
+            <img class="wavebottom_ph_fake" src="./img/wavewave-bottom.png" alt="">
+        </div>
+    </section>
+    <section class="view_info">
+        <div class="bg_wave">
+            <div id="fakebox"></div>
+            <img class="wave_top" src="./img/wave-top.png" alt="">
+            <img class="wave_fake" src="./img/wave-top.png" alt="">
+        </div>
+        <div class="contant-group">
+            <div class="contant">
+                <div class="view_word">
+                    <h3 class="info_title">綠色隧道</h3>
+                    <p class="info_content">
+                        位於名間鄉與集集鎮之間，長達4.5公里的樟樹自然景觀，這些種植於1940年的樟樹，枝葉茂密，夾道成蔭，蔚為奇觀，路旁是觀光鐵道，小火車緩緩經過，更添詩意盎然，是許多新婚佳人、攝影留念的好景點。
+                    </p>
+                </div>
+                <div class="view_pic">
+                    <img class="pic_size" src="./img/green.jpg" alt="">
+                </div>
+            </div>
+            <div class="contant">
+                <div class="view_word">
+                    <h3 class="info_title">集元果觀光工廠</h3>
+                    <p class="info_content">
+                        集集山蕉是日治時期專供日本天皇品嚐的「御用蕉」，也是集集最具代表的農特產品，為了讓這段榮耀的歷史能被了解，集元果2016年10月成立了以「香蕉」為主題的觀光工廠，適合親子同遊的空間設計，來此能親近大自然，享用美味的山蕉美食，還兼具了教育、知識、趣味的功能。
+                    </p>
+                </div>
+                <div class="view_pic">
+                    <img class="pic_size" src="./img/factory.jpg" alt="">
+                </div>
+            </div>
+            <div class="contant">
+                <div class="view_word">
+                    <h3 class="info_title">八張牛肉麵</h3>
+                    <p class="info_content">地址：南投縣集集鎮文心街291巷11號<br>
+                        電話：04-9276-4539<br>
+                        營業時間10:30~14:30,16:30~ 20:00 (週日公休)<br>
+                    </p>
+                </div>
+                <div class="view_pic">
+                    <img class="pic_size" src="./img/noodles.jpg" alt="">
+                </div>
+            </div>
+            <div class="contant">
+                <div class="view_word">
+                    <h3 class="info_title">水里肉圓</h3>
+                    <p class="info_content">地址：南投縣集集鎮民生路152號<br>
+                        電話：0915161801<br>
+                        營業時間14:30 - 19:30 (週三公休)<br>
+                    </p>
+                </div>
+                <div class="view_pic">
+                    <img class="pic_size" src="./img/Meatballs.webp" alt="">
+                </div>
+            </div>
+            <div class="contant active">
+                <div class="view_word">
+                    <h3 class="info_title">集集火車站</h3>
+                    <p class="info_content">
+                        集集火車站建於民國22年（西元1933年），以純檜木建造，具古樸風格。早期鐵道運輸沿線鄉鎮的旅客、香蕉、稻米、水果和木材，是附近鄉鎮的農產品集散地，經歷九二一地震造成嚴重傾斜，經修復後的集集車站保有日式木造外觀，是目前碩果僅存日治時代留下來的火車站。
+                    </p>
+                </div>
+                <div class="view_pic active">
+                    <img class="pic_size" src="./img/jiji.jpg" alt="">
+                </div>
+            </div>
+            <div class="contant">
+                <div class="view_word">
+                    <h3 class="info_title">碧雲製冰城</h3>
+                    <p class="info_content">地址： 南投縣集集鎮八張街130號<br>
+                        電話：04-5266-4559<br>
+                        營業時間：08:00–18:00
+                    </p>
+                </div>
+                <div class="view_pic">
+                    <img class="pic_size" src="./img/ice.webp" alt="">
+                </div>
+            </div>
+            <div class="contant">
+                <div class="view_word">
+                    <h3 class="info_title">明新書院</h3>
+                    <p class="info_content"> 明新書院為古僕風貌的三合院建築物，座中為三開間正殿， 三面有紅磚圍牆。
+                        集集光緒初年由於開發中央山脈及樟業大興的影響，街肆繁榮，人文跡象呈活躍，於是士紳倡議建明新書院於柴橋庄。
+                        神龕上主要奉祀文昌帝君神位，配祀有制字聖、紫陽夫子神位，大成至聖先師孔夫子神位。
+                    </p>
+                </div>
+                <div class="view_pic">
+                    <img class="pic_size" src="./img/book.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="bg_wave">
+            <img src="./img/wavewave-bottom.png" alt="">
+        </div>
+    </section>
+    <section class="background_image">
+        <img class="bg_family" src="./img/bg-family.svg" alt="">
+        <img class="bg_run" src="./img/bg-run.svg" alt="">
+    </section>
+
+
+    <a href="reservation.html" class="reservation">
+        <span>
+            我
+            要
+            預
+            約
+        </span>
+    </a>
+    <a href="#" class="gototop"></a>
+
+    <footer>
+        <div class="container">
+            <div class="footer-info">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="footer-box">
+                            <img src="./img/icon-phone-h.svg" alt="服務專線" width="78">
+                            <div class="pl-1">
+                                <h4>服務專線</h4>
+                                <h3 class="tel"><a href="tel:04-9278-1130">04-9278-1130</a></h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="footer-box">
+                            <img src="./img/icon-mail-h.svg" alt="聯絡我們" width="78">
+                            <div class="pl-1">
+                                <h4>聯絡我們</h4>
+                                <h3 class="br"><a href="mailto:tianxingkiln@gmail.com">tianxingkiln@gmail.com</a></h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="footer-box">
+                            <img src="./img/icon-time-h.svg" alt="營業時間" width="78">
+                            <div class="pl-1">
+                                <h4>營業時間<span class="text-note">(週四公休)</span></h4>
+                                <h3 class="br">9:00am~17:30pm</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-social">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <h3>南投縣集集鎮田寮里楓林巷十號</h3>
+                        <h4>All Copyright c Reserved by Tian Xing Kiln Ceramic Art Co., Ltd.</h4>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/txkiln/" target="_blank">
+                                <div class="icon-fb"></div>
+                            </a>
+                            <a href="https://www.instagram.com/txkiln/" target="_blank">
+                                <div class="icon-ig"></div>
+                            </a>
+                            <a href="https://twitter.com/TXKiln" target="_blank">
+                                <div class="icon-twitter"></div>
+                            </a>
+                            <a href="http://line.me/ti/p/@sse5946o" target="_blank">
+                                <div class="icon-line"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--JS CDN套件-->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <!--JS CDN套件-->
+
+
+    <script src="./js/loading.js"></script>
+    <script src="./js/nav.js"></script>
+
+    <script>
+        let btns = document.querySelectorAll(".btn")
+        let contants = document.querySelectorAll(".contant")
+
+        for (let index = 0; index < btns.length; index++) {
+            const btn = btns[index];
+            const contant = contants[index];
+
+            btn.onclick = function () {
+                clearallactive()
+                btn.classList.add("active")
+                contant.classList.add("active")
+            }
+        }
+
+        function clearallactive() {
+            for (let index = 0; index < btns.length; index++) {
+                const btn = btns[index];
+                const contant = contants[index];
+
+                btn.classList.remove("active")
+                contant.classList.remove("active")
+            }
+        }
+    </script>
+</body>
+
+</html>

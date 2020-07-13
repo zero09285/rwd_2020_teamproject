@@ -1,0 +1,411 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:400,400i,700,700i");
+/* *, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  word-break: break-all;
+  box-sizing: border-box;
+} */
+
+/* 整個畫面大小 */
+html {
+  font-size: 10px;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: 'Ubuntu', sans-serif;
+  color: #6e6e6e;
+  font-size: 1.6rem;
+}
+
+header, footer {
+  display: block;
+}
+
+a, a:link, a:visited {
+  color: #4d4d4d;
+  text-decoration: none;
+}
+
+img {
+  border: 0;
+}
+
+ul {
+  list-style: none;
+}
+/* --------------------------------------------- */
+/* 背景 */
+.center {
+  height: 400px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 80%;
+}
+/* -----------------------橋--------------------- */
+.bridge {
+  border-bottom: 1px solid rgb(0, 0, 0);
+  border-top: 1px solid rgb(0, 0, 0);
+  background: linear-gradient(90deg, #666666 50%,#EFE4D0 50%) left/199px;
+  bottom: 26%;
+  height: 20px;
+  position: absolute;
+  width: 100%;
+}
+/* --------------火車------------------- */
+.train {
+  animation: move-train 8s linear infinite;
+  bottom: 12.6rem;
+  height: 10rem;
+  position: absolute;
+  left: calc(100% + 1.3rem);
+  width: 44rem;
+  z-index: 1;
+}
+
+.engine-front, .engine-front::before, .engine-front::after {
+  background: #0f0f0f;
+  background: linear-gradient(0deg, #914921, #B64D30, #D6663E);
+  border: 0.1rem solid rgba(0, 0, 0, 0.15);
+  border-radius: 50% 0 0 50%;
+  border-right: none;
+}
+
+.engine-front {
+  animation: body-upDown 0.3s infinite;
+  border-radius: 0.5rem 0 0 0.5rem;
+  bottom: 1.4rem;
+  height: 4.6rem;
+  left: 0;
+  position: absolute;
+  width: 8rem;
+}
+.engine-front::before, .engine-front::after {
+  content: "";
+  position: absolute;
+  height: 70%;
+  left: -0.9rem;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 0.8rem;
+}
+.engine-front::after {
+  height: 40%;
+  left: -1.4rem;
+  width: 0.5rem;
+}
+
+.chimney {
+  background: #D76840;
+  height: 2.2rem;
+  left: 2.5rem;
+  position: absolute;
+  top: -2.3rem;
+  width: 1.7rem;
+}
+.chimney::before, .chimney::after {
+  position: absolute;
+}
+
+/* ----------------------------------------- */
+
+/* 火車煙霧 */
+.smoke {
+  animation: move-smoke 0.4s linear infinite;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  height: 1.4rem;
+  left: 0.2rem;
+  position: absolute;
+  top: -1.5rem;
+  width: 0.8rem;
+  z-index: -1;
+}
+.smoke-2 {
+  animation-delay: 0.1s;
+  left: 0.4rem;
+}
+.smoke-3 {
+  animation-delay: 0.2s;
+  left: 0.6rem;
+}
+.smoke-4 {
+  left: 0.8rem;
+}
+/* ----------------------------------------- */
+
+
+.engine-body {
+  animation: body-upDown 0.3s 0.1s infinite;
+  background: linear-gradient(0deg, #914921, #B64D30, #D6663E);
+  border-radius: 0 0 0.4rem 0;
+  bottom: 1.4rem;
+  height: 7rem;
+  left: 8rem;
+  position: absolute;
+  width: 5rem;
+}
+
+
+.engine-body::before, .engine-body::after {
+  content: "";
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, 0);
+}
+.engine-body::before {
+  animation: up-down 0.3s 0.2s infinite;
+  background: linear-gradient(0deg, #934B23, #934B23, #934B23);
+  border-radius: 50% 50% 0 0;
+  height: 1.2rem;
+  top: -1.2rem;
+  width: 130%;
+}
+.engine-body::after {
+  background: #EAE0D6;
+  border-radius: 0.2rem;
+  height: 40%;
+  top: 1rem;
+  width: 45%;
+}
+/* ------------------輪子---------------- */
+.wheel::before, .wheel::after {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.wheel-holder {
+  height: 2.8rem;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.wheel {
+  animation: rotate 2s linear infinite;
+  background: #B1B1B1;
+  border: 0.3rem solid #777370;
+  border-radius: 50%;
+  height: 2.8rem;
+  left: 1rem;
+  position: absolute;
+  width: 2.8rem;
+}
+.wheel-2 {
+  left: 4.5rem;
+}
+.wheel-3 {
+  border-width: 0.5rem;
+  height: 3.8rem;
+  left: 8.7rem;
+  top: -1.1rem;
+  width: 3.8rem;
+}
+.wheel-4 {
+  left: 15.7rem;
+}
+.wheel-5 {
+  left: 19.5rem;
+}
+.wheel-6 {
+  left: 25.7rem;
+}
+.wheel-7 {
+  left: 29.5rem;
+}
+.wheel-8 {
+  left: 35.7rem;
+}
+.wheel-9 {
+  left: 39.5rem;
+}
+.wheel::before, .wheel::after {
+  content: "";
+  position: absolute;
+}
+.wheel::before {
+  background: rgba(0, 0, 0, 0.3);
+  height: 86%;
+  width: 0.2rem;
+}
+.wheel::after {
+  background: #996300;
+  background: -webkit-radial-gradient(circle at center, #b37400 30%, #996300 30%);
+  background: -moz-radial-gradient(circle at center, #b37400 30%, #996300 30%);
+  background: -o-radial-gradient(circle at center, #b37400 30%, #996300 30%);
+  background: -ms-radial-gradient(circle at center, #b37400 30%, #996300 30%);
+  background: radial-gradient(circle at center, #b37400 30%, #996300 30%);
+  border-radius: 50%;
+  height: 40%;
+  width: 40%;
+}
+/* -------------------車廂---------------------- */
+.compartment {
+  animation: body-upDown 0.3s infinite;
+  background: linear-gradient(#F3B125 50%, #FAD86D);
+  border-radius: 0 0 0.3rem 0.3rem;
+  bottom: 1.4rem;
+  height: 5rem;
+  left: 15rem;
+  position: absolute;
+  width: 8rem;
+}
+.compartment-two {
+  animation: body-upDown 0.3s 0.1s infinite;
+  left: 25rem;
+}
+.compartment-two .compartment-window::before {
+  animation: up-down 0.3s 0.3s infinite;
+}
+.compartment-three {
+  animation: body-upDown 0.3s 0.2s infinite;
+  left: 35rem;
+}
+.compartment-three .compartment-window::before {
+  animation: up-down 0.35s infinite;
+}
+.compartment::before, .compartment::after {
+  background: black;
+  border: 0.4rem solid transparent;
+  bottom: 0.4rem;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1);
+  content: "";
+  height: 0.8rem;
+  position: absolute;
+  width: 0.9rem;
+}
+.compartment::before {
+  border-left: 0.4rem solid rgba(255, 255, 255, 0.3);
+  left: -0.9rem;
+}
+.compartment::after {
+  border-right: 0.4rem solid rgba(255, 255, 255, 0.3);
+  left: -2rem;
+}
+
+.compartment-window {
+  background: #f8f8f8;
+  background: linear-gradient(90deg, transparent 0.8rem, #EAE0D6 0.8rem) left/2.4rem 100%;
+  height: 40%;
+  position: absolute;
+  top: 0.7rem;
+  width: 100%;
+}
+.compartment-window::before, .compartment-window::after {
+  content: "";
+  position: absolute;
+}
+.compartment-window::before {
+  animation: up-down 0.3s 0.1s infinite;
+  background: #924C23;
+  border-radius: 50% 50% 0 0;
+  height: 0.6rem;
+  left: 50%;
+  top: -1.4rem;
+  transform: translate(-50%, 0);
+  width: 110%;
+}
+
+@keyframes up-down {
+  0%, 100% {
+    transform: translate(-50%, 0);
+  }
+  50% {
+    transform: translate(-50%, -0.3rem);
+  }
+}
+@keyframes rotate {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes move-train {
+  100% {
+    transform: translateX(-154rem);
+  }
+}
+@keyframes body-upDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-0.2rem);
+  }
+}
+@keyframes move-smoke {
+  0% {
+    -webkit-filter: blur(0);
+    -moz-filter: blur(0);
+    -o-filter: blur(0);
+    -ms-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+  50% {
+    -webkit-filter: blur(0.2rem);
+    -moz-filter: blur(0.2rem);
+    -o-filter: blur(0.2rem);
+    -ms-filter: blur(0.2rem);
+    filter: blur(0.2rem);
+    opacity: 0.6;
+    transform: translate(0, -3rem) scale(2);
+  }
+  100% {
+    -webkit-filter: blur(0.3rem);
+    -moz-filter: blur(0.3rem);
+    -o-filter: blur(0.3rem);
+    -ms-filter: blur(0.3rem);
+    filter: blur(0.3rem);
+    opacity: 0;
+    transform: translate(2.5rem, -6rem) scale(3);
+  }
+}
+.wheel-joint {
+  animation: wheel-joint 2s linear infinite;
+  background: black;
+  border-radius: 0.6rem;
+  height: 0.4rem;
+  position: absolute;
+  right: 0.4rem;
+  top: calc(50% - 0.2rem);
+  transform-origin: 100% 50%;
+  width: 3.6rem;
+  z-index: 1;
+}
+.wheel-joint::before, .wheel-joint::after {
+  background: #333333;
+  border: 0.1rem solid black;
+  border-radius: 50%;
+  content: "";
+  height: 0.8rem;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 0.8rem;
+}
+.wheel-joint::before {
+  left: -0.4rem;
+}
+.wheel-joint::after {
+  right: -0.4rem;
+}
+.wheel-joint-2 {
+  left: 1.8rem;
+  right: auto;
+  transform: rotate(-15deg);
+  transform-origin: 0 50%;
+  width: 4.4rem;
+}
+
+@keyframes wheel-joint {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@media (max-width:768px){
+  .train{
+    animation: move-train 5s linear infinite;
+}
+}

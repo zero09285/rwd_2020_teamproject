@@ -8,8 +8,12 @@ body {
   color:black;
 }
 
-ul{
+.radio2{
   display: flex;
+}
+
+.radio_margin {
+  margin-right: 10px;
 }
 
 .wrapper {
