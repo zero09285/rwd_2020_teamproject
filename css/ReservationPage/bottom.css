@@ -1,0 +1,30 @@
+.btn_box{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content:center;
+}
+
+
+.button {
+    background: brown;
+    width: 300px;
+    height: 60px;
+    padding: 15px 0;
+    position: absolute;
+    border-radius: 50px;
+}
+
+.button:hover{
+    background: rgb(206, 120, 120);
+}
+
+.btn_text{
+    width: 100px;
+    height: 30px;
+    margin: auto;
+    font-size: 20px;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+}

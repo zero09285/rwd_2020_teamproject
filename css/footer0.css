@@ -1,35 +1,57 @@
+/* footer */
 
 footer {
     background-image: url('../img/footer.png');
     background-position: left top;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 200px 0 0 0;
+    padding: 100px 0 0 0;
     }
 
+.footer_padding {
+    padding-top: 80px;
+}
+
+footer a{
+    color: #9a4628;
+}
+
+footer a:hover{
+    text-decoration:none;
+    color: #000;
+}
 
 .footer-info{
-    padding: 30px 0;
+    padding: 10px 0 20px 0;
     border-bottom: 1px solid #dcc8b4;
 }
 
 .footer-box{
     width: 100%;
     background-color: #dcc8b4;
-    padding: 20px 20px 0 20px;
+    padding: 20px 20px 10px 20px;
     border-radius: 8px;
     display:flex;
-    min-width: 300px;
+    justify-content: center;
+    align-items: center; 
+    margin: 0 0 10px 0;
+   
 }
+
+
 
 .footer-box h3{
     font-size: 18px;
-    color: #000;
+    color: #9a4628;
+}
+
+.footer-box .tel{
+    font-size: 24px;
 }
 
 .footer-box h4{
     font-size: 14px;
-    color: #666;
+    color: #000;
 }
 
 
@@ -38,7 +60,7 @@ footer {
 }
 
 .footer-social h3{
-    font-style: 18px;
+    font-size: 21px;
     color: #fff;
     font-weight: 400;
 }
@@ -46,7 +68,7 @@ footer {
 
 .footer-social h4{
     font-size: 12px;
-    counter-reset: #dcc8b4;
+    color: #dcc8b4;
 }
 
 
@@ -62,26 +84,20 @@ footer {
     height: 36px;
 }
 
+
 .icon-fb{
     background-image: url('../img/icon-fb.svg');
 }
-
-.icon-ig{
-    background-image: url('../img/icon-ig.svg');
-}    
-
-.icon-twitter{
-    background-image: url('../img/icon-twitter.svg');
-}    
-
-.icon-line{
-    background-image: url('../img/icon-line.svg');
-}  
 
 .icon-fb:hover{
     background-image: url('../img/icon-fg-h.svg');
     transition: 0.4s;
     transform:rotate(360deg);
+}
+
+
+.icon-ig{
+    background-image: url('../img/icon-ig.svg');
 }
 
 .icon-ig:hover{
@@ -90,11 +106,21 @@ footer {
     transform:rotate(360deg);
 }
 
+
+.icon-twitter{
+    background-image: url('../img/icon-twitter.svg');
+}    
+
 .icon-twitter:hover{
     background-image: url('../img/icon-twitter-h.svg');
     transition: 0.4s;
     transform:rotate(360deg);
 } 
+
+
+.icon-line{
+    background-image: url('../img/icon-line.svg');
+}
 
 .icon-line:hover{
     background-image: url('../img/icon-line-h.svg');
@@ -102,26 +128,36 @@ footer {
     transform:rotate(360deg);
 }
 
-a{
-    color: black;
+
+.text-note{
+    font-size: 12px;
+    color: #666;
 }
 
-a:hover{
-    color: black;
-    text-decoration: none;
-}
 
-@media screen and (max-width: 992px) {
+
+@media screen and (max-width: 768px) {
+
+    footer {
+        background-position: center top;
+        padding: 180px 0 0 0;
+    }
+
+    .footer-info{
+        padding: 10px 0 10px 0;
+    }
+    
+
+    .footer-box{
+        justify-content: start;
+        margin: 0 0 20px 0;
+    }
+
     .social-icons{
+        margin: 10px 0 0 0;
         display: flex;
         justify-content: center;
     }
-
-    .icon-fb, .icon-ig, .icon-twitter, .icon-line{
-    margin: 0 0 0 10px;
-    width: 20px;
-    height: 20px;
-}
 
 
     .footer-social h3{
@@ -136,8 +172,7 @@ a:hover{
         counter-reset: #dcc8b4;
     }
 
-    .footer-box{
-        margin: 0 0 20px 0;
-    }
+
+    
 
 }

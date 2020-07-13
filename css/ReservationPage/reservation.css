@@ -1,0 +1,759 @@
+.bigbox_1{
+    width: 900px;
+    height: 700px;
+    background-color: white;
+    margin: auto;
+    padding: 50px 0;
+    border-radius: 8px;
+    position: relative;
+    
+}
+
+.bg_reservation{
+    width: 100%;
+    height: 100%;
+    z-index: -999;
+    position: absolute;
+    background-image: url('../../img/bg-reservation.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 500px 0 0 0;
+}
+
+
+
+.bigbox_1_img{
+    position: absolute;
+    width: 300px;
+    height: 500px;
+    margin: -50px 0 0 -300px;
+    z-index: 500;
+    background-image: url('../../img/bg-form-info.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form_1{
+    width: 90%;
+    height: 600px;
+    background-color: white;
+    margin: auto;
+}
+
+.empty{
+    width: 100%;
+    height: 10%;
+    background-color: white;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+input {
+    font-size: 16px;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #757575;
+    background-color: white;
+}
+
+input:focus {
+    outline: none;
+}
+
+/* 111111111111111111111111111111111111111111 */
+.formbox_1{
+    width: 100%;
+    height: 15%;
+    display: flex;
+}
+
+.formbox_1 .name{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    /* background-color: rebeccapurple; */
+}
+
+.formbox_1 .name .name_font{
+    width: 50%;
+    height: 100%;
+    color: brown;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.formbox_1 .name .name_text{
+    width: 100%;
+    height: 50%;
+}
+
+.name_line {
+    width: 100%;
+    height: 50%;
+}
+
+.name_radio{
+    width: 50%;
+    height: 100%;
+}
+
+.name_radio ul{
+    padding: 47px 0 0 0;
+}
+
+
+.formbox_1 .tel{
+    width: 50%;
+    height: 100%;
+
+}
+
+.formbox_1 .tel .tel_font{
+    width: 100%;
+    height: 50%;
+    color: brown;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.formbox_1 .tel .tel_text{
+    width: 100%;
+    height: 50%;
+}
+
+
+
+
+/* 22222222222222222222222222222222222222222222 */
+
+.formbox_2{
+    width: 100%;
+    height: 15%;
+    display: flex;
+}
+
+.formbox_2 .email{
+    width: 50%;
+    height: 100%;
+}
+
+.formbox_2 .email .email_font{
+    width: 100%;
+    height: 50%;
+    color: brown;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.formbox_2 .email .email_text{
+    width: 100%;
+    height: 50%;
+}
+
+.formbox_2 .people{
+    width: 50%;
+    height: 100%;
+}
+
+.formbox_2 .people .people_font{
+    width: 100%;
+    height: 50%;
+    color: brown;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+
+.formbox_2 .people .people_text{
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+
+.adult{
+    font-weight: 900;
+}
+
+.child{
+    font-weight: 900;
+}
+
+.adult_num{
+    height: 25px;
+    margin: 0 30px 0 0;
+}
+
+.adult_num input{
+    width: 40px;
+}
+
+.child_num{
+    width: 40px;
+    height: 25px;
+}
+
+.child_num input{
+    width: 40px;
+}
+
+/* 33333333333333333333333333333333333333333333333 */
+.formbox_3{
+    width: 100%;
+    height: 15%;
+    display: flex;
+}
+
+.formbox_3 .date{
+    width: 50%;
+    height: 100%;
+}
+
+.formbox_3 .date .date_font{
+    width: 100%;
+    height: 50%;
+    color: brown;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.formbox_3 .date .date_text{
+    width: 50%;
+    height: 100%;
+}
+
+.formbox_3 .date .date_text input{
+    width: 100%;
+}
+
+.formbox_3 .time{
+    width: 50%;
+    height: 100%;
+}
+
+.formbox_3 .time .time_font{
+    width: 100%;
+    height: 50%;
+    color: brown;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.formbox_3 .time .time_text{
+    width: 50%;
+    height: 100%;
+}
+
+.time .time_text select{
+    width: 100%;
+}
+
+
+/* 444444444444444444444444444444444444444444444444 */
+.formbox_4{
+    width: 100%;
+    height: 15%;
+}
+
+.formbox_4 .remarks_font{
+    width: 100%;
+    height: 50%;
+    color: brown;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.remarks_container {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+#remarks_contact textarea {
+    width: 100%;
+    border: 1px solid #CCC;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+}
+
+#remarks_contact textarea {
+    height: 100px;
+    max-width: 100%;
+    resize: none;
+}
+
+/*****************************************************/
+
+.bigbox_2{
+    width: 900px;
+    height: 400px;
+    background-color: white;
+    margin: auto;
+    border-radius: 8px;
+    position: relative;
+    padding: 50px 0;
+}
+
+.bigbox_2_img{
+    position: absolute;
+    width: 300px;
+    height: 500px;
+    margin: 0 0 0 -300px;
+    z-index: 500;
+    background-image: url('../../img/bg-form-list.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form_2{
+    width: 90%;
+    height: 300px;
+    background-color: white;
+    margin: auto;
+    display: flex;
+} 
+
+.lesson_box_1{
+    width: 300px;
+    height: 300px;
+    background-color: white; 
+}
+
+.lesson_1_img{
+    border-radius: 99px;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    background-image: url('../../img/form_1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.lesson_1_text{
+    width: 250px;
+    height: 60px;
+    margin: 10px auto;
+    font-size: 20px;
+    color: black;
+    font-weight: 900;
+    text-align: center;
+}
+
+.lesson_box_2{
+    width: 300px;
+    height: 300px;
+    background-color: white; 
+}
+
+.lesson_2_img{
+    border-radius: 99px;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    background-image: url('../../img/form_2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.lesson_2_text{
+    width: 250px;
+    height: 60px;
+    margin: 10px auto;
+    font-size: 20px;
+    color: black;
+    font-weight: 900;
+    text-align: center;
+}
+
+
+.lesson_box_3{
+    width: 300px;
+    height: 300px;
+    background-color: white;
+}
+
+.lesson_3_img{
+    border-radius: 99px;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    background-image: url('../../img/form_3.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.lesson_3_text{
+    width: 250px;
+    height: 60px;
+    margin: 10px auto;
+    font-size: 20px;
+    color: black;
+    font-weight: 900;
+    text-align: center;
+}
+
+/* /------------------------------ */
+
+.empty_box{
+    width: 100%;
+    height: 150px;
+}
+/* ------------------------------------ */
+.bigbox_3{
+    width: 100%;
+    height: 200px;
+    margin:auto;
+}
+
+.form_3{
+    width: 60%;
+    margin: auto;
+}
+
+.form_3 h1{
+    font-size: 30px;
+    font-weight: 900;
+}
+
+
+@media(max-width: 1508px) {
+
+    .bigbox_1{
+        width: 650px;
+    }
+/*****************************************/
+    .name_radio li{
+        padding: 11px 0 0 0;
+    }
+
+    .name_line  input {
+        width: 90%;
+    }
+
+    .name_radio ul{
+        padding: 38px 0 0 0;
+    }
+/****************************************/
+    .bigbox_2{
+        width: 650px;
+        height: 300px;
+    }
+    
+    .bigbox_1_img{
+        width: 180px;
+        height: 280px;
+        margin: 0 0px 0 -180px;
+    }
+    
+    .bigbox_2_img{
+        width: 180px;
+        height: 280px;
+        margin: 0 0px 0 -180px;
+    }
+
+
+    .form_2{
+        height: 250px;
+    }
+
+
+    .lesson_1_img{
+        width: 150px;
+        height: 150px;
+    }
+
+    .lesson_2_img{
+        width: 150px;
+        height: 150px;
+    }
+
+    .lesson_3_img{
+        width: 150px;
+        height: 150px;
+    }
+
+
+    .lesson_box_1{
+        width: 200px;
+        height: 200px;
+    }
+
+    .lesson_box_2{
+        width: 200px;
+        height: 200px;
+    }
+
+    .lesson_box_3{
+        width: 200px;
+        height: 200px;
+    }
+
+    .lesson_1_text{
+        width: 200px;
+    }
+
+    .lesson_2_text{
+        width: 200px;
+    }
+
+    .lesson_3_text{
+        width: 200px;
+    }
+}
+
+
+
+
+@media(max-width:991px) {
+    
+    .bigbox_1{
+        width: 600px;
+    }
+
+    .bigbox_1_img{
+        background-image: unset;
+    }
+    
+    .bigbox_2{
+        width: 600px;
+    }
+
+    .bigbox_2_img{
+        background-image: unset;
+    }
+
+    .card img{
+        width: 200px;
+        height: 200px;
+    }
+
+    .name_line  input {
+        width: 90%;
+    }
+
+
+    /*********************************/
+    .lesson_box_1{
+        width: 180px;
+        height: 180px;
+    }
+
+    .lesson_box_2{
+        width: 180px;
+        height: 180px;
+    }
+
+    .lesson_box_3{
+        width: 180px;
+        height: 180px;
+    }
+
+    .lesson_1_text{
+        width: 200px;
+    }
+
+    .lesson_2_text{
+        width: 200px;
+    }
+
+    .lesson_3_text{
+        width: 200px;
+    }
+}
+
+@media(max-width:768px) {
+
+    .bigbox_1{
+        height: 1200px;
+    }
+
+    .bigbox_1_img{
+        background-image: unset;
+    }
+
+    .form_1{
+        height: 1000px;
+    }
+
+
+
+    /* -------------------------------------- */
+    .formbox_1{
+        display: unset;
+        height: 100px;
+    }
+
+    .formbox_1 .name{
+        height: 15%;
+        width: 100%;
+    } 
+
+    .formbox_1 .tel{
+        height: 15%;
+        width: 100%;
+    } 
+
+    .name_radio ul{
+        padding: 80px 0 0 0;
+    }
+
+/* ****************************************** */
+    .formbox_2{
+        display: unset;
+        height: 100px;
+    }
+
+    .formbox_2 .email{
+        height: 15%;
+        width: 100%;
+    } 
+
+
+    .formbox_2 .people{
+        height: 15%;
+        width: 100%;
+    } 
+
+
+    /****************************************/
+    .formbox_3{
+        display: unset;
+        height: 100px;
+
+    }
+
+    .formbox_3 .date{
+        height: 15%;
+        width: 100%;
+    } 
+
+    .formbox_3 .time{
+        height: 15%;
+        width: 100%;
+    } 
+    /****************************************/
+    .empty{
+        height: 0px;
+    }
+    /****************************************/
+    .bigbox_2_img{
+        background-image: unset;
+    }
+
+
+    .bigbox_1{
+        width: 450px;
+    }
+
+    .bigbox_2{
+        width: 450px;
+        height: 720px;
+    }
+
+    .test_1 , .name_radio{
+        margin: -15px 0 0 0;
+    }
+    .formbox_3 .date .date_text input {
+        width: 140%;
+    }
+
+    .form_2{
+        display: unset;
+    }
+
+    .lesson_box_1{
+        margin: auto;
+        width: 400px;
+        height: 220px;
+    }
+
+    .lesson_box_2{
+        margin: auto;
+        width: 400px;
+        height: 220px;
+    }
+
+
+    .lesson_box_3{
+        margin: auto;
+        width: 400px;
+        height: 220px;
+    }
+
+    .lesson_1_img{
+        width: 400px;
+        border-radius: 8px;
+    }
+
+    .lesson_2_img{
+        width: 400px;
+        border-radius: 8px;
+    }
+
+    .lesson_3_img{
+        width: 400px;
+        border-radius: 8px;
+    }
+}
+
+@media(max-width:576px) {
+
+
+    .bigbox_1{
+        width: 380px;
+    }
+
+    .bigbox_2{
+        width: 380px;
+    }
+
+    .lesson_box_1{
+        width: 350px;
+    }
+
+    .lesson_box_2{
+        width: 350px;
+    }
+
+
+    .lesson_box_3{
+        width: 350px;
+    }
+
+    .lesson_1_img{
+        width: 350px;
+    }
+
+    .lesson_2_img{
+        width: 350px;
+    }
+
+    .lesson_3_img{
+        width: 350px;
+    }
+
+    .test_1 , .name_radio{
+        margin: -15px 0 0 0;
+    }
+
+    .formbox_3 .date .date_text input {
+        width: 140%;
+    }
+
+}
+
+
+
+

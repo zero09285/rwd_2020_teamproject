@@ -4,24 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>經典商品</title>
+    <title>添興窯官方網站</title>
 
     <!-- bootstrap  -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
     <!-- 共用style  -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
-
 
     <!--CSS檔外連-->
     <link rel="stylesheet" href="./css/loading.css">
     <link rel="stylesheet" href="./css/nav.css">
     <link rel="stylesheet" href="./css/footer.css">
-    <link rel="stylesheet" href="./css/facility.css">
 
+    <!-- nav使用 -->
+    <link rel="stylesheet" href="./css/nav.css">
+
+    <!-- container使用 -->
+    <link rel="stylesheet" href="./css/ReservationPage/reservation.css">
+
+    <!-- radio使用 -->
+    <link rel="stylesheet" href="./css/ReservationPage/radio.css">
+
+    <!-- 最下面bottom使用 -->
+    <link rel="stylesheet" href="./css/ReservationPage/bottom.css" />
 
 
 </head>
+
 
 <body>
 
@@ -121,101 +133,176 @@
     </header>
 
 
-
     <!-- 標題區塊 每一頁換圖換字 -->
     <section id="title">
         <div class="container">
             <div class="title-main">
-                <h1><img src="./img/title-inside.svg" alt="DIY體驗"></h1>
-                <h3>發揮創意製作陶器之餘，還可以從園內的導覽介紹了解到台灣近代陶藝發展情形。</h3>
+                <h1><img src="./img/title-form.svg" alt="團體預約"></h1>
+                <h3>為維護您的旅遊品質，十人以上團體請事先預約。</h3>
             </div>
         </div>
     </section>
-    <section class="wall">
-        <div class="wallcontainer">
-            <div class="wallcontent">
-                <picture class="wallpic_phone">
-                    <img class="wallph" src="./img/facility-wall.png" alt="">
-                </picture>
-                <div class="wall_flex">
-                    <div class="wall_info">
-                        <h4>文藝特色陶牆</h4>
-                        <p>
-                            由於本窯位於集集龍泉這個小地方，估建造了一座龍泉甘泉，象徵著生生不息的生命。本作造景從龍頭到龍身甚或是地板，全部使用陶器製成。舉凡陶燈、瓦片、大水缸、陶地板、舊式飼料槽等。
-                        </p>
+
+    <!-- /***********************************************************/ -->
+    <div class="bigbox_1">
+        <div class="bigbox_1_img"></div>
+
+        <div class="form_1">
+            <div class="formbox_1">
+
+                <div class="name">
+                    <div class="name_font">
+                        <div class="name_text">聯絡人姓名*</div>
+                        <div class="name_line">
+                            <input type="text" placeholder="請輸入姓名" id="name" required>
+                        </div>
+                    </div>
+                    <div class="name_radio">
+                        <ul>
+                            <li>
+                                <input type="radio" name="radio-btn" />先生
+                            </li>
+                            <li>
+                                <input type="radio" name="radio-btn" />小姐
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <picture class="content">
-                    <img class="ball" src="./img/facility-ball.png" alt="">
-                    <img class="family" src="./img/bg-family.svg" alt="">
-                    <img class="wallpic" src="./img/facility-wall.png" alt="">
-                    <img class="cup" src="./img/facility-cup.png" alt="">
-                </picture>
-            </div>
-        </div>
-    </section>
 
-    <section class="show">
-        <div class="showcontainer">
-            <picture class="showroom_phone">
-                <img class="showroomph" src="./img/facility-showroom.png" alt="">
-            </picture>
-            <div class="show_l">
-                <div class="show_info">
-                    <h4>陶藝展示藝廊</h4>
-                    <p>文獻可考的南投陶超過兩百年歷史，與先民生活各層片息息相關。在日治時期陶業達到鼎盛，發展至今已成為本縣特殊產物之一，館內主要展示先民使用的各類陶器用品，並有陶土的種類與特質、成型技法與裝飾技法、窯、現代陶藝等的介紹，引領參觀者穿越時光隧道，領略早期南投陶藝之美
-                    </p>
+
+                <div class="tel">
+                    <div class="tel_font">聯絡人電話*</div>
+                    <div class="tel_text">
+                        <input type="number" placeholder="請輸入電話號碼" required>
+                    </div>
                 </div>
+
             </div>
-            <picture class="show_r">
-                <img class="showroom" src="./img/facility-showroom.png" alt="">
-            </picture>
-        </div>
-    </section>
 
-    <picture class="centerpicbox">
-        <div class="centerpic"><img src="./img/bg-family.svg" alt=""></div>
-        <div class="centerpic"><img src="./img/bg-bicycle.svg" alt=""></div>
-        <div class="centerpic"><img src="./img/bg-run.svg" alt=""></div>
 
-    </picture>
 
-    <section class="coffee">
-        <div class="coffeecontainer">
-            <picture class="coffee_l">
-                <img class="cafe" src="./img/facility-cafe.png" alt="">
-            </picture>
-            <div class="coffee_mid">
-                <div class="coffee_info">
-                    <h4>森林咖啡簡餐</h4>
-                    <p>有著懷舊復古裝潢風的咖啡廳，最大的特色除了復古風裝潢拍照起來好看之外，還有許多陶藝作品可以欣賞，在綠色隧道旁啜飲咖啡吃著各式各樣的甜點，讓人感到輕鬆又愜意，如果假日不知道去哪裡，適合帶朋友家人一起來這裡度過午後悠閒的時光。
-                    </p>
+            <div class="empty"></div>
+
+
+
+            <div class="formbox_2">
+                <div class="email">
+                    <div class="email_font">Email</div>
+                    <div class="email_text">
+                        <input type="email" placeholder="請輸入Email">
+                    </div>
                 </div>
-            </div>
-            <picture class="coffee_r">
-                <img class="bicycle" src="./img/bg-bicycle.svg" alt="">
-            </picture>
-        </div>
-    </section>
-
-    <section class="nature">
-        <div class="naturecontainer">
-            <div class="nature_l">
-                <img class="plant" src="./img/facility-plant.png" alt="">
-            </div>
-
-            <div class="nature_mid">
-                <div class="nature_info">
-                    <h4>親近綠的自然</h4>
-                    <p>添興窯除了與陶藝有關的建築、裝飾之外，也種植許多草木，讓您休閒時能更親近大自然，還有許多秘密場所等您發掘喔。</p>
+                <div class="people">
+                    <div class="people_font">人數*</div>
+                    <div class="people_text">
+                        <div class="adult">成人</div>
+                        <div class="adult_num">
+                            <input type="number" required>
+                        </div>
+                        <div class="child">孩童</div>
+                        <div class="child_num">
+                            <input type="number" required>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="nature_r">
-                <img class="run" src="./img/bg-run.svg" alt="">
+            <div class="empty"></div>
+
+            <div class="formbox_3">
+                <div class="date">
+                    <div class="date_font">預約日期*</div>
+                    <div class="date_text">
+                        <input type="date" required>
+                    </div>
+                </div>
+                <div class="time">
+                    <div class="time_font">預約時段*</div>
+                    <div class="time_text">
+                        <select name="" id="" required>
+                            <option value="">09:00</option>
+                            <option value="">10:00</option>
+                            <option value="">11:00</option>
+                            <option value="">13:00</option>
+                            <option value="">14:00</option>
+                            <option value="">15:00</option>
+                            <option value="">16:00</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="empty"></div>
+
+            <div class="formbox_4">
+                <div class="remarks_font">留言備註</div>
+                <div class="remarks_container">
+                    <form id="remarks_contact" action="" method="post">
+                        <fieldset>
+                            <textarea placeholder="若有其他需求請於此留言" tabindex="5" required></textarea>
+                        </fieldset>
+                    </form>
+                </div>
             </div>
         </div>
-    </section>
+
+    </div>
+    <!-- ***************************************************************** -->
+
+    <div class="empty_box"></div>
+
+    <div class="bigbox_2">
+
+        <div class="bigbox_2_img"></div>
+        <div class="form_2">
+
+            <div class="lesson_box_1">
+                <div class="lesson_1_img"></div>
+                <div class="lesson_1_text">
+                    <div class="tour">
+                        <div class="wrapper"> <input type="checkbox" name="check-box" /> <span>手捏陶藝體驗</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lesson_box_2">
+                <div class="lesson_2_img"></div>
+                <div class="lesson_2_text">
+                    <div class="tour">
+                        <div class="wrapper"> <input type="checkbox" name="check-box" /> <span>拉坏陶藝體驗</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lesson_box_3">
+                <div class="lesson_3_img"></div>
+                <div class="lesson_3_text">
+                    <div class="tour">
+                        <div class="wrapper"> <input type="checkbox" name="check-box" /> <span>園區導覽參觀</span></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="empty_box"></div>
+
+    <div class="bigbox_3">
+        <div class="form_3">
+            <h1>注意事項</h1>
+            <h5>團體預約限10人以上並於活動前7日預約，若無法前往請透過電話、Facebook、Line聯繫，送出後將於活動前5日本館再次電聯確認，若無法聯繫上活動將自動取消，敬請各位朋友們留意。</h5>
+        </div>
+    </div>
+
+    <div class="empty_box"></div>
+
+
+    <div class="btn_box">
+        <div class="button" id="sumbit">
+            <div class="btn_text">確定送出</div>
+        </div>
+    </div>
 
     <!-- gototop -->
     <a href="#" class="reservation">
@@ -223,6 +310,8 @@
             我要預約
         </span>
     </a>
+
+
     <a href="#" class="gototop"></a>
 
 
@@ -288,24 +377,20 @@
     </footer>
 
 
-    <!--JS CDN套件-->
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script>
-    <!--JS CDN套件-->
 
-    <!--JS檔外連-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!-- bottom js外連 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.12.1/TweenMax.min.js"></script>
+
+    <!-- radio JS外連 -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+
+
     <script src="./js/loading.js"></script>
     <script src="./js/nav.js"></script>
-    <!--JS檔外連-->
-
+    <script src="./js/reservation.js"></script>
 
 
 </body>
