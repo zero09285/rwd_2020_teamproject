@@ -32,25 +32,82 @@
     border-top: 1px solid #dddddd;
 }
 
+/*產品分類-標題 */
+
 .product-title{
     background-image: url('../img/bg-pottery-left.svg');
     background-repeat: no-repeat;
-    background-position: top left;
+    background-position: bottom left;
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
+    justify-content: center;
+    min-height: 260px;
+
 }
 
 .product-title img{
-    width: 60px;
+    min-width: 60px;
 }
 
-.product-title p{
-    padding: 20px 0 0 20px;
-    height: 180px;
-    writing-mode: vertical-rl;
+.title-phone{
+    display: none;
 }
 
 
 
+/* 順序 */
+.box-order{
+    display: flex;
+}
 
+.box-frist{
+    order: 1;
+}
+
+.box-end{
+    order: 2;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    /*產品分類-標題-phone */
+
+    .product-title{
+        width: 40%;
+        margin: auto;
+        display: block;
+        background-image: none;
+        min-height: 0;
+    }
+
+    .title-phone{
+        display: block;
+
+    }
+
+    .product-title-word{
+        display: none;
+    }
+
+
+
+
+    /* 順序-phone */
+
+    .box-order{
+        display: flex;
+    }
+
+    .box-frist{
+
+        order: 2;
+    }
+
+    .box-end{
+        order: 1;
+    }
+
+
+
+
+}

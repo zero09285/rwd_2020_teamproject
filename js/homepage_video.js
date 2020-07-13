@@ -160,6 +160,13 @@ $(".video_slidebox").on("dragstop", function () {//拖動結束後增加現在�
 
 $(".videoplayer_box_exit"), $('.videoplayer_box').click(function () {//看完影片按離開之後回復原始畫面
 
+    setTimeout(() => {
+        $('html,body').animate({scrollTop:$('.video_section').offset().top}, 0); 
+
+    }, 550);
+
+
+
     $('.video_section').fadeOut(500)
     $('canvas').removeClass('noactive');
 
@@ -259,8 +266,20 @@ $('.RWD_playbox').click(function () {
         $('canvas').addClass('noactive');
 
         setTimeout(function () {//設定延遲的函式
+
             $('.video_switch').removeClass('active')
         }, 10)
 
     }, 1000);
 })
+
+// $(document).ready(function(){//使用JQ語法，JQ ready的function是必要的
+//     $(function(){ $(".videoplayer_box_exit"), $('.videoplayer_box').click(function(){ 
+//         setTimeout(() => {
+//             $('html,body').animate({scrollTop:$('.video_section').offset().top}, 0); 
+
+//         }, 550);
+        
+//         });  
+//     }); 
+// });

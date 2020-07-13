@@ -116,7 +116,7 @@
   .card-container {
     /* background-color: darkred; */
     /* margin-bottom: 200px; */
-    perspective: 700px;
+    /* perspective: 700px; */
   }
   .card-flip {
     position: relative;
@@ -269,8 +269,8 @@
   @media (max-width:992px) {
 
     .diy_intro { 
-      background-size: 100%;
-      background-position: bottom;
+      background-size: 85%;
+      background-position: center;
       width: 103%;
       height: 500px;
   }
@@ -309,11 +309,12 @@
 
 @media (max-width:576px) {
 
-  .diy_intro {
-    background-size: 100%;
+  .diy_intro { 
+    background-size: 85%;
+    background-position: center;
+    width: 103%;
     height: 300px;
-    background-position: right;
-  }
+}
 
   .diy_image_box {
     position: top;

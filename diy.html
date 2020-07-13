@@ -19,14 +19,22 @@
     <link rel="stylesheet" type="text/css" href="./css/diy.css">
     <!--CSS檔外連-->
 
+    <!-- 燈箱 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+
 </head>
 
 <body>
-
-    <div class="loading_page fixed-top">
-        <!--Loading-->
+    <!--Loading-->
+    <!-- <div class="loading_page fixed-top">
+       
         <div class="loader">Loading...</div>
-    </div>
+    </div> -->
 
     <header class="header fixed-top">
         <div id="headerSection" class="container">
@@ -120,7 +128,7 @@
 
 
     <!-- 標題區塊 -->
-    <section id="title">
+    <section id="title" data-aos="fade-down" data-aos-duration="1500">
         <div class="container">
             <div class="title-main">
                 <h1><img src="./img/title-diy.svg" alt="DIY體驗"></h1>
@@ -132,7 +140,7 @@
     <section id="diy" class="diy-bg">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 col-sm-12">
+                <div class="col-md-6 col-sm-12" data-aos="fade-right" data-aos-duration="1500">
                     <div class="diy-box border-color-yellow">
                         <div class="diy-item">
                             <img src="./img/diy-soil.png" alt="DIY體驗">
@@ -196,7 +204,7 @@
                 </div>
 
 
-                <div class="col-md-6 col-sm-12">
+                <div class="col-md-6 col-sm-12" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1500">
                     <div class="diy-box border-color-yellow">
                         <div class="diy-item">
                             <img src="./img/diy-hand.png" alt="DIY體驗">
@@ -253,11 +261,11 @@
         </div>
 
         <div class="combo">
-            <div class="z1">
+            <div class="z1" data-aos="fade-right" data-aos-duration="500">
                 <img src="./img/img-soil-fish.png" alt="魚">
             </div>
 
-            <div class="z2">
+            <div class="z2" data-aos="fade-right" data-aos-duration="1500">
                 <div class="diy-box border-color-blue">
                     <h2>陶陶總動員</h2>
                     <div class="diy-ticket">
@@ -341,7 +349,7 @@
             <div class="hand-3">
                 <img src="./img/img-hand-twin.jpg" alt="" class="w-100">
             </div>
-            <div class="hand-2">
+            <div class="hand-2" data-aos="fade-left" data-aos-duration="2000">
                 <div class="diy-box border-color-pink">
                     <h2>天生陶手(磚)</h2>
                     <div class="diy-ticket">
@@ -392,7 +400,7 @@
                 </div>
             </div>
 
-            <div class="hand-1">
+            <div class="hand-1" data-aos="fade-left" data-aos-duration="500">
                 <img src="./img/img-soil-hand.png" alt="手印磚">
             </div>
 
@@ -407,7 +415,7 @@
     <section id="diy-info">
         <div class="container-fluid">
             <div class="row justify-content-between">
-                <div class="col-md-5 col-sm-12 mb-5">
+                <div class="col-md-5 col-sm-12 mb-5" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="50">
                     <div class="diy-info-box">
                         <div class="diy-info-box-img">
                             <img src="./img/diy-info-soli.png" alt="手捏陶藝體驗">
@@ -419,7 +427,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-5 col-sm-12 mb-5">
+                <div class="col-md-5 col-sm-12 mb-5" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="100">
                     <div class="diy-info-box">
                         <div class="diy-info-box-img">
                             <img src="./img/img-info-hand.png" alt="拉坯陶藝體驗">
@@ -433,7 +441,7 @@
             </div>
 
             <div class="row justify-content-around">
-                <div class="col-md-5 col-sm-12 mb-5">
+                <div class="col-md-5 col-sm-12 mb-5" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="150">
                     <div class="diy-info-box">
                         <div class="diy-info-box-img">
                             <img src="./img/diy-info.png" alt="手印陶板磚">
@@ -444,7 +452,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-5 col-sm-12 mb-5">
+                <div class="col-md-5 col-sm-12 mb-5" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="200">
                     <div class="diy-info-box">
                         <div class="diy-info-box-img">
                             <img src="./img/diy-info-inside.png" alt="園區參觀">
@@ -466,40 +474,44 @@
         <div class="container">
 
             <div class="row">
-                <div class="col-md-6 col-sm-12 mb-4">
+                <div class="col-lg-6 col-md-12 col-sm-12 mb-4" data-aos="fade-right" data-aos-duration="1500">
                     <div class="diy-note-box">
                         <h2>燒窯費</h2>
                         <ul>
                             <li>
                                 <h3>手捏作品加燒<span class="float-right">$ 0.15/cm3</span>
                                 </h3>
-                                <p>10㎝起算，任一邊不足以10㎝計算。
-                                    範例：手捏12×5×12㎝=12×10×12×0.15=216元。</p>
+                                <p>10cm起算，任一邊不足以10㎝計算。
+                                    範例：手捏12×5×12cm=12×10×12×0.15=216元。</p>
                             </li>
                             <li>
                                 <h3>手捏作品加燒<span class="float-right">$ 0.15/cm3</span>
                                 </h3>
-                                <p>10㎝起算，任一邊不足以10㎝計算。
-                                    範例：手捏12×5×12㎝=12×10×12×0.15=216元。</p>
+                                <p>10cm起算，任一邊不足以10㎝計算。
+                                    範例：手捏12×5×12cm=12×10×12×0.15=216元。</p>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-6 col-sm-12 mb-4">
+                <div class="col-lg-6 col-md-12 col-sm-12 mb-4" data-aos="fade-left" data-aos-delay="400"
+                    data-aos-duration="1500">
                     <div class="diy-note-box">
                         <h2>國內宅配(台灣本島)<span class="float-right"></h2>
                         <ul>
                             <li>
-                                運費(S) 約可裝15㎝作品4件<span class="float-right">$ 160</span>
+                                <span class="text-brown">運費(S)</span> 約可裝15cm作品4件</span> <span
+                                    class="float-right text-brown">$ 160</span>
                             </li>
                             <li>
-                                運費(M) 約可裝15㎝作品10件<span class="float-right">$ 180</span>
+                                <span class="text-brown">運費(M)</span> 約可裝15cm作品10件<span class="float-right text-brown">$
+                                    180</span>
                             </li>
                             <li>
-                                運費(L) 約可裝15㎝作品18件<span class="float-right">$ 250</span>
+                                <span class="text-brown">運費(L)</span> 約可裝15cm作品18件<span class="float-right text-brown">$
+                                    250</span>
                             </li>
                             <li>
-                                例假日加價 指定於國定例假日收件、取件<span class="float-right">$ 20</span>
+                                例假日加價 指定於國定例假日收件、取件<span class="float-right text-brown">$ 20</span>
                             </li>
 
                         </ul>
@@ -511,7 +523,8 @@
 
 
             <div class="row">
-                <div class="col-md-12 col-sm-12">
+                <div class="col-lg-12 col-md-12 col-sm-12" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                    data-aos-delay="400" data-aos-duration="1500">
                     <div class="diy-note-box">
                         <h2>注意事項</h2>
                         <ul>
@@ -538,6 +551,59 @@
         </div>
     </section>
 
+    <!-- 照片燈箱 -->
+    <div class="diy-marquee-box">
+        <div class="diy-marquee-wrapper">
+            <div class="diy-marquee ">
+                <a href="./img/diy/marquee_1.jpg" data-toggle="lightbox" data-gallery="gallery">
+                    <img src="./img/diy/marquee_1.jpg" alt="DIY體驗活動剪影">
+                </a>
+                <a href="./img/diy/marquee_2.jpg" data-toggle="lightbox" data-gallery="gallery">
+                    <img src="./img/diy/marquee_2.jpg" alt="DIY體驗活動剪影">
+                </a>
+                <a href="./img/diy/marquee_3.jpg" data-toggle="lightbox" data-gallery="gallery">
+                    <img src="./img/diy/marquee_3.jpg" alt="DIY體驗活動剪影">
+                </a>
+                <a href="./img/diy/marquee_4.jpg" data-toggle="lightbox" data-gallery="gallery">
+                    <img src="./img/diy/marquee_4.jpg" alt="DIY體驗活動剪影">
+                </a>
+                <a href="./img/diy/marquee_5.jpg" data-toggle="lightbox" data-gallery="gallery">
+                    <img src="./img/diy/marquee_5.jpg" alt="DIY體驗活動剪影">
+                </a>
+                <a href="./img/diy/marquee_6.jpg" data-toggle="lightbox" data-gallery="gallery">
+                    <img src="./img/diy/marquee_6.jpg" alt="DIY體驗活動剪影">
+                </a>
+                <a href="./img/diy/marquee_7.jpg" data-toggle="lightbox" data-gallery="gallery">
+                    <img src="./img/diy/marquee_7.jpg" alt="DIY體驗活動剪影">
+                </a>
+                <a href="./img/diy/marquee_8.jpg" data-toggle="lightbox" data-gallery="gallery">
+                    <img src="./img/diy/marquee_8.jpg" alt="DIY體驗活動剪影">
+                </a>
+                <a href="./img/diy/marquee_9.jpg" data-toggle="lightbox" data-gallery="gallery">
+                    <img src="./img/diy/marquee_9.jpg" alt="DIY體驗活動剪影">
+                </a>
+                <a href="./img/diy/marquee_10.jpg" data-toggle="lightbox" data-gallery="gallery">
+                    <img src="./img/diy/marquee_10.jpg" alt="DIY體驗活動剪影">
+                </a>
+                <a href="./img/diy/marquee_11.jpg" data-toggle="lightbox" data-gallery="gallery">
+                    <img src="./img/diy/marquee_11.jpg" alt="DIY體驗活動剪影">
+                </a>
+                <a href="./img/diy/marquee_12.jpg" data-toggle="lightbox" data-gallery="gallery">
+                    <img src="./img/diy/marquee_12.jpg" alt="DIY體驗活動剪影">
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
     <!-- gototop -->
     <a href="#" class="reservation">
         <span>
@@ -552,59 +618,62 @@
         <div class="container">
             <div class="footer-info">
                 <div class="row">
-                    <div class="col-lg-4 col-sm-12">
+                    <div class="col-lg-4 col-md-12 col-sm-12">
                         <div class="footer-box">
                             <img src="./img/icon-phone-h.svg" alt="服務專線" width="78">
-                            <div>
+                            <div class="pl-1">
                                 <h4>服務專線</h4>
-                                <h3>04-9278-1130</h3>
+                                <h3 class="tel"><a href="tel:04-9278-1130">04-9278-1130</a></h3>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-sm-12">
+                    <div class="col-lg-4 col-md-12 col-sm-12">
                         <div class="footer-box">
                             <img src="./img/icon-mail-h.svg" alt="聯絡我們" width="78">
-                            <div>
+                            <div class="pl-1">
                                 <h4>聯絡我們</h4>
-                                <h3>tianxingkiln@gmail.com</h3>
+                                <h3 class="br"><a href="mailto:tianxingkiln@gmail.com">tianxingkiln@gmail.com</a></h3>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-sm-12">
+                    <div class="col-lg-4 col-md-12 col-sm-12">
                         <div class="footer-box">
                             <img src="./img/icon-time-h.svg" alt="營業時間" width="78">
-                            <div>
-                                <h4>營業時間</h4>
-                                <h3>9:00am~17:30pm</h3>
+                            <div class="pl-1">
+                                <h4>營業時間<span class="text-note">(週四公休)</span></h4>
+                                <h3 class="br">9:00am~17:30pm</h3>
                             </div>
                         </div>
                     </div>
-
                 </div>
-
-
             </div>
 
             <div class="footer-social">
                 <div class="row">
-                    <div class="col-lg-6 col-sm-12">
+                    <div class="col-md-6 col-sm-12">
                         <h3>南投縣集集鎮田寮里楓林巷十號</h3>
                         <h4>All Copyright c Reserved by Tian Xing Kiln Ceramic Art Co., Ltd.</h4>
                     </div>
-                    <div class="col-lg-6 col-sm-12">
-
+                    <div class="col-md-6 col-sm-12">
                         <div class="social-icons">
-                            <div class="icon-fb"></div>
-                            <div class="icon-ig"></div>
-                            <div class="icon-twitter"></div>
-                            <div class="icon-line"></div>
+                            <a href="https://www.facebook.com/txkiln/" target="_blank">
+                                <div class="icon-fb"></div>
+                            </a>
+                            <a href="https://www.instagram.com/txkiln/" target="_blank">
+                                <div class="icon-ig"></div>
+                            </a>
+                            <a href="https://twitter.com/TXKiln" target="_blank">
+                                <div class="icon-twitter"></div>
+                            </a>
+                            <a href="http://line.me/ti/p/@sse5946o" target="_blank">
+                                <div class="icon-line"></div>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </footer>
 
@@ -625,6 +694,22 @@
     <script src="./js/loading.js"></script>
     <script src="./js/nav.js"></script>
     <!--JS檔外連-->
+
+    <!-- 燈箱 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+    <script>
+        $(document).on("click", '[data-toggle="lightbox"]', function (event) {
+            event.preventDefault();
+            $(this).ekkoLightbox();
+        });
+    </script>
+
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 
 </body>

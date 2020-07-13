@@ -282,6 +282,17 @@ body {
         position: relative;
     }
 
+    .videoplayer {
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        width: 90%;
+        height: 70%;
+    
+    
+        /* display: none; */
+    }
+
     .RWD_playbox {
         opacity: 1;
     }
