@@ -9,15 +9,21 @@
     line-height: 100vh; */
     z-index: -1;
 }
+
+.skip_section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: sticky;
+    top: 90vh;
+    z-index: 999;
+}
+
 .skip {
     text-decoration: none ;
     font-size: 40px;
-    width: 400px;
-    height: 200px;
     text-align: center;
     position: sticky;
-    top: 90vh;
-    left: 45vw;
     font-weight: 900;
     color: black;
     z-index: 99;
@@ -26,8 +32,10 @@
 .skip:hover {
     text-decoration: none ;
     color: brown;
-    transform: scale(1.2);
+    /* transform: scale(1.2); */
     transition: 0.5s;
+    font-size: 50px;
+    transform:rotate(360deg);
 }
 
 #banner_background {
@@ -64,16 +72,8 @@
 
 @media (max-width:576px) {
     .skip {
-        text-decoration: none ;
         font-size: 24px;
-        width: 0;
-        height: 0;
-        text-align: center;
-        position: sticky;
-        top: 90vh;
-        left: 40vw;
-        font-weight: 900;
-        color: red;
-        z-index: 99;
+        color: darkgoldenrod;
+
     }
 }

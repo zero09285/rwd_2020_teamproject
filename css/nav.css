@@ -103,6 +103,11 @@ text-align: center;
 .subMenu>li {
 width: 120px;
 }
+
+.nav_padding {
+    padding: 15px 9px !important;
+}
+
 .subMenu>li a{
     color: white;
 }
