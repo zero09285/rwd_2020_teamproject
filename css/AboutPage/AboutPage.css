@@ -1,3 +1,7 @@
+* {
+    outline: none !important;
+}
+
 body {
     background: linear-gradient(180deg, rgba(171, 136, 93, 1)29%, rgba(189, 158, 143, 1)60%);
     margin: 0;
@@ -5,6 +9,8 @@ body {
     overflow-x: hidden;
     background-image: url('../../img/background.jpg');
 }
+
+a,map,area,img{border:0px;}
 
 .container {
     width: 100%;
@@ -73,6 +79,7 @@ body {
 }
 
  .about-map {
+    outline: none !important;
     width: 100%;
     height: 80vh;
     /* background-size:cover;
