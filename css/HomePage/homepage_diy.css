@@ -162,29 +162,27 @@
 
 .card-img-back1 {
   background-image: url(../../img/home/diy-1.jpg);
- 
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 113% !important;
-  height: 331% !important;
-  border-radius: 10px;
-  top: -182px;
-  left: -20px;
-  position: absolute;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 113% !important;
+    height: 300% !important;
+    border-radius: 10px;
+    top: -234px;
+    left: -20px;
+    position: absolute;
 
 }
 
 .card-img-back2 {
   background-image: url(../../img/home/diy-2.jpg);
- 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   width: 113% !important;
-  height: 331% !important;
+  height: 300% !important;
   border-radius: 10px;
-  top: -182px;
+  top: -234px;
   left: -20px;
   position: absolute;
 
@@ -192,14 +190,13 @@
 
 .card-img-back3 {
   background-image: url(../../img/home/diy-3.jpg);
- 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   width: 113% !important;
-  height: 331% !important;
+  height: 300% !important;
   border-radius: 10px;
-  top: -182px;
+  top: -234px;
   left: -20px;
   position: absolute;
 
