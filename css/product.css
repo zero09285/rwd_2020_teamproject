@@ -2,6 +2,10 @@
     outline: none !important;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 /* 產品-陶球 */
 
 #product-main{

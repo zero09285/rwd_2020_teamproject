@@ -44,7 +44,6 @@ html {
 .food_a:hover{
     opacity: 1;
 }
-
 #fakebox{
     width: 50px;
     height: 50px;
@@ -56,9 +55,17 @@ html {
     width: 100%;
     position: relative;
 }
+.wave_fake{
+    visibility: hidden;
+    width: 100%;
+}
 .wave_top{
     position: absolute;
     top:5px;
+    width: 100%;
+}
+.wave_bottom{
+    width: 100%;
 }
 .contant-group{
     width: 100%;
@@ -76,7 +83,6 @@ html {
     width: 50%;
     padding: 20px;
 }
-
 .view_word{
     width: 50%;
     padding: 20px;
@@ -89,13 +95,16 @@ html {
     padding: 20px 0;
     border-bottom:2px solid #D8B790 ;
 }
+.info_subcontent{
+padding: 20px 0;
+}
 .contant{
     width: 80%;
     margin: auto;
     display: flex;
     display: none;
 }
-.contant.active{
+.contant.show{
 display: flex;
 }
 .background_image{
@@ -118,6 +127,7 @@ right: 50px;
 .viewinfo_ph{
     display: none;
 }
+
 @media (max-width:768px) {
     .view_btns{
         display: none;
@@ -156,20 +166,28 @@ right: 50px;
     }
     .food_bg_ph{
         background:#EEEEEE ;
+        padding: 50px 0;
     }
     .ph_wave{
-     position: relative;
+        position: relative;
     }
     .wavetop_ph{
         position: absolute;
-        top:10%;
+        top:20%;
+        overflow-x: hidden;
+        width: 100%;
     }
     .wavebottom_ph{
         position: absolute;
-        top: -80%;
+        overflow-x: hidden;
+        width: 100%;
     }
-    .wavebottom_ph_fake{
+    .wavetop_ph_fake{
+        width: 100%;
         visibility: hidden;
     }
-    
+    .wavebottom_ph_fake{
+        width: 100%;
+        visibility: hidden;
+    } 
 }
