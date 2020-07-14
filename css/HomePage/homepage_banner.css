@@ -54,7 +54,8 @@
     position: fixed;
 }
 .actor {
-    top: 300px;
+    width: 35%;
+    top: 25%;
 }
 /* .contanier {
     width: 100%;
@@ -67,7 +68,59 @@
     bottom: 0px;
 }
 .cover {
-    /* z-index: 5; */
+    z-index: 5;
+}
+
+.font_bg {
+    top: -5%;
+    left: 15%;
+}
+
+@media(max-width:1500px) {
+    .actor {
+        width: 40%;
+    }
+}
+
+@media(max-width:1300px) {
+    .actor {
+        width: 45%;
+    }
+}
+
+@media(max-width:1150px) {
+    .actor {
+        width: 50%;
+    }
+}
+
+@media(max-width:1000px) {
+    .actor {
+        width: 60%;
+    }
+}
+
+@media(max-width:850px) {
+    .actor {
+        width: 65%;
+    }
+}
+
+@media(max-width:768px) {
+    .actor {
+        top: 20%;
+        width: 90%;
+    }
+
+    .bg {
+        display: none;
+    }
+
+    .font_bg {
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
 }
 
 @media (max-width:576px) {
