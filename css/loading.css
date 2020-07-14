@@ -1,11 +1,12 @@
-/* body {
+body {
   background: #eaecfa;
-} */
+}
 
 .loading_page {
   width: 100%;
   height: 100vh;
   background: radial-gradient(circle, #d6a66a, #dbc19f, transparent 200%);
+  z-index: 99999 !important;
 }
 
 .loading_page .loader {
@@ -21,7 +22,7 @@
   font-family: helvetica, arial, sans-serif;
   text-transform: uppercase;
   font-weight: 900;
-  color: red;
+  color: black;
   letter-spacing: 0.2em;
 }
 
@@ -30,7 +31,7 @@
   display: block;
   width: 15px;
   height: 15px;
-  background: red;
+  background: #a04628;
   position: absolute;
   -webkit-animation: load .7s infinite alternate ease-in-out;
           animation: load .7s infinite alternate ease-in-out;

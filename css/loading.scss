@@ -1,5 +1,6 @@
 $color-background: #eaecfa;
-$color-loader: red;
+$color-loader: black ;
+$color-loader2: #a04628;
 
 body {
   background: $color-background;
@@ -31,7 +32,7 @@ body {
       display: block;
       width: 15px;
       height: 15px;
-      background: $color-loader;
+      background: $color-loader2;
       position: absolute;
       animation: load .7s infinite alternate ease-in-out;
     }
