@@ -10,6 +10,7 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
   <!--套件CDN-->
 
   <!--CSS檔外連-->
@@ -22,6 +23,10 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/footer.css">
   <!--CSS檔外連-->
+
+  <!-- Swiper  -->
+  <link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css">
+
 
 
 
@@ -36,93 +41,93 @@
 
   <header class="header fixed-top">
     <div id="headerSection" class="container">
-        <div class="headerContent">
-            <h2 class="logo">
-                <a href="index.html"><img src="./img/logo.png" alt="添興窯logo"></a>
-            </h2>
+      <div class="headerContent">
+        <h2 class="logo">
+          <a href="index.html"><img src="./img/logo.png" alt="添興窯logo"></a>
+        </h2>
 
 
-            <nav class="navBar">
-                <ul class="mainMenu">
-                    <h2>Nav Bar</h2>
-                    <li class="mainLi">
-                        <a class="mainA" href="about.html"><span class="select">關於添興</span></a>
-                    </li>
+        <nav class="navBar">
+          <ul class="mainMenu">
+            <h2>Nav Bar</h2>
+            <li class="mainLi">
+              <a class="mainA" href="about.html"><span class="select">關於添興</span></a>
+            </li>
 
-                    <!--  -->
-                    <li class="mainLi selectph">
-                        <a href="visitInfo.html"><span class="mainA select">車票與交通</span></a>
-                    </li>
+            <!--  -->
+            <li class="mainLi selectph">
+              <a href="visitInfo.html"><span class="mainA select">車票與交通</span></a>
+            </li>
 
-                    <li class="mainLi selectph">
-                        <a href="facility.html"><span class="mainA select">環境設施</span></a>
-                    </li>
-                    <!--  -->
-                    <li class="mainLi mainB">
-                        <a class="mainA" href="visitInfo.html"><span class="select">參觀資訊</span></a>
-                        <ul class="subMenu">
-                          <li><a class="nav_padding" href="visitInfo.html"><span class="select">車票與交通</span></a></li>
-                          <li><a class="nav_padding" href="facility.html"><span class="select">環境設施</span></a></li>
-                        </ul>
-                    </li>
-                    <li class="mainLi">
-                        <a class="mainA" href="diy.html"><span class="select">DIY體驗</span></a>
-                    </li>
-                    <li class="mainLi">
-                        <a class="mainA" href="product.html"><span class="select">經典商品</span></a>
-                    </li>
-                    <li class="mainLi">
-                        <a class="mainA" href="viewpoint.html"><span class="select">周邊景點</span></a>
-                    </li>
-                    <li class="mainLi">
-                        <a class="mainA" href="reservation.html"><span class="select">團體預約</span></a>
-                    </li>
-                </ul>
-                <div class="icon">
+            <li class="mainLi selectph">
+              <a href="facility.html"><span class="mainA select">環境設施</span></a>
+            </li>
+            <!--  -->
+            <li class="mainLi mainB">
+              <a class="mainA" href="visitInfo.html"><span class="select">參觀資訊</span></a>
+              <ul class="subMenu">
+                <li><a class="nav_padding" href="visitInfo.html"><span class="select">車票與交通</span></a></li>
+                <li><a class="nav_padding" href="facility.html"><span class="select">環境設施</span></a></li>
+              </ul>
+            </li>
+            <li class="mainLi">
+              <a class="mainA" href="diy.html"><span class="select">DIY體驗</span></a>
+            </li>
+            <li class="mainLi">
+              <a class="mainA" href="product.html"><span class="select">經典商品</span></a>
+            </li>
+            <li class="mainLi">
+              <a class="mainA" href="viewpoint.html"><span class="select">周邊景點</span></a>
+            </li>
+            <li class="mainLi">
+              <a class="mainA" href="reservation.html"><span class="select">團體預約</span></a>
+            </li>
+          </ul>
+          <div class="icon">
 
-                    <div class="icon_change ">
-                        <a id="icon_a" href="#">
-                            <img class="icon_pic " src="./img/icon-fb-h.svg" alt="">
-                            <img class="icon_pic" src="./img/icon-fb.svg" alt="">
-                        </a>
-                    </div>
-
-                    <div class="icon_change ">
-                        <a id="icon_a" href="#">
-                            <img class="icon_pic " src="./img/icon-ig-h.svg" alt="">
-                            <img class="icon_pic" src="./img/icon-ig.svg" alt="">
-                        </a>
-                    </div>
-
-                    <div class="icon_change ">
-                        <a id="icon_a" href="#">
-                            <img class="icon_pic " src="./img/icon-twitter-h.svg" alt="">
-                            <img class="icon_pic" src="./img/icon-twitter.svg" alt="">
-                        </a>
-                    </div>
-
-                    <div class="icon_change ">
-                        <a id="icon_a" href="#">
-                            <img class="icon_pic " src="./img/icon-youtube-h.svg" alt="">
-                            <img class="icon_pic" src="./img/icon-youtube.svg" alt="">
-                        </a>
-                    </div>
-
-                </div>
-            </nav>
-
-            <div class="burgar_btn ">
-                <a href="#">
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
-                </a>
+            <div class="icon_change ">
+              <a id="icon_a" href="#">
+                <img class="icon_pic " src="./img/icon-fb-h.svg" alt="">
+                <img class="icon_pic" src="./img/icon-fb.svg" alt="">
+              </a>
             </div>
 
+            <div class="icon_change ">
+              <a id="icon_a" href="#">
+                <img class="icon_pic " src="./img/icon-ig-h.svg" alt="">
+                <img class="icon_pic" src="./img/icon-ig.svg" alt="">
+              </a>
+            </div>
 
+            <div class="icon_change ">
+              <a id="icon_a" href="#">
+                <img class="icon_pic " src="./img/icon-twitter-h.svg" alt="">
+                <img class="icon_pic" src="./img/icon-twitter.svg" alt="">
+              </a>
+            </div>
+
+            <div class="icon_change ">
+              <a id="icon_a" href="#">
+                <img class="icon_pic " src="./img/icon-youtube-h.svg" alt="">
+                <img class="icon_pic" src="./img/icon-youtube.svg" alt="">
+              </a>
+            </div>
+
+          </div>
+        </nav>
+
+        <div class="burgar_btn ">
+          <a href="#">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </a>
         </div>
+
+
+      </div>
     </div>
-</header>
+  </header>
 
 
   <!-- <nav id="nav" class="sticky-top">
@@ -173,6 +178,41 @@
       </section>
       <div class="about-top">
 
+        <div class="col-xl-3 col-12">
+          <div id="Kiln01" class="bubble-box noactive box01">
+            <img src="./img/about/Kiln01.jpg" alt="窯門" class="w-100">
+            <h3>窯門</h3>
+            <p>平時開放給遊客參觀，燒窯時會以磚塊及泥土封起來。</p>
+          </div>
+        </div>
+
+
+        <div class="col-xl-5 col-12">
+          <div id="Kiln02" class="bubble-box noactive box02">
+            <img src="./img/about/Kiln02.jpg" alt="窯燒前裝窯" class="w-100">
+            <h3>窯燒前裝窯</h3>
+            <p>進行柴燒之前，師傅需要將陶器一一排列在蛇窯內部，排列時皆需要注意許多細節，才不會導致作品在窯燒時破損或毀壞</p>
+          </div>
+        </div>
+
+
+        <div class="col-xl-9 col-12">
+          <div id="Kiln03" class="bubble-box noactive box03">
+            <img src="./img/about/Kiln03.jpg" alt="窯窗" class="w-100">
+            <h3>窯窗</h3>
+            <p>蛇窯的溫度控制全由人力掌控，因此師傅需要２４小時輪班照顧，當溫度到達穩定階段，則由左右兩邊的窯窗來保持溫度。</p>
+          </div>
+        </div>
+
+
+        <div class="col-xl-12 col-12">
+          <div id="Kiln04" class="bubble-box noactive box04">
+            <img src="./img/about/Kiln04.jpg" alt="內部" class="w-100">
+            <h3>內部</h3>
+            <p>蛇窯燒窯時會將窯門以磚塊封住，平時則開放讓民眾入內參觀。</p>
+          </div>
+        </div>
+
         <div class="row">
           <div class="about-top_left col-lg-5 col-12"></div>
           <div class="about-top_right col-lg-7 col-12">
@@ -181,30 +221,39 @@
               添興窯於1955年創窯時，即建立第一座蛇窯，921大地震，遭受嚴重的損傷，終於在2000年8月3日修復完成，現已成為台灣地區現存仍實際燒窯的老蛇窯，繼續擔負延續台灣陶藝傳統的使命。
           </div>
         </div>
+
+
+
+
+
         <div class="about-map">
           <!-- Image Map Generated by http://www.image-map.net/ -->
-          <img src="./img/蛇窯-02.png" class="image-map" usemap="#image-map">
+          <img src="./img/image-map.png" class="image-map" usemap="#image-map">
 
           <map name="image-map">
-            <area target="" alt="door" title="door" href="" coords="565,716,42" shape="circle">
-            <area target="" alt="windows" title="windows" href="" coords="649,535,45" shape="circle">
-            <area target="" alt="inside" title="inside" href="" coords="976,497,43" shape="circle">
-            <area target="" alt=" chimney" title=" chimney" href="" coords="1365,556,41" shape="circle">
+            <area class="map01" target="" alt="door" title="door" href="#Kiln03" coords="154,381,34" shape="circle">
+            <area class="map02" target="" alt="windows" title="windows" href="#Kiln03" coords="240,199,36"
+              shape="circle">
+            <area class="map03" target="" alt="inside" title="inside" href="#Kiln03" coords="567,161,36" shape="circle">
+            <area class="map04" target="" alt=" chimney" title=" chimney" href="#Kiln04" coords="955,218,32"
+              shape="circle">
           </map>
+
+
         </div>
       </div>
 
-        <div class="row">
-          <div class="about-bottom_left col-lg-5 col-12"></div>
-          <div class="about-bottom_right col-lg-7 col-12">
-            <div class="about-text_title col-13">集集蛇窯小檔案</div>
-            <div class="about-text_01 col-12">．窯室身長75台尺，窯頭長20台尺，總長95台尺，身高12台尺，煙囪高20台尺。</div>
-            <div class="about-text_02 col-12">．按15度斜坡建築， 共有窯門3個，左右窯窗各25個〈共50個〉，窯頭柴灶孔2個及通氣孔1個。</div>
-            <div class="about-text_02 col-12">．每年燒窯三到六次外，可供遊客走入窯中欣賞內部多年燒窯的痕跡，及緬懷先民燒</div>
-            <div class="about-text_03 col-12">陶之辛苦，宛如走入時空隧道 。</div>
-            <div class="about-text_04 col-12">由於目前需用以蛇窯燒的陶藝品不多，故每窯僅燒約全窯容積的三分之一，其他三分之二容積必須維持空燒，成本雖高但是為了維持老蛇窯的長壽，仍是值得。
-              (註：一般窯爐若長久不燒窯容易風化塌陷 。)</div>
-          </div>
+      <div class="row">
+        <div class="about-bottom_left col-lg-5 col-12"></div>
+        <div class="about-bottom_right col-lg-7 col-12">
+          <div class="about-text_title col-13">集集蛇窯小檔案</div>
+          <div class="about-text_01 col-12">．窯室身長75台尺，窯頭長20台尺，總長95台尺，身高12台尺，煙囪高20台尺。</div>
+          <div class="about-text_02 col-12">．按15度斜坡建築， 共有窯門3個，左右窯窗各25個〈共50個〉，窯頭柴灶孔2個及通氣孔1個。</div>
+          <div class="about-text_02 col-12">．每年燒窯三到六次外，可供遊客走入窯中欣賞內部多年燒窯的痕跡，及緬懷先民燒</div>
+          <div class="about-text_03 col-12">陶之辛苦，宛如走入時空隧道 。</div>
+          <div class="about-text_04 col-12">由於目前需用以蛇窯燒的陶藝品不多，故每窯僅燒約全窯容積的三分之一，其他三分之二容積必須維持空燒，成本雖高但是為了維持老蛇窯的長壽，仍是值得。
+            (註：一般窯爐若長久不燒窯容易風化塌陷 。)</div>
+        </div>
 
       </div>
     </div>
@@ -227,63 +276,112 @@
         <div class="tab_cricle">
 
           <div class="tab-btn-group">
-            <input id="btn-1" class="tab-btn tab_active" type="button" value="理念&使命">
+            <input id="btn-1" class="tab-btn tab_active" type="button" value="作品賞析">
             <input id="btn-2" class="tab-btn" type="button" value="得獎經歷">
             <!-- <div id="btn-3" class="tab-btn">分頁3</div> -->
-            <input id="btn-3" class="tab-btn" type="button" value="作品賞析">
+            <input id="btn-3" class="tab-btn" type="button" value="理念&使命">
           </div>
-          <section id="title" class="tab_title">
-            <div class="container">
-              <div class="title-main">
-                <h1><img src="./img/title-master.svg" alt="DIY體驗" width="300" /></h1>
-              </div>
-            </div>
-          </section>
           <div class="tab-content-group">
             <div id="content-1" class="tab-content tab_active">
-              <h3>理念</h3>
-              <span
-                class="tab_text">使命傳承陶藝文化，以傳統陶製品為基礎之創意生活產業，並繼續在窯場中注入「休閒體驗」及「陶藝文化園區」合併的精神，作為永續經營的模式。陶瓷商品跟陶藝品最大的差別，就是在內涵
-                很多人把藝術這二個字的定義，講得天花亂墜，但是我用那個洋人給我們一個最簡單的定義就是真善美！
-                真就是誠實，善就是把所有的事情，所有的作品做到盡善，那美，當然是一個結果。
-                我們希望這個作品是讓你越看越愛，越愛越用，這樣能夠長久的東西，我才認為它是陶藝品。
-              </span>
-              <p>
-              <p>
-              <p>
-              <p>
-              <h3>使命</h3>
-              <span class="tab_text">傳承陶藝文化，以傳統陶製品為基礎之創意生活產業，並繼續在窯場中注入「休閒體驗」及「陶藝文化園區」合併的精神，作為永續經營的模式。</span>
+              <h3 class="d-flex justify-content-center"><img src="./img/title-about-portfolios.svg" alt="作品賞析"
+                  class="w-50 align-middle"></h3>
+              <!-- Swiper -->
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="row justify-content-center">
+                      <div class="col-md-8 mb-2 ">
+                        <img src="./img/about/work01.png" alt="" class="w-100">
+                      </div>
+                      <div class="col-md-12">柴燒陶有著
+                        “瓦斯燒、電窯燒”等成品無法取代的自然美感；以現在本地環境製作柴燒的成本已經高至幾乎無人接受的地步，但是作者總是不願意放棄柴燒的製作，甚至已接近著迷之情形。
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="row justify-content-center">
+                      <div class="col-md-8 mb-2 ">
+                        <img src="./img/about/work02.png" alt="" class="w-100">
+                      </div>
+                      <div class="col-md-12">
+                        三件瓶系列是作者將 一件作品分割成三件式，可以組合成為一件作品，亦可分而成各單件完整的作品，更可以任意重組，是作者企圖留給收藏者作品的一個互動空間。
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="row justify-content-center">
+                      <div class="col-md-8 mb-2 ">
+                        <img src="./img/about/work03.png" alt="" class="w-100">
+                      </div>
+                      <div class="col-md-12">
+                        泥質釉是作者多年來陶藝經驗所研配得來的一種釉藥配方 ，它是一種生澀釉，亦可裝作化妝土或釉下彩使用。
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="row justify-content-center">
+                      <div class="col-md-8 mb-2 ">
+                        <img src="./img/about/work04.png" alt="" class="w-100">
+                      </div>
+                      <div class="col-md-12">
+                        質感是陶藝創作的重要課題之一，其中包括含釉藥、化妝土的塗裝及陶土肌理的表現等。作者也體任這些經驗的重，故亦將這些課題列為研究重點。
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="row justify-content-center">
+                      <div class="col-md-8 mb-2 ">
+                        <img src="./img/about/work05.png" alt="" class="w-100">
+                      </div>
+                      <div class="col-md-12">
+                        本系列作品主要在表現陶刻與釉藥相互搭配的美感，是作者發展出一種獨特的陶藝技法，所表現的整體氣氛，實與一般的雕刻有極大的不同。
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="row justify-content-center">
+                      <div class="col-md-8 mb-2 ">
+                        <img src="./img/about/work06.png" alt="" class="w-100">
+                      </div>
+                      <div class="col-md-12">
+                        本系列作品是作者以陶瓷刮落技法及紙雕技術搭配自創的套釉技法，而發展出的一種新的陶瓷釉藥塗裝方式（本技法的專利正在申請中）。由於利用紙雕的技法來作釉藥的刮落，所展現的圖案較傳統的刮落技法乾淨俐落，毫無拖泥帶水的痕跡。
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- Add Arrows -->
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+
+
             </div>
             <div id="content-2" class="tab-content">
-              <h3>理念</h3>
-              <span
-                class="tab_text">2使命傳承陶藝文化，以傳統陶製品為基礎之創意生活產業，並繼續在窯場中注入「休閒體驗」及「陶藝文化園區」合併的精神，作為永續經營的模式。陶瓷商品跟陶藝品最大的差別，就是在內涵
-                很多人把藝術這二個字的定義，講得天花亂墜，但是我用那個洋人給我們一個最簡單的定義就是真善美！
-                真就是誠實，善就是把所有的事情，所有的作品做到盡善，那美，當然是一個結果。
-                我們希望這個作品是讓你越看越愛，越愛越用，這樣能夠長久的東西，我才認為它是陶藝品。
-              </span>
-              <p>
-              <p>
-              <p>
-              <p>
-              <h3>使命</h3>
-              <span class="tab_text">傳承陶藝文化，以傳統陶製品為基礎之創意生活產業，並繼續在窯場中注入「休閒體驗」及「陶藝文化園區」合併的精神，作為永續經營的模式。</span>
+              <h3 class="d-flex justify-content-center"><img src="./img/title-about-award.svg" alt="得獎經歷"
+                  class="w-50 align-middle"></h3>
+              <ul>
+                <li>1993 手工業產品評選優良獎（陶瓷類首獎）</li>
+                <li>1994 手工業產品評選佳作獎、49屆全省美展教育廳獎</li>
+                <li>1997 飄逸瓶系列「草蝶蚊瓶」榮台灣陶展優選獎</li>
+                <li>1998 台中市中心個展</li>
+                <li>2002 南投文化中心特展</li>
+                <li>2006 史博館邀請展</li>
+                <li>2010 玉山美術獎邀請展</li>
+                <li> 2011 文化局邀請展</li>
+              </ul>
+
             </div>
             <div id="content-3" class="tab-content">
-              <h3>理念</h3>
-              <span
-                class="tab_text">3使命傳承陶藝文化，以傳統陶製品為基礎之創意生活產業，並繼續在窯場中注入「休閒體驗」及「陶藝文化園區」合併的精神，作為永續經營的模式。陶瓷商品跟陶藝品最大的差別，就是在內涵
-                很多人把藝術這二個字的定義，講得天花亂墜，但是我用那個洋人給我們一個最簡單的定義就是真善美！
-                真就是誠實，善就是把所有的事情，所有的作品做到盡善，那美，當然是一個結果。
+              <h3 class="d-flex justify-content-center"><img src="./img/title-about-mission.svg" alt="理念與使命"
+                  class="w-50 align-middle mb-1"></h3>
+              <p>
+                第三代傳人林清河：陶瓷商品跟陶藝品最大的差別，就是在內涵很多人把藝術這二個字的定義，講得天花亂墜，但是我用那個洋人給我們一個最簡單的定義
+                就是真善美！真就是誠實，善就是把所有的事情，所有的作品做到盡善，那美，當然是一個結果。
                 我們希望這個作品是讓你越看越愛，越愛越用，這樣能夠長久的東西，我才認為它是陶藝品。
-              </span>
-              <p>
-              <p>
-              <p>
-              <p>
-              <h3>使命</h3>
-              <span class="tab_text">傳承陶藝文化，以傳統陶製品為基礎之創意生活產業，並繼續在窯場中注入「休閒體驗」及「陶藝文化園區」合併的精神，作為永續經營的模式。</span>
+              </p>
+              <p class="tab_text">傳承陶藝文化，以傳統陶製品為基礎之創意生活產業，並繼續在窯場中注入「休閒體驗」及「陶藝文化園區」合併的精神，作為永續經營的模式。</p>
             </div>
 
           </div>
@@ -340,7 +438,91 @@
 
     </section>
 
-    <div class="marquee">
+    <div class="diy-marquee-box">
+      <div class="diy-marquee-wrapper">
+        <div class="diy-marquee ">
+          <a class="image_size" href="./img/about/image_wall01.jpg" data-toggle="lightbox" data-gallery="gallery">
+            <img src="./img/about/image_wall01.jpg" alt="DIY體驗活動剪影">
+          </a>
+          <a class="image_size" href="./img/about/image_wall02.jpeg" data-toggle="lightbox" data-gallery="gallery">
+            <img src="./img/about/image_wall02.jpeg" alt="DIY體驗活動剪影">
+          </a>
+          <a class="image_size" href="./img/about/image_wall03.jpg" data-toggle="lightbox" data-gallery="gallery">
+            <img src="./img/about/image_wall03.jpg" alt="DIY體驗活動剪影">
+          </a>
+          <a class="image_size" href="./img/about/image_wall04.jpg" data-toggle="lightbox" data-gallery="gallery">
+            <img src="./img/about/image_wall04.jpg" alt="DIY體驗活動剪影">
+          </a>
+          <a class="image_size" href="./img/about/image_wall05.jpg" data-toggle="lightbox" data-gallery="gallery">
+            <img src="./img/about/image_wall05.jpg" alt="DIY體驗活動剪影">
+          </a>
+          <a class="image_size" href="./img/about/image_wall01.jpg" data-toggle="lightbox" data-gallery="gallery">
+            <img src="./img/about/image_wall01.jpg" alt="DIY體驗活動剪影">
+          </a>
+          <a class="image_size" href="./img/about/image_wall02.jpeg" data-toggle="lightbox" data-gallery="gallery">
+            <img src="./img/about/image_wall02.jpeg" alt="DIY體驗活動剪影">
+          </a>
+          <a class="image_size" href="./img/about/image_wall03.jpg" data-toggle="lightbox" data-gallery="gallery">
+            <img src="./img/about/image_wall03.jpg" alt="DIY體驗活動剪影">
+          </a>
+          <a class="image_size" href="./img/about/image_wall04.jpg" data-toggle="lightbox" data-gallery="gallery">
+            <img src="./img/about/image_wall04.jpg" alt="DIY體驗活動剪影">
+          </a>
+          <a class="image_size" href="./img/about/image_wall05.jpg" data-toggle="lightbox" data-gallery="gallery">
+            <img src="./img/about/image_wall05.jpg" alt="DIY體驗活動剪影">
+          </a>
+          <a class="image_size" href="./img/about/image_wall01.jpg" data-toggle="lightbox" data-gallery="gallery">
+            <img src="./img/about/image_wall01.jpg" alt="DIY體驗活動剪影">
+          </a>
+          <a class="image_size" href="./img/about/image_wall02.jpeg" data-toggle="lightbox" data-gallery="gallery">
+            <img src="./img/about/image_wall02.jpeg" alt="DIY體驗活動剪影">
+          </a>
+        </div>
+
+        <div class="diy-marquee ">
+          <a class="image_size" href="./img/about/image_wall06.jpg" data-toggle="lightbox" data-gallery="gallery">
+            <img src="./img/about/image_wall06.jpg" alt="DIY體驗活動剪影">
+          </a>
+          <a class="image_size" href="./img/about/image_wall07.jpg" data-toggle="lightbox" data-gallery="gallery">
+            <img src="./img/about/image_wall07.jpg" alt="DIY體驗活動剪影">
+          </a>
+          <a class="image_size" href="./img/about/image_wall08.jpg" data-toggle="lightbox" data-gallery="gallery">
+            <img src="./img/about/image_wall08.jpg" alt="DIY體驗活動剪影">
+          </a>
+          <a class="image_size" href="./img/about/image_wall09.jpg" data-toggle="lightbox" data-gallery="gallery">
+            <img src="./img/about/image_wall09.jpg" alt="DIY體驗活動剪影">
+          </a>
+          <a class="image_size" href="./img/about/image_wall10.jpg" data-toggle="lightbox" data-gallery="gallery">
+            <img src="./img/about/image_wall10.jpg" alt="DIY體驗活動剪影">
+          </a>
+          <a class="image_size" href="./img/about/image_wall06.jpg" data-toggle="lightbox" data-gallery="gallery">
+            <img src="./img/about/image_wall06.jpg" alt="DIY體驗活動剪影">
+          </a>
+          <a class="image_size" href="./img/about/image_wall07.jpg" data-toggle="lightbox" data-gallery="gallery">
+            <img src="./img/about/image_wall07.jpg" alt="DIY體驗活動剪影">
+          </a>
+          <a class="image_size" href="./img/about/image_wall08.jpg" data-toggle="lightbox" data-gallery="gallery">
+            <img src="./img/about/image_wall08.jpg" alt="DIY體驗活動剪影">
+          </a>
+          <a class="image_size" href="./img/about/image_wall09.jpg" data-toggle="lightbox" data-gallery="gallery">
+            <img src="./img/about/image_wall09.jpg" alt="DIY體驗活動剪影">
+          </a>
+          <a class="image_size" href="./img/about/image_wall10.jpg" data-toggle="lightbox" data-gallery="gallery">
+            <img src="./img/about/image_wall10.jpg" alt="DIY體驗活動剪影">
+          </a>
+          <a class="image_size" href="./img/about/image_wall06.jpg" data-toggle="lightbox" data-gallery="gallery">
+            <img src="./img/about/image_wall06.jpg" alt="DIY體驗活動剪影">
+          </a>
+          <a class="image_size" href="./img/about/image_wall07.jpg" data-toggle="lightbox" data-gallery="gallery">
+            <img src="./img/about/image_wall07.jpg" alt="DIY體驗活動剪影">
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="marquee">
       <div class="marquee--inner">
         <span>
           <div class="orb marquee_1"></div>
@@ -389,17 +571,17 @@
         </span>
 
       </div>
-    </div>
+    </div> -->
 
   </div>
   <a href="reservation.html" class="reservation">
     <span>
-        我
-        要
-        預
-        約
+      我
+      要
+      預
+      約
     </span>
-</a>
+  </a>
   <a href="#" class="gototop"></a>
 
 
@@ -407,66 +589,66 @@
 
   <footer>
     <div class="container">
-        <div class="footer-info">
-            <div class="row">
-                <div class="col-lg-4 col-md-12 col-sm-12">
-                    <div class="footer-box">
-                        <img src="./img/icon-phone-h.svg" alt="服務專線" width="78">
-                        <div class="pl-1">
-                            <h4>服務專線</h4>
-                            <h3 class="tel"><a href="tel:04-9278-1130">04-9278-1130</a></h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-12 col-sm-12">
-                    <div class="footer-box">
-                        <img src="./img/icon-mail-h.svg" alt="聯絡我們" width="78">
-                        <div class="pl-1">
-                            <h4>聯絡我們</h4>
-                            <h3 class="br"><a href="mailto:tianxingkiln@gmail.com">tianxingkiln@gmail.com</a></h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-12 col-sm-12">
-                    <div class="footer-box">
-                        <img src="./img/icon-time-h.svg" alt="營業時間" width="78">
-                        <div class="pl-1">
-                            <h4>營業時間<span class="text-note">(週四公休)</span></h4>
-                            <h3 class="br">9:00am~17:30pm</h3>
-                        </div>
-                    </div>
-                </div>
+      <div class="footer-info">
+        <div class="row">
+          <div class="col-lg-4 col-md-12 col-sm-12">
+            <div class="footer-box">
+              <img src="./img/icon-phone-h.svg" alt="服務專線" width="78">
+              <div class="pl-1">
+                <h4>服務專線</h4>
+                <h3 class="tel"><a href="tel:04-9278-1130">04-9278-1130</a></h3>
+              </div>
             </div>
-        </div>
+          </div>
 
-        <div class="footer-social">
-            <div class="row">
-                <div class="col-md-6 col-sm-12">
-                    <h3>南投縣集集鎮田寮里楓林巷十號</h3>
-                    <h4>All Copyright c Reserved by Tian Xing Kiln Ceramic Art Co., Ltd.</h4>
-                </div>
-                <div class="col-md-6 col-sm-12">
-                    <div class="social-icons">
-                        <a href="https://www.facebook.com/txkiln/" target="_blank">
-                            <div class="icon-fb"></div>
-                        </a>
-                        <a href="https://www.instagram.com/txkiln/" target="_blank">
-                            <div class="icon-ig"></div>
-                        </a>
-                        <a href="https://twitter.com/TXKiln" target="_blank">
-                            <div class="icon-twitter"></div>
-                        </a>
-                        <a href="http://line.me/ti/p/@sse5946o" target="_blank">
-                            <div class="icon-line"></div>
-                        </a>
-                    </div>
-                </div>
+          <div class="col-lg-4 col-md-12 col-sm-12">
+            <div class="footer-box">
+              <img src="./img/icon-mail-h.svg" alt="聯絡我們" width="78">
+              <div class="pl-1">
+                <h4>聯絡我們</h4>
+                <h3 class="br"><a href="mailto:tianxingkiln@gmail.com">tianxingkiln@gmail.com</a></h3>
+              </div>
             </div>
+          </div>
+
+          <div class="col-lg-4 col-md-12 col-sm-12">
+            <div class="footer-box">
+              <img src="./img/icon-time-h.svg" alt="營業時間" width="78">
+              <div class="pl-1">
+                <h4>營業時間<span class="text-note">(週四公休)</span></h4>
+                <h3 class="br">9:00am~17:30pm</h3>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+
+      <div class="footer-social">
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <h3>南投縣集集鎮田寮里楓林巷十號</h3>
+            <h4>All Copyright c Reserved by Tian Xing Kiln Ceramic Art Co., Ltd.</h4>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="social-icons">
+              <a href="https://www.facebook.com/txkiln/" target="_blank">
+                <div class="icon-fb"></div>
+              </a>
+              <a href="https://www.instagram.com/txkiln/" target="_blank">
+                <div class="icon-ig"></div>
+              </a>
+              <a href="https://twitter.com/TXKiln" target="_blank">
+                <div class="icon-twitter"></div>
+              </a>
+              <a href="http://line.me/ti/p/@sse5946o" target="_blank">
+                <div class="icon-line"></div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</footer>
+  </footer>
 
 
 
@@ -481,6 +663,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
   <!--JS CDN套件-->
 
   <!--JS檔外連-->
@@ -490,6 +673,23 @@
   <script src="./js/aboutpage_tabs.js"></script>
   <!--JS檔外連-->
 
+  <!-- swiper -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+
+
+    $(document).on("click", '[data-toggle="lightbox"]', function (event) {
+      event.preventDefault();
+      $(this).ekkoLightbox();
+    });
+  </script>
 
 </body>
 

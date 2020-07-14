@@ -81,7 +81,7 @@ body {
 }
 
 .image-map {
-    margin: -270px -320px;
+    margin: 200px 0px;
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -228,11 +228,8 @@ section {
     z-index: 15;
 }
 
-.tab-btn:hover{
-    transition: 1s;
-}
 
-
+/* 頁籤按鈕 */
 .tab-btn-group {
     width: 100%;
     height: 100px;
@@ -254,52 +251,73 @@ section {
     width: 25%;
     height: 50%;
     border-radius: 50px;
-    background-color: rgb(224, 138, 9);
+    background-color: #c88232;
     text-align: center;
     line-height: 40px;
     font-size: 15px;
     color: white;
     margin-right: 30px;
+    position: relative;
+}
+
+.tab-btn:hover {
+    background-color: #a04628;
+    transition: 1s;
 }
 
 .tab-btn.tab_active {
-    background: rgb(224, 51, 51);
-    color: black;
+    outline:none;
+    border: 0;
+    width: 25%;
+    height: 70%;
+    border-radius: 50px;
+    background-color: #a04628;
+    text-align: center;
+    line-height: 40px;
+    font-size: 15px;
+    color: white;
+    margin-right: 30px;
+    position: relative;
 }
 
-.tab_title {
+
+/* .tab_title {
     position: absolute;
     top: -50px;
     z-index: 5;
-}
+} */
 
 .tab-content-group {
     padding: 0 20%;
 }
 
-.tab-btn:hover {
-    background-color: rgb(235, 68, 27);
-}
+
 
 .tab_text {
     font-weight: 600;
 }
 
-h3 {
-    /* font-weight: 900; */
-}
 
 .tab-content {
     position: absolute;
     left: 0;
-    top: 190px;
+    top: 120px;
     width: 100%;
     /* height: 400px; */
     padding: 20px 100px;
     text-align: justify;
     /* background: radial-gradient(circle,rgb(255, 3, 3),rgb(231, 116, 9)); */
-
     display: none;
+}
+
+
+.tab-content ul{
+    padding: 0;
+    margin: 0;
+}
+
+.tab-content li{
+    margin: 0 0 10px 10px;
 }
 
 .tab-content.tab_active {
@@ -319,6 +337,60 @@ h3 {
 }
 
 
+
+/* hover的泡泡box*/
+
+
+.bubble-box{
+    position: absolute;
+    z-index: 99;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 6px 8px rgba(153, 153, 153, 0.5);
+}
+
+.box01 {
+    top: 420px;
+    left: -240px;
+}
+
+.box02 {
+    position: absolute;
+    top: 250px;
+    left: 200px;
+}
+
+.box03 {
+    top: 180px;
+    left: 525px;
+}
+
+.box04 {
+    width: 30%;
+    top: 450px;
+    left: 1000px;
+}
+
+.bubble-box h3{
+    display: none;
+}
+
+.bubble-box p{
+    font-size: 16px;
+    margin: 10px 0 0 0;
+}
+
+@media screen and (max-width: 576px) {
+    .bubble-box h3{
+        margin: 20px 0 0 0;
+        display:block;
+        color: #a04628;
+        font-size: 18px;
+        
+    }
+
+}
 
 /*  */
 
@@ -347,6 +419,58 @@ h3 {
     }
 }
 
+@media (max-width:1510px) {
+    .box01 {
+        top: 480px;
+        left: -100px;
+        width: 100%;
+    }
+    
+    .box02 {
+        position: absolute;
+        top: 250px;
+        left: 200px;
+    }
+    
+    .box03 {
+        top: 180px;
+        left: 525px;
+    }
+    
+    .box04 {
+        width: 25%;
+        top: 450px;
+        left: 1000px;
+    }
+}
+
+@media (max-width:1400px) {
+    .box01 {
+        top: 540px;
+        left: -10px;
+        width: 80%;
+    }
+    
+    .box02 {
+        position: absolute;
+        top: 250px;
+        left: 235px;
+        width: 60%;
+    }
+    
+    .box03 {
+        top: 190px;
+        left: 550px;
+        width: 35%;
+    }
+    
+    .box04 {
+        width: 25%;
+        top: 320px;
+        left: 880px;
+    }
+}
+
 @media (max-width:1220px) {
     
     .tab_cricle {
@@ -356,6 +480,47 @@ h3 {
     }
     .bottleB {
         display: none;
+    }
+    
+
+}
+
+@media (max-width:1140px) {
+    .box01 {
+        width: unset;
+        position: unset;
+        display: block !important;
+        margin-bottom: 20px;
+    }
+    
+    .box02 {
+        
+        width: unset;
+        position: unset;
+        display: block !important;
+        margin-bottom: 20px;
+    }
+    
+    .box03 {
+        
+        width: unset;
+        position: unset;
+        display: block !important;
+        margin-bottom: 20px;
+    }
+    
+    .box04 {
+        width: unset;
+        position: unset;
+        display: block !important;
+        margin-bottom: 20px;
+    }
+
+    .about-map {
+        display: none;
+        /* background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat; */
     }
     
 }

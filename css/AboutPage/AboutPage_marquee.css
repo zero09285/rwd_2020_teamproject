@@ -1,4 +1,4 @@
-
+/* 
     .orb {
         width: 300px;
         height: 200px;
@@ -170,4 +170,68 @@
         .marquee--inner2 {
             animation: marquee_rwd576 15s linear infinite;
             }
+    } */
+
+
+    .image_size {
+        height: 200px;
     }
+
+    .diy-marquee-box {
+        display: flex;
+        align-items: center;
+        margin: 0 0 60px 0;
+    }
+    
+    .diy-marquee-wrapper {
+        overflow: hidden;
+        /* height: 399.66px; */
+        background-color:#333;
+    }
+    
+    .diy-marquee {
+        width: 100%;
+        display: flex;
+        animation-name: diy-marquee;
+        animation-duration: 15s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-direction: alternate;
+        transform: translateX(0);
+    }
+    
+    .diy-marquee a:hover{
+        opacity: 0.5;
+    }
+    
+    
+    .diy-marquee img {
+        width: 300px;
+    }
+    
+     @keyframes diy-marquee {
+        from {
+            transform: translateX(0);
+        }
+    
+            to {
+                transform: translateX(-100%);
+            }
+        }
+
+        
+    @media screen and (max-width: 576px) {
+        .diy-marquee-box {
+            margin:60px 0 0 0;
+        }
+    
+        .diy-marquee img {
+            height: 150px;
+            width: 200px;
+        }
+        .image_size {
+            height: unset;
+        }
+        }
+        
+    
