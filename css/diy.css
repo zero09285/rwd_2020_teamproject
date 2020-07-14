@@ -152,6 +152,7 @@
     justify-content: center;
     height: 600px;
     margin: 0 0 200px 0;
+    overflow: hidden;
 }
 
 .z1{
@@ -168,8 +169,8 @@
 
 .z2{
     position: absolute;
-    top: 100px;
-    left: 15%;
+    top: 60px;
+    left: 15vw;
     z-index:20;
 
 }
@@ -179,6 +180,9 @@
     right:0;
     z-index:10;
 
+}
+.z3 img{
+    width: 60vw;
 }
 
 /* 重疊區塊設定-手印磚*/
@@ -195,10 +199,12 @@
 }
 
 
+
+
 .hand-2{
     position: absolute;
-    top: 100px;
-    right: 15%;
+    top: 60px;
+    right:18vw;
     z-index:20;
 
 
@@ -208,6 +214,10 @@
     position: absolute;
     left:0;
     z-index:10;
+}
+
+.hand-3 img{
+    width: 70vw;
 }
 
 
@@ -380,6 +390,61 @@
     }
 
 
+@media screen and (max-width: 768px) {
+
+
+    .combo{
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        margin: 0;   
+    }
+
+    .z1{
+        display: none;
+    }
+
+    .z2{
+        position: unset;
+        top:0;
+        left:0;
+        z-index:20;
+    
+    }
+
+    .z3{
+        display: none;
+    }
+
+
+    .hand-1{
+        display: none;
+    }
+
+    .hand-2{
+        position: unset;
+        top:0;
+        right:0;
+        z-index:20;
+    }
+
+    .hand-3{
+        display: none;
+    }
+    
+    .wave{
+        display: none;
+    }
+
+    .diy-bg{
+        background-image: none;
+       
+    }
+
+
+   
+
+}
 
 
 @media screen and (max-width: 576px) {
@@ -391,11 +456,6 @@
 
     .diy-ticket ul{
         display: block;
-    }
-
-    .diy-ticket li{
-        width: 100%;
-        display: flex;
     }
 
     .diy-item img{
@@ -466,9 +526,7 @@
         justify-content: center;
         align-items: center;
         height: auto;
-        margin: 0;
-
-    
+        margin: 0;   
     }
 
    
@@ -512,7 +570,7 @@
     /* DIY課程介紹-phone */
 
     #diy-info{
-        padding:0;
+        padding:40px 0 0 0 ;
     }
     
     .diy-info-box{

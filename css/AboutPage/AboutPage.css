@@ -88,7 +88,7 @@ a,map,area,img{border:0px;}
 }
 
 .image-map {
-    margin: 200px 0px;
+    margin: 240px 0px;
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -360,27 +360,36 @@ section {
 .box01 {
     top: 420px;
     left: -240px;
+    display: none;
 }
 
 .box02 {
     position: absolute;
     top: 250px;
     left: 200px;
+    display: none;
 }
 
 .box03 {
     top: 180px;
     left: 525px;
+    display: none;
 }
 
 .box04 {
     width: 30%;
     top: 450px;
     left: 1000px;
+    display: none;
 }
 
+
 .bubble-box h3{
-    display: none;
+    margin: 20px 0 0 0;
+    display:block;
+    color: #a04628;
+    font-size: 18px;
+    
 }
 
 .bubble-box p{

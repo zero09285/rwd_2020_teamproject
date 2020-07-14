@@ -8,6 +8,10 @@ footer {
     }
 
 
+    footer a{
+        color: #9a4628;
+    }
+
 .footer-info{
     padding: 30px 0;
     border-bottom: 1px solid #dcc8b4;
