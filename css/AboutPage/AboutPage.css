@@ -358,8 +358,8 @@ section {
 }
 
 .box01 {
-    top: 420px;
-    left: -240px;
+    top: 450px;
+    left: -200px;
     display: none;
 }
 
@@ -438,8 +438,8 @@ section {
 @media (max-width:1510px) {
     .box01 {
         top: 480px;
-        left: -100px;
-        width: 100%;
+    left: -100px;
+    width: 240%;
     }
     
     .box02 {
@@ -462,9 +462,8 @@ section {
 
 @media (max-width:1400px) {
     .box01 {
-        top: 540px;
+        top: 440px;
         left: -10px;
-        width: 80%;
     }
     
     .box02 {
